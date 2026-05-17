@@ -76,15 +76,15 @@
         }
         .subtitle { font-family: 'IM Fell English', serif; font-size: clamp(1.4rem, 2vw, 2.2rem); color: var(--color-primary); margin-top: 1.2rem; }
 
-        .otter-container { position: absolute; top: -15vh; right: -25vw; width: min(70vw, 1100px); z-index: 20; }
+        .otter-container { position: absolute; top: -5vh; right: -25vw; width: min(58vw, 920px); z-index: 5; }
         .otter-img { width: 100%; height: auto; }
 
         .fountain-container {
             position: absolute;
             bottom: -12vh;
-            right: -15vw; 
-            width: min(45vw, 700px); 
-            z-index: 12;
+            right: -12vw;
+            width: min(37vw, 960px);
+            z-index: 9;
             transform: translateY(100%);
             opacity: 0;
             pointer-events: none;
@@ -212,6 +212,15 @@
         .markmap { width: 100%; height: 100%; }
         .markmap svg path, .markmap svg line { stroke-width: 3px !important; stroke-linecap: round !important; stroke-linejoin: round !important; }
 
+        .in-progress-text {
+            font-family: var(--font-handwriting);
+            font-size: 1.2rem;
+            color: #000000;
+            text-align: center;
+            opacity: 0.6;
+            letter-spacing: 0.5px;
+        }
+
         @media (max-width: 900px) {
             .top-nav { top: 2vh; left: 5vw; }
             .card-grid { gap: 2rem; }
@@ -223,7 +232,7 @@
     <nav class="top-nav">
         <a href="#" id="navAbout">About Me</a>
         <a href="#notebookSection" id="navNotebook">Notebook</a>
-        <a href="#researchSection">Research</a>
+        <a href="#researchSection" id="navResearch">Research</a>
     </nav>
 
     <section class="scroll-container">
@@ -269,6 +278,11 @@
                 <h3 class="card-title">Future Exploration...</h3>
             </div>
         </div>
+    </section>
+
+    <section class="content-section" id="researchSection">
+        <h2>Research</h2>
+        <p class="in-progress-text">in the progress</p>
     </section>
 
     <div id="mindmapModal" class="mindmap-modal">
@@ -348,6 +362,7 @@ markmap:
 
 
 ## Part II Understanding People
+
 ## Part III User Research
 ## Part IV Understanding Interaction
 ## Part V User Interfaces
@@ -392,76 +407,70 @@ markmap:
             document.getElementById('notebookSection').scrollIntoView({ behavior: 'smooth' });
         });
 
+        document.getElementById('navResearch').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('researchSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
         window.addEventListener('scroll', () => {
             const offsetTop = scrollContainer.offsetTop;
             const totalScrollableHeight = scrollContainer.clientHeight - window.innerHeight;
             let progress = (window.scrollY - offsetTop) / totalScrollableHeight;
             progress = Math.max(0, Math.min(1, progress));
 
-           
+            // 首屏文字向右滑出
             const phaseOne = Math.min(progress / 0.28, 1);
             textLayer.style.transform = `translateX(${phaseOne * window.innerWidth * 0.9}px)`;
             textLayer.style.opacity = 1 - phaseOne * 1.15;
 
-            
+            // 水獭向左移动
             const otterTravel = window.innerWidth + otter.offsetWidth * 1.35;
-            otter.style.transform = `translateX(${-Math.min(progress * 1.75, 1) * otterTravel}px)`;
+            const otterCurrentX = -Math.min(progress * 1.75, 1) * otterTravel;
+            otter.style.transform = `translateX(${otterCurrentX}px)`;
 
-           
-            const fInStart = 0.25, fInEnd = 0.25;
-            
-            const fOutStart = 0.85, fOutEnd = 1.95;
+            // About Me 标题：从最右侧外，与水獭同速同向滑入，固定距离一起向左
+            const aboutStartX = window.innerWidth * 1.15;
+            const aboutTitleX = Math.max(0, otterCurrentX + aboutStartX);
+            aboutTitle.style.transform = `translateX(${aboutTitleX}px)`;
 
+            // About Me 滑入进度（用于触发其他事件 / 控制淡入）
+            const aboutArrivedP = Math.max(0, Math.min(1, 1 - aboutTitleX / aboutStartX));
+
+            // 喷泉：About Me 移动到中段时从下方升起
+            const fInStart = 0.13, fInEnd = 0.30;
+            const fOutStart = 0.85, fOutEnd = 1.0;
             let fountainOpacity = 0;
-            let fountainYPercent = 100; 
+            let fountainYPercent = 100;
 
             if (progress < fInStart) {
-               
+                // 隐藏在下方
             } else if (progress < fInEnd) {
-                const fInP = Math.max(0, Math.min(1, (progress - fInStart) / (fInEnd - fInStart)));
+                const fInP = (progress - fInStart) / (fInEnd - fInStart);
                 fountainOpacity = fInP;
                 const easeOut = 1 - Math.pow(1 - fInP, 3);
-                fountainYPercent = easeOut * -100 + 100; // 从 100% 滑到 0%
+                fountainYPercent = (1 - easeOut) * 100; // 100% -> 0%
             } else if (progress < fOutStart) {
-                
                 fountainOpacity = 1;
                 fountainYPercent = 0;
             } else if (progress < fOutEnd) {
-                const fOutP = Math.max(0, Math.min(1, (progress - fOutStart) / (fOutEnd - fOutStart)));
+                const fOutP = (progress - fOutStart) / (fOutEnd - fOutStart);
                 fountainOpacity = 1 - fOutP;
-                const easeIn = Math.pow(fOutP, 3);
-                fountainYPercent = easeIn * 100; 
-            } else {
-                fountainOpacity = 0;
-                fountainYPercent = 100;
+                fountainYPercent = Math.pow(fOutP, 3) * 100;
             }
 
             fountain.style.opacity = fountainOpacity;
             fountain.style.transform = `translateY(${fountainYPercent}%)`;
 
-            
-            const titleStart = 0.24, titleEnd = 0.42;
-            const titleP = Math.max(0, Math.min(1, (progress - titleStart) / (titleEnd - titleStart)));
-            const introStart = 0.44, introEnd = 0.58;
+            // About Me 介绍文字在标题就位后淡入
+            const introStart = 0.30, introEnd = 0.48;
             const introP = Math.max(0, Math.min(1, (progress - introStart) / (introEnd - introStart)));
-
-            aboutMe.style.opacity = titleP > 0 ? 1 : 0;
-
-            if (progress < titleEnd) {
-                const titleMoveT = Math.max(0, Math.min(1, (progress - titleStart) / (titleEnd - titleStart)));
-                const easeOut = 1 - Math.pow(1 - titleMoveT, 3);
-                const followDistance = window.innerWidth * 0.3;
-                aboutTitle.style.transform = `translateX(${(1 - easeOut) * followDistance}px)`;
-            } else {
-                aboutTitle.style.transform = `translateX(0px)`;
-            }
-
             aboutIntro.style.opacity = introP;
-            aboutIntro.style.transform = `translateY(${(1 - (1 - Math.pow(1 - introP, 3))) * window.innerHeight * 0.08}px)`;
+            aboutIntro.style.transform = `translateY(${(1 - introP) * window.innerHeight * 0.08}px)`;
 
-           
-            const liftStart = 0.62;
+            // 整个 About Me 容器：滑入时即显示（依赖 sticky-viewport overflow:hidden 裁切），后期抬起淡出
+            const liftStart = 0.72;
             const liftP = Math.max(0, Math.min(1, (progress - liftStart) / (1 - liftStart)));
+            aboutMe.style.opacity = aboutArrivedP > 0 ? Math.max(0, 1 - liftP * 1.2) : 0;
             aboutMe.style.transform = `translateY(${-liftP * window.innerHeight * 0.62}px)`;
         });
 
