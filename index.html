@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruolin Zhang - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-bg: #DAD2BC;
+            --color-primary: #425A77;
+            --color-accent: #800000;
+            --font-main: 'Helvetica Neue', Arial, sans-serif;
+            --font-handwriting: 'La Belle Aurore', cursive;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background-color: var(--color-bg);
+            color: var(--color-primary);
+            font-family: var(--font-main);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .top-nav {
+            position: fixed;
+            top: 5vh;
+            left: 5vw;
+            z-index: 200;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.8rem;
+        }
+
+        .top-nav a {
+            font-family: var(--font-handwriting);
+            font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+            color: #FFFFFF;
+            text-decoration: none;
+            line-height: 1.2;
+            transition: opacity 0.3s ease;
+            text-align: center;
+        }
+
+        .top-nav a:hover { opacity: 0.7; }
+
+        .scroll-container {
+            position: relative;
+            height: 420vh;
+        }
+
+        .sticky-viewport {
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            overflow: hidden;
+            background-color: var(--color-bg);
+        }
+
+        .hero-text-layer {
+            position: absolute;
+            left: 6vw;
+            bottom: 18vh;
+            z-index: 10;
+            width: fit-content;
+        }
+        .greeting { font-family: 'IM Fell English', serif; font-size: clamp(1.6rem, 2.3vw, 2.3rem); color: var(--color-accent); }
+        .name {
+            font-family: 'IM Fell English', serif;
+            font-size: clamp(4rem, 7vw, 6.5rem);
+            color: var(--color-accent);
+            font-weight: 400;
+        }
+        .subtitle { font-family: 'IM Fell English', serif; font-size: clamp(1.4rem, 2vw, 2.2rem); color: var(--color-primary); margin-top: 1.2rem; }
+
+        .otter-container { position: absolute; top: -15vh; right: -25vw; width: min(70vw, 1100px); z-index: 20; }
+        .otter-img { width: 100%; height: auto; }
+
+        .fountain-container {
+            position: absolute;
+            bottom: -12vh;
+            right: -15vw; 
+            width: min(45vw, 700px); 
+            z-index: 12;
+            transform: translateY(100%);
+            opacity: 0;
+            pointer-events: none;
+        }
+        .fountain-img { width: 100%; height: auto; }
+
+        .story-section {
+            position: absolute;
+            left: 18vw; 
+            top: 30vh;
+            width: min(62vw, 820px);
+            z-index: 15;
+            pointer-events: none;
+            opacity: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; 
+        }
+        .about-title {
+            font-family: 'IM Fell English', serif;
+            font-size: clamp(4rem, 7vw, 6.5rem);
+            color: var(--color-accent);
+            text-align: left; 
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            opacity: 0.95;
+        }
+        .about-intro { margin-top: 1.2rem; font-family: 'IM Fell English', serif; font-size: clamp(1.1rem, 1.6vw, 1.6rem); color: var(--color-primary); text-align: left; opacity: 0; }
+
+        
+        .content-section {
+            min-height: 100vh;
+            padding: 15vh 8vw 15vh;
+            background-color: var(--color-bg);
+            position: relative;
+            z-index: 30;
+        }
+
+        .content-section h2 {
+            font-family: 'IM Fell English', serif;
+            font-size: clamp(4rem, 7vw, 6.5rem);
+            color: var(--color-accent);
+            text-align: center;
+            margin-bottom: 5rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+            opacity: 0.95;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 4rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .library-card {
+            background: #F2EFE6;
+            padding: 2.2rem 2rem;
+            cursor: pointer;
+            position: relative;
+            border: none;
+            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .library-card:hover {
+            transform: translateY(-4px) rotate(-0.5deg);
+            box-shadow: 0 15px 25px -10px rgba(0,0,0,0.15);
+        }
+
+        .library-card::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, transparent 80%, rgba(0,0,0,0.05) 100%);
+            pointer-events: none;
+        }
+
+        .card-header {
+            font-family: var(--font-handwriting);
+            font-size: 1.2rem;
+            color: #000000;
+            margin-bottom: 1.2rem;
+            opacity: 0.6;
+            letter-spacing: 0.5px;
+        }
+
+        .card-title {
+            font-family: 'IM Fell English', serif;
+            font-weight: 400;
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            line-height: 1.4;
+            margin-top: auto;
+        }
+
+        
+        .mindmap-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--color-bg);
+            z-index: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+        .mindmap-modal.active { opacity: 1; pointer-events: auto; }
+        .close-btn { position: absolute; top: 5vh; right: 6vw; font-family: var(--font-handwriting); font-size: 1.8rem; color: var(--color-accent); background: none; border: none; cursor: pointer; z-index: 301; }
+        .mindmap-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 85vw; height: 85vh; opacity: 0; visibility: hidden; }
+        .mindmap-content.active { opacity: 1; visibility: visible; }
+        .markmap { width: 100%; height: 100%; }
+        .markmap svg path, .markmap svg line { stroke-width: 3px !important; stroke-linecap: round !important; stroke-linejoin: round !important; }
+
+        @media (max-width: 900px) {
+            .top-nav { top: 2vh; left: 5vw; }
+            .card-grid { gap: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="top-nav">
+        <a href="#" id="navAbout">About Me</a>
+        <a href="#notebookSection" id="navNotebook">Notebook</a>
+        <a href="#researchSection">Research</a>
+    </nav>
+
+    <section class="scroll-container">
+        <div class="sticky-viewport">
+            <div class="hero-text-layer" id="textLayer">
+                <div class="title-line">
+                    <span class="greeting">HI, I AM</span>
+                    <span class="name">RUOLIN ZHANG</span>
+                </div>
+                <p class="subtitle">I am building my knowledge map in <span class="highlight">Human-Computer Interaction</span></p>
+            </div>
+
+            <div class="otter-container" id="otter">
+                <img src="./images/otter.png" alt="Otter" class="otter-img" onerror="this.src='https://via.placeholder.com/800x500/DAD2BC/425A77?text=Otter+Image'">
+            </div>
+
+            <div class="fountain-container" id="fountain">
+                <img src="./images/fountain.png" alt="Fountain" class="fountain-img" onerror="this.src='https://via.placeholder.com/600x800/DAD2BC/425A77?text=Fountain+Image'">
+            </div>
+
+            <div class="story-section" id="aboutMe">
+                <h2 class="about-title" id="aboutTitle">About Me</h2>
+                <div class="about-intro" id="aboutIntro">
+                    <p>im ruolin zhang im the superhero...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="notebookSection">
+        <h2>Notebook</h2>
+        <div class="card-grid">
+            <div class="library-card" onclick="openMindmap('note1')">
+                <div class="card-header">📒 mindmap of the book</div>
+                <h3 class="card-title">Introduction to Human-Computer Interaction</h3>
+            </div>
+            <div class="library-card" onclick="openMindmap('note2')">
+                <div class="card-header">🗒️ paper</div>
+                <h3 class="card-title">xxxxxxx</h3>
+            </div>
+            <div class="library-card" style="opacity: 0.5;">
+                <div class="card-header">📑 draft</div>
+                <h3 class="card-title">Future Exploration...</h3>
+            </div>
+        </div>
+    </section>
+
+    <div id="mindmapModal" class="mindmap-modal">
+        <button class="close-btn" onclick="closeMindmap()">✕ Close</button>
+        <div id="note1" class="mindmap-content">
+            <div class="markmap">
+---
+markmap:
+  color: ["#8596A6","#B89C9A","#9EACA0","#C9BAA6","#978B94"]
+---
+# The Mindmap of the Book
+## Part I Overview of Human–Computer Interaction
+### Why is HCI challenging？
+#### Humans are complex
+#### Computers are complex
+#### Contexts are complex
+#### Design is hard
+
+### Human–computer interaction as a field
+#### The term HCI has been in use since the mid-1970s
+
+### Definition of HCI
+#### Design + Evaluation + Implementation + Human use + Interaction phenomena
+#### HCI is about building interactive systems
+#### People are the starting point for HCI
+#### HCI is concerned with investigating all phenomena relevant to interaction
+
+### Research in HCI
+#### Empirical problems
+##### Data-driven understanding
+
+#### Conceptual problems
+##### The value of this type of problem lies in providing theoretical constructions
+
+#### Constructive problems
+##### Building knowledge for design
+
+### Empirical data are linked to knowledge, and knowledge is linked to design.
+
+### The practice of HCI
+#### Understanding users/ Designing and prototyping/ Evaluating systems /Engaging stakeholders
+
+### HCI is a Multidisciplinary field
+
+### Human-centered approach
+#### Understand users + Participate in user research and design + Undertake ethical responsibility
+
+### Interaction
+#### Interaction is emergent
+#### Co-adaptation
+
+### User Interface
+
+### Design
+#### Design is about envisioning things as they could be
+
+### Engineering and Computing
+
+### Evaluation
+#### Verification, Validation, Testing
+
+### Why HCI matters
+#### 1. Interactive systems are difficult to use
+#### 2. The egocentric fallacy: you are often NOT the user
+#### 3. HCI is right
+#### 4. HCI pays off
+#### 5. HCI shapes the future
+
+### Our approach to HCI
+#### A focus on principles
+##### For example, direct manipulation is a principle for organizing the interaction with graphical user interfaces
+
+#### Pluralism in methods and theories
+#### Essential insights supported by research
+#### Optimism in solving HCI problems
+##### Do not blindly believe in the omnipotence of technology
+
+
+## Part II Understanding People
+## Part III User Research
+## Part IV Understanding Interaction
+## Part V User Interfaces
+## Part VI Design
+## Part VII Engineering
+## Part VIII Evaluation
+## Part IX Conclusion
+            </div>
+        </div>
+        <div id="note2" class="mindmap-content">
+            <div class="markmap">
+---
+markmap:
+  color: ["#8596A6","#B89C9A","#9EACA0","#C9BAA6","#978B94"]
+---
+# Don't Make Me Think
+## 1. 核心法则
+- 不要让用户思考
+- 我们不做最佳选择
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+    <script>
+        const scrollContainer = document.querySelector('.scroll-container');
+        const otter = document.getElementById('otter');
+        const textLayer = document.getElementById('textLayer');
+        const aboutMe = document.getElementById('aboutMe');
+        const aboutTitle = document.getElementById('aboutTitle');
+        const aboutIntro = document.getElementById('aboutIntro');
+        const fountain = document.getElementById('fountain');
+
+        document.getElementById('navAbout').addEventListener('click', (e) => {
+            e.preventDefault();
+            const totalH = scrollContainer.clientHeight - window.innerHeight;
+            window.scrollTo({ top: totalH * 0.5, behavior: 'smooth' });
+        });
+
+        document.getElementById('navNotebook').addEventListener('click', (e) => {
+            e.preventDefault();
+            document.getElementById('notebookSection').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', () => {
+            const offsetTop = scrollContainer.offsetTop;
+            const totalScrollableHeight = scrollContainer.clientHeight - window.innerHeight;
+            let progress = (window.scrollY - offsetTop) / totalScrollableHeight;
+            progress = Math.max(0, Math.min(1, progress));
+
+           
+            const phaseOne = Math.min(progress / 0.28, 1);
+            textLayer.style.transform = `translateX(${phaseOne * window.innerWidth * 0.9}px)`;
+            textLayer.style.opacity = 1 - phaseOne * 1.15;
+
+            
+            const otterTravel = window.innerWidth + otter.offsetWidth * 1.35;
+            otter.style.transform = `translateX(${-Math.min(progress * 1.75, 1) * otterTravel}px)`;
+
+           
+            const fInStart = 0.25, fInEnd = 0.25;
+            
+            const fOutStart = 0.85, fOutEnd = 1.95;
+
+            let fountainOpacity = 0;
+            let fountainYPercent = 100; 
+
+            if (progress < fInStart) {
+               
+            } else if (progress < fInEnd) {
+                const fInP = Math.max(0, Math.min(1, (progress - fInStart) / (fInEnd - fInStart)));
+                fountainOpacity = fInP;
+                const easeOut = 1 - Math.pow(1 - fInP, 3);
+                fountainYPercent = easeOut * -100 + 100; // 从 100% 滑到 0%
+            } else if (progress < fOutStart) {
+                
+                fountainOpacity = 1;
+                fountainYPercent = 0;
+            } else if (progress < fOutEnd) {
+                const fOutP = Math.max(0, Math.min(1, (progress - fOutStart) / (fOutEnd - fOutStart)));
+                fountainOpacity = 1 - fOutP;
+                const easeIn = Math.pow(fOutP, 3);
+                fountainYPercent = easeIn * 100; 
+            } else {
+                fountainOpacity = 0;
+                fountainYPercent = 100;
+            }
+
+            fountain.style.opacity = fountainOpacity;
+            fountain.style.transform = `translateY(${fountainYPercent}%)`;
+
+            
+            const titleStart = 0.24, titleEnd = 0.42;
+            const titleP = Math.max(0, Math.min(1, (progress - titleStart) / (titleEnd - titleStart)));
+            const introStart = 0.44, introEnd = 0.58;
+            const introP = Math.max(0, Math.min(1, (progress - introStart) / (introEnd - introStart)));
+
+            aboutMe.style.opacity = titleP > 0 ? 1 : 0;
+
+            if (progress < titleEnd) {
+                const titleMoveT = Math.max(0, Math.min(1, (progress - titleStart) / (titleEnd - titleStart)));
+                const easeOut = 1 - Math.pow(1 - titleMoveT, 3);
+                const followDistance = window.innerWidth * 0.3;
+                aboutTitle.style.transform = `translateX(${(1 - easeOut) * followDistance}px)`;
+            } else {
+                aboutTitle.style.transform = `translateX(0px)`;
+            }
+
+            aboutIntro.style.opacity = introP;
+            aboutIntro.style.transform = `translateY(${(1 - (1 - Math.pow(1 - introP, 3))) * window.innerHeight * 0.08}px)`;
+
+           
+            const liftStart = 0.62;
+            const liftP = Math.max(0, Math.min(1, (progress - liftStart) / (1 - liftStart)));
+            aboutMe.style.transform = `translateY(${-liftP * window.innerHeight * 0.62}px)`;
+        });
+
+        function openMindmap(noteId) {
+            document.querySelectorAll('.mindmap-content').forEach(c => c.classList.remove('active'));
+            document.getElementById(noteId).classList.add('active');
+            document.getElementById('mindmapModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMindmap() {
+            document.getElementById('mindmapModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    </script>
+</body>
+</html>
