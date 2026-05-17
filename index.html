@@ -80,7 +80,7 @@
         .otter-img { width: 100%; height: auto; }
 
         .fountain-container {
-            position: absolute;
+            position: fixed;
             bottom: -12vh;
             right: -12vw;
             width: min(37vw,1550px);
@@ -93,15 +93,15 @@
 
         .story-section {
             position: absolute;
-            left: 18vw; 
-            top: 30vh;
+            left: 18vw;
+            top: 35vh;
             width: min(62vw, 820px);
             z-index: 15;
             pointer-events: none;
             opacity: 0;
             display: flex;
             flex-direction: column;
-            align-items: flex-start; 
+            align-items: flex-start;
         }
         .about-title {
             font-family: 'IM Fell English', serif;
@@ -112,13 +112,15 @@
             letter-spacing: -0.01em;
             opacity: 0.95;
         }
-        .about-intro { margin-top: 1.2rem; font-family: 'IM Fell English', serif; font-size: clamp(1.1rem, 1.6vw, 1.6rem); color: var(--color-primary); text-align: left; opacity: 0; }
+        .about-intro { margin-top: 1.2rem; font-family: 'IM Fell English', serif; font-size: clamp(1.15rem, 1.45vw, 1.55rem); color: #000000; text-align: left; line-height: 1.55; }
+        .about-intro p { margin-bottom: 1.6rem; }
+        .about-intro p:last-child { margin-bottom: 0; }
 
         
         .content-section {
             min-height: 100vh;
             padding: 15vh 8vw 15vh;
-            background-color: var(--color-bg);
+            background-color: transparent;
             position: relative;
             z-index: 30;
         }
@@ -212,6 +214,62 @@
         .markmap { width: 100%; height: 100%; }
         .markmap svg path, .markmap svg line { stroke-width: 3px !important; stroke-linecap: round !important; stroke-linejoin: round !important; }
 
+        /* Portfolio 卡片：嵌在 About Me 内部，跟随上升，水平居中 */
+        .portfolio-card {
+            align-self: center;
+            width: min(560px, 95%);
+            min-height: 300px;
+            padding: 2.2rem 2rem;
+            margin-top: 5.5rem;
+            overflow: hidden;
+            position: relative;
+            pointer-events: auto;
+        }
+        .portfolio-card .portfolio-title {
+            font-size: clamp(2rem, 3vw, 2.8rem);
+        }
+        /* 探照灯图层：默认隐藏，hover 时显示，跟随鼠标圆形揭示 proB */
+        .spotlight-layer {
+            position: absolute;
+            inset: 0;
+            background-image: url('./images/proB.png');
+            background-size: cover;
+            background-position: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease;
+            --x: 50%;
+            --y: 50%;
+            -webkit-mask-image: radial-gradient(circle 90px at var(--x) var(--y), rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+                    mask-image: radial-gradient(circle 90px at var(--x) var(--y), rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+        }
+        .portfolio-card:hover .spotlight-layer { opacity: 1; }
+
+        /* PDF 弹窗（同 mindmap 风格） */
+        .pdf-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--color-bg);
+            z-index: 300;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.4s ease;
+        }
+        .pdf-modal.active { opacity: 1; pointer-events: auto; }
+        .pdf-content {
+            width: 85vw;
+            height: 90vh;
+            background: #ffffff;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.18);
+        }
+        .pdf-content iframe { width: 100%; height: 100%; border: none; }
+
         .in-progress-text {
             font-family: var(--font-handwriting);
             font-size: 1.2rem;
@@ -256,7 +314,16 @@
             <div class="story-section" id="aboutMe">
                 <h2 class="about-title" id="aboutTitle">About Me</h2>
                 <div class="about-intro" id="aboutIntro">
-                    <p>im ruolin zhang im the superhero...</p>
+                    <p>My journey into the field of Human-Computer Interaction felt like a coincidence, yet perhaps it was destined.</p>
+                    <p>Before even learning about this field, I was already conducting similar research.&nbsp; My master's thesis focused on desktop documentaries, exploring how desktop elements shape narratives and how these choices affect the audience's experience.</p>
+                    <p>Earlier, I joined the VR department during my first undergraduate internship.&nbsp; My graduation thesis then focused on media studies, exploring the materiality of media from different researchers' perspectives.&nbsp; Paper, computers, mobile phones, VR headsets… I was fascinated by different forms of media.</p>
+                    <p>As I gradually learned about HCI, I realized that everyone can find intersections with HCI in their major and daily life, and I didn't want to just "discover" it; I wanted to explore it further.</p>
+                    <p>Today, artificial intelligence, extended reality, and robotics are constantly reshaping our daily lives.&nbsp; I'm learning technical skills, hoping to explore from a multifaceted perspective how people can better find their place in a technologically constructed world, how media can develop, and how to balance media development.</p>
+                </div>
+                <div class="library-card portfolio-card" id="portfolioCard" onclick="openPdf()">
+                    <div class="card-header">film &amp; literature</div>
+                    <h3 class="card-title portfolio-title">Portfolio</h3>
+                    <div class="spotlight-layer"></div>
                 </div>
             </div>
         </div>
@@ -386,6 +453,13 @@ markmap:
         </div>
     </div>
 
+    <div id="pdfModal" class="pdf-modal">
+        <button class="close-btn" onclick="closePdf()">✕ Close</button>
+        <div class="pdf-content">
+            <iframe id="pdfIframe" src=""></iframe>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
     <script>
         const scrollContainer = document.querySelector('.scroll-container');
@@ -395,6 +469,7 @@ markmap:
         const aboutTitle = document.getElementById('aboutTitle');
         const aboutIntro = document.getElementById('aboutIntro');
         const fountain = document.getElementById('fountain');
+        const portfolioCard = document.getElementById('portfolioCard');
 
         document.getElementById('navAbout').addEventListener('click', (e) => {
             e.preventDefault();
@@ -415,8 +490,8 @@ markmap:
         window.addEventListener('scroll', () => {
             const offsetTop = scrollContainer.offsetTop;
             const totalScrollableHeight = scrollContainer.clientHeight - window.innerHeight;
-            let progress = (window.scrollY - offsetTop) / totalScrollableHeight;
-            progress = Math.max(0, Math.min(1, progress));
+            const rawProgress = (window.scrollY - offsetTop) / totalScrollableHeight;
+            let progress = Math.max(0, Math.min(1, rawProgress));
 
             // 首屏文字向右滑出
             const phaseOne = Math.min(progress / 0.28, 1);
@@ -433,45 +508,60 @@ markmap:
             const aboutTitleX = Math.max(0, otterCurrentX + aboutStartX);
             aboutTitle.style.transform = `translateX(${aboutTitleX}px)`;
 
-            // About Me 滑入进度（用于触发其他事件 / 控制淡入）
-            const aboutArrivedP = Math.max(0, Math.min(1, 1 - aboutTitleX / aboutStartX));
+            // About Me 容器：始终不透明（一旦滚动），无渐隐效果
+            aboutMe.style.opacity = 1;
 
-            // 喷泉：About Me 移动到中段时从下方升起
+            // 喷泉：升起 → 保持 → Portfolio 卡片快要消失（lift 末段）时向右滑出
             const fInStart = 0.13, fInEnd = 0.30;
-            const fOutStart = 0.85, fOutEnd = 1.0;
+            const fSlideStart = 1.10; // 等 Notebook 已经出现在视口里再开始撤
+            const fSlideEnd   = 1.30; // Notebook 接近完全可见时滑出完成
             let fountainOpacity = 0;
             let fountainYPercent = 100;
+            let fountainXPercent = 0;
 
-            if (progress < fInStart) {
+            if (rawProgress < fInStart) {
                 // 隐藏在下方
-            } else if (progress < fInEnd) {
-                const fInP = (progress - fInStart) / (fInEnd - fInStart);
-                fountainOpacity = fInP;
+            } else if (rawProgress < fInEnd) {
+                const fInP = (rawProgress - fInStart) / (fInEnd - fInStart);
                 const easeOut = 1 - Math.pow(1 - fInP, 3);
-                fountainYPercent = (1 - easeOut) * 100; // 100% -> 0%
-            } else if (progress < fOutStart) {
+                fountainOpacity = fInP;
+                fountainYPercent = (1 - easeOut) * 100;
+            } else if (rawProgress < fSlideStart) {
+                // 保持位置（即便 About Me 在向上抬起，喷泉也不动）
                 fountainOpacity = 1;
                 fountainYPercent = 0;
-            } else if (progress < fOutEnd) {
-                const fOutP = (progress - fOutStart) / (fOutEnd - fOutStart);
-                fountainOpacity = 1 - fOutP;
-                fountainYPercent = Math.pow(fOutP, 3) * 100;
+            } else if (rawProgress < fSlideEnd) {
+                fountainOpacity = 1;
+                fountainYPercent = 0;
+                const fOutP = (rawProgress - fSlideStart) / (fSlideEnd - fSlideStart);
+                const easeIn = Math.pow(fOutP, 2);
+                fountainXPercent = easeIn * 220; // 向右滑出
+            } else {
+                fountainOpacity = 0;
+                fountainXPercent = 220;
             }
 
             fountain.style.opacity = fountainOpacity;
-            fountain.style.transform = `translateY(${fountainYPercent}%)`;
+            fountain.style.transform = `translateX(${fountainXPercent}%) translateY(${fountainYPercent}%)`;
 
-            // About Me 介绍文字在标题就位后淡入
-            const introStart = 0.30, introEnd = 0.48;
-            const introP = Math.max(0, Math.min(1, (progress - introStart) / (introEnd - introStart)));
-            aboutIntro.style.opacity = introP;
-            aboutIntro.style.transform = `translateY(${(1 - introP) * window.innerHeight * 0.08}px)`;
+            // About Me 介绍 + Portfolio 卡片：标题在 ~0.25 就位之后再从视口下方升起
+            const riseStart = 0.32, riseEnd = 0.68;
+            const riseP = Math.max(0, Math.min(1, (progress - riseStart) / (riseEnd - riseStart)));
+            const riseEase = 1 - Math.pow(1 - riseP, 3);
+            const riseInitialY = window.innerHeight * 0.9; // 起点：自然位置下方约 90vh（视口外）
+            const riseTranslateY = (1 - riseEase) * riseInitialY;
+            aboutIntro.style.opacity = 1;
+            aboutIntro.style.transform = `translateY(${riseTranslateY}px)`;
+            if (portfolioCard) {
+                portfolioCard.style.opacity = 1;
+                portfolioCard.style.transform = `translateY(${riseTranslateY}px)`;
+            }
 
-            // 整个 About Me 容器：滑入时即显示（依赖 sticky-viewport overflow:hidden 裁切），后期抬起淡出
-            const liftStart = 0.72;
+            // 整个 About Me（标题 + intro + 卡片）一起向上滑出视口；不渐隐
+            const liftStart = 0.75;
             const liftP = Math.max(0, Math.min(1, (progress - liftStart) / (1 - liftStart)));
-            aboutMe.style.opacity = aboutArrivedP > 0 ? Math.max(0, 1 - liftP * 1.2) : 0;
-            aboutMe.style.transform = `translateY(${-liftP * window.innerHeight * 0.62}px)`;
+            const liftEase = Math.pow(liftP, 2);
+            aboutMe.style.transform = `translateY(${-liftEase * window.innerHeight * 1.4}px)`;
         });
 
         function openMindmap(noteId) {
@@ -483,6 +573,29 @@ markmap:
 
         function closeMindmap() {
             document.getElementById('mindmapModal').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Portfolio 探照灯效果：鼠标在卡片上时，圆形揭示 proB.png
+        if (portfolioCard) {
+            const spotlight = portfolioCard.querySelector('.spotlight-layer');
+            portfolioCard.addEventListener('mousemove', (e) => {
+                const rect = portfolioCard.getBoundingClientRect();
+                spotlight.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                spotlight.style.setProperty('--y', `${e.clientY - rect.top}px`);
+            });
+        }
+
+        // 点击 Portfolio 卡片打开 PDF 弹窗
+        const PORTFOLIO_PDF_PATH = './pdf/portfolio.pdf';
+        function openPdf() {
+            document.getElementById('pdfIframe').src = PORTFOLIO_PDF_PATH;
+            document.getElementById('pdfModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closePdf() {
+            document.getElementById('pdfModal').classList.remove('active');
+            document.getElementById('pdfIframe').src = '';
             document.body.style.overflow = 'auto';
         }
     </script>
