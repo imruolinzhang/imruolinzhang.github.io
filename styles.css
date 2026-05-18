@@ -1,0 +1,375 @@
+:root {
+    --color-bg: #DAD2BC;
+    --color-primary: #425A77;
+    --color-accent: #800000;
+    --font-main: 'Helvetica Neue', Arial, sans-serif;
+    --font-handwriting: 'La Belle Aurore', cursive;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background-color: var(--color-bg);
+    color: var(--color-primary);
+    font-family: var(--font-main);
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.top-nav {
+    position: fixed;
+    top: 5vh;
+    left: 5vw;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.top-nav a {
+    font-family: var(--font-handwriting);
+    font-size: clamp(1.2rem, 1.8vw, 1.8rem);
+    color: #FFFFFF;
+    text-decoration: none;
+    line-height: 1.2;
+    transition: opacity 0.3s ease;
+    text-align: center;
+}
+
+.top-nav a:hover { opacity: 0.7; }
+
+.scroll-container {
+    position: relative;
+    height: 420vh;
+}
+
+.sticky-viewport {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-color: var(--color-bg);
+}
+
+.hero-text-layer {
+    position: absolute;
+    left: 6vw;
+    bottom: 18vh;
+    z-index: 10;
+    width: fit-content;
+}
+.greeting { font-family: 'IM Fell English', serif; font-size: clamp(1.6rem, 2.3vw, 2.3rem); color: var(--color-accent); }
+.name {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(4rem, 7vw, 6.5rem);
+    color: var(--color-accent);
+    font-weight: 400;
+}
+.subtitle { font-family: 'IM Fell English', serif; font-size: clamp(1.4rem, 2vw, 2.2rem); color: var(--color-primary); margin-top: 1.2rem; }
+
+.otter-container { position: absolute; top: -5vh; right: -25vw; width: min(58vw, 1550px); z-index: 5; }
+.otter-img { width: 100%; height: auto; }
+
+.fountain-container {
+    position: fixed;
+    bottom: -12vh;
+    right: -12vw;
+    width: min(37vw,1550px);
+    z-index: 9;
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+.fountain-img { width: 100%; height: auto; }
+
+.story-section {
+    position: absolute;
+    left: 18vw;
+    top: 35vh;
+    width: min(62vw, 820px);
+    z-index: 15;
+    pointer-events: none;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.about-title {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(4rem, 7vw, 6.5rem);
+    color: var(--color-accent);
+    text-align: left;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    opacity: 0.95;
+}
+.about-intro { margin-top: 1.2rem; font-family: 'IM Fell English', serif; font-size: clamp(1.15rem, 1.45vw, 1.55rem); color: #000000; text-align: left; line-height: 1.55; }
+.about-intro p { margin-bottom: 1.6rem; }
+.about-intro p:last-child { margin-bottom: 0; }
+
+
+.content-section {
+    min-height: 100vh;
+    padding: 15vh 8vw 15vh;
+    background-color: transparent;
+    position: relative;
+    z-index: 30;
+}
+
+.content-section h2 {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(4rem, 7vw, 6.5rem);
+    color: var(--color-accent);
+    text-align: center;
+    margin-bottom: 5rem;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    opacity: 0.95;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.library-card {
+    background: #F2EFE6;
+    padding: 2.2rem 2rem;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.library-card:hover {
+    transform: translateY(-4px) rotate(-0.5deg);
+    box-shadow: 0 15px 25px -10px rgba(0,0,0,0.15);
+}
+
+.library-card::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, transparent 80%, rgba(0,0,0,0.05) 100%);
+    pointer-events: none;
+}
+
+.card-header {
+    font-family: var(--font-handwriting);
+    font-size: 1.2rem;
+    color: #000000;
+    margin-bottom: 1.2rem;
+    opacity: 0.6;
+    letter-spacing: 0.5px;
+}
+
+.card-title {
+    font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    line-height: 1.4;
+    margin-top: auto;
+}
+
+
+.mindmap-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+.mindmap-modal.active { opacity: 1; pointer-events: auto; }
+.close-btn { position: absolute; top: 5vh; right: 6vw; font-family: var(--font-handwriting); font-size: 1.8rem; color: var(--color-accent); background: none; border: none; cursor: pointer; z-index: 301; }
+
+/* mindmap 搜索框 */
+.markmap-search-bar {
+    position: absolute;
+    top: 5vh;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 302;
+    width: clamp(220px, 32vw, 360px);
+    padding: 0.55em 1.2em;
+    font-family: 'IM Fell English', serif;
+    font-size: 1.05rem;
+    color: var(--color-primary);
+    background: rgba(255,255,255,0.6);
+    border: 1px solid rgba(66, 90, 119, 0.4);
+    border-radius: 999px;
+    outline: none;
+    backdrop-filter: blur(4px);
+    transition: border-color 0.2s ease, background 0.2s ease;
+}
+.markmap-search-bar:focus {
+    border-color: var(--color-accent);
+    background: rgba(255,255,255,0.85);
+}
+.markmap-search-bar::placeholder {
+    color: var(--color-primary);
+    opacity: 0.55;
+}
+
+/* mindmap 搜索命中高亮 */
+g.markmap-node.search-match foreignObject > * {
+    background-color: rgba(128, 0, 0, 0.12);
+    border-radius: 3px;
+    padding: 0 0.2em;
+}
+g.markmap-node.search-match > circle {
+    stroke: var(--color-accent) !important;
+    stroke-width: 3.5px !important;
+}
+.mindmap-content { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 85vw; height: 85vh; opacity: 0; visibility: hidden; }
+.mindmap-content.active { opacity: 1; visibility: visible; }
+.markmap { width: 100%; height: 100%; }
+.markmap svg path, .markmap svg line { stroke-width: 3px !important; stroke-linecap: round !important; stroke-linejoin: round !important; }
+
+/* Portfolio 卡片：嵌在 About Me 内部，跟随上升，水平居中 */
+.portfolio-card {
+    align-self: center;
+    width: min(560px, 95%);
+    min-height: 300px;
+    padding: 2.2rem 2rem;
+    margin-top: 5.5rem;
+    overflow: hidden;
+    position: relative;
+    pointer-events: auto;
+}
+.portfolio-card .portfolio-title {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+}
+/* 探照灯图层：通用，背景图由内联 style 提供 */
+.spotlight-layer {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+    --x: 50%;
+    --y: 50%;
+    -webkit-mask-image: radial-gradient(circle 90px at var(--x) var(--y), rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+            mask-image: radial-gradient(circle 90px at var(--x) var(--y), rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+}
+.library-card:hover .spotlight-layer { opacity: 1; }
+
+/* HCI 卡片：体积小，圆圈半径相应缩小 */
+.hci-card { overflow: hidden; position: relative; }
+.hci-card .spotlight-layer {
+    -webkit-mask-image: radial-gradient(circle 65px at var(--x) var(--y), rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+            mask-image: radial-gradient(circle 65px at var(--x) var(--y), rgba(0,0,0,1) 55%, rgba(0,0,0,0) 100%);
+}
+
+/* Portfolio 卡片 card-header（film & literature）：统一成 serif 字体 */
+.portfolio-card .card-header {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(1.3rem, 1.6vw, 1.55rem);
+    letter-spacing: 0;
+    opacity: 0.7;
+}
+
+/* PDF 弹窗（同 mindmap 风格） */
+.pdf-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-bg);
+    z-index: 300;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+.pdf-modal.active { opacity: 1; pointer-events: auto; }
+.pdf-content {
+    width: 90vw;
+    height: 92vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 2vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pdf-pages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    width: 100%;
+}
+.pdf-page {
+    width: min(820px, 92%);
+    height: auto;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.18);
+    background: #ffffff;
+}
+.pdf-loading {
+    font-family: 'IM Fell English', serif;
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    padding: 6rem 0;
+    opacity: 0.7;
+}
+
+.in-progress-text {
+    font-family: var(--font-handwriting);
+    font-size: 1.2rem;
+    color: #000000;
+    text-align: center;
+    opacity: 0.6;
+    letter-spacing: 0.5px;
+}
+
+/* Click to open 小字（内联在标题右侧） */
+.click-hint-inline {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(1.3rem, 1.7vw, 1.7rem);
+    color: #425A77;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-left: 0.6em;
+    vertical-align: baseline;
+    white-space: nowrap;
+}
+/* Click to open 小字（块级，置于大标题下方） */
+.click-hint-block {
+    font-family: 'IM Fell English', serif;
+    font-size: clamp(1.3rem, 1.7vw, 1.7rem);
+    color: #425A77;
+    font-weight: 400;
+    text-align: center;
+    margin-top: -3.8rem; /* 拉近，抵消 h2 的 margin-bottom */
+    margin-bottom: 3.8rem;
+}
+
+@media (max-width: 900px) {
+    .top-nav { top: 2vh; left: 5vw; }
+    .card-grid { gap: 2rem; }
+}
