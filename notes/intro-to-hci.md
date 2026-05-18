@@ -1,82 +1,84 @@
----
+﻿---
 markmap:
   color: ["#8596A6","#B89C9A","#9EACA0","#C9BAA6","#978B94"]
-  initialExpandLevel: 2
+  initialExpandLevel: 3
 ---
 # The Mindmap of the Book
+
 ## Part I Overview of Human–Computer Interaction
-### Why is HCI challenging？
-#### Humans are complex
-#### Computers are complex
-#### Contexts are complex
-#### Design is hard
 
-### Human–computer interaction as a field
-#### The term HCI has been in use since the mid-1970s
+### 1 Introduction to human–computer interaction
+#### Why is HCI challenging?
+##### Humans are complex
+##### Computers are complex
+##### Contexts are complex
+##### Design is hard
 
-### Definition of HCI
-#### Design + Evaluation + Implementation + Human use + Interaction phenomena
-#### HCI is about building interactive systems
-#### People are the starting point for HCI
-#### HCI is concerned with investigating all phenomena relevant to interaction
+#### Human–computer interaction as a field
+##### The term HCI has been in use since the mid-1970s
 
-### Research in HCI
-#### Empirical problems
-##### Data-driven understanding
+#### Definition of HCI
+##### Design + Evaluation + Implementation + Human use + Interaction phenomena
+##### HCI is about building interactive systems
+##### People are the starting point for HCI
+##### HCI is concerned with investigating all phenomena relevant to interaction
 
-#### Conceptual problems
-##### The value of this type of problem lies in providing theoretical constructions
+#### Research in HCI
+##### Empirical problems
+###### Data-driven understanding
 
-#### Constructive problems
-##### Building knowledge for design
+##### Conceptual problems
+###### The value of this type of problem lies in providing theoretical constructions
 
-### Empirical data are linked to knowledge, and knowledge is linked to design.
+##### Constructive problems
+###### Building knowledge for design
 
-### The practice of HCI
-#### Understanding users/ Designing and prototyping/ Evaluating systems /Engaging stakeholders
+#### Empirical data are linked to knowledge, and knowledge is linked to design
 
-### HCI is a Multidisciplinary field
+#### The practice of HCI
+##### Understanding users / Designing and prototyping / Evaluating systems / Engaging stakeholders
 
-### Human-centered approach
-#### Understand users + Participate in user research and design + Undertake ethical responsibility
+#### HCI is a Multidisciplinary field
 
-### Interaction
-#### Interaction is emergent
-#### Co-adaptation
+#### Human-centered approach
+##### Understand users + Participate in user research and design + Undertake ethical responsibility
 
-### User Interface
+#### Interaction
+##### Interaction is emergent
+##### Co-adaptation
 
-### Design
-#### Design is about envisioning things as they could be
+#### User Interface
 
-### Engineering and Computing
+#### Design
+##### Design is about envisioning things as they could be
 
-### Evaluation
-#### Verification, Validation, Testing
+#### Engineering and Computing
 
-### Why HCI matters
-#### 1. Interactive systems are difficult to use
-#### 2. The egocentric fallacy: you are often NOT the user
-#### 3. HCI is right
-#### 4. HCI pays off
-#### 5. HCI shapes the future
+#### Evaluation
+##### Verification, Validation, Testing
 
-### Our approach to HCI
-#### A focus on principles
-##### For example, direct manipulation is a principle for organizing the interaction with graphical user interfaces
+#### Why HCI matters
+##### 1. Interactive systems are difficult to use
+##### 2. The egocentric fallacy: you are often NOT the user
+##### 3. HCI is right
+##### 4. HCI pays off
+##### 5. HCI shapes the future
 
-#### Pluralism in methods and theories
-#### Essential insights supported by research
-#### Optimism in solving HCI problems
-##### Do not blindly believe in the omnipotence of technology
+#### Our approach to HCI
+##### A focus on principles
+###### For example, direct manipulation is a principle for organizing the interaction with graphical user interfaces
+
+##### Pluralism in methods and theories
+##### Essential insights supported by research
+##### Optimism in solving HCI problems
+###### Do not blindly believe in the omnipotence of technology
 
 ## Part II Understanding People
 
-### Introduction to understanding people
+### 2 Introduction to understanding people
 #### Types of understanding
 
-Human-centeredness requires understanding people
-##### Design decision##### Human-centeredness requires understanding people
+##### Human-centeredness requires understanding people
 ###### Design decisions should be justified by how people feel, think, and behave
 
 ##### Understanding people
@@ -270,7 +272,7 @@ Human-centeredness requires understanding people
 ##### General understanding supports HCI across users, interfaces, and contexts
 
 
-### Perception
+### 3 Perception
 ##### Introduction
 ###### Perception
 ###### Sensory information
@@ -742,7 +744,7 @@ Human-centeredness requires understanding people
 ##### Clutter reduces the ability to make elements stand out
 ##### Active perception means users strategically sample, learn, and act
 
-### Motor control
+### 4 Motor control
 ##### Introduction
 ###### Motor control
 ###### Movement regulation
@@ -1110,7 +1112,7 @@ Human-centeredness requires understanding people
 ##### Movement is shaped by speed, accuracy, feedback, practice, and task constraints
 
 
-### Cognition
+### 5 Cognition
 ##### Introduction
 ###### Cognition
 ###### Control
@@ -1673,7 +1675,7 @@ Human-centeredness requires understanding people
 ##### Cognitive theories explain multitasking, learning, forgetting, reasoning, and decision-making
 ##### Many HCI guidelines and evaluation models are rooted in cognition
 
-### Needs and motivations
+### 6 Needs and motivations
 ##### Introduction
 ###### Needs
 ###### Motivations
@@ -2075,7 +2077,7 @@ Human-centeredness requires understanding people
 ##### Motivation theory warns against naive assumptions about designing experiences
 
 
-### Experience
+### 7 Experience
 ##### Introduction
 ###### Experience
 ###### Experiencing
@@ -2458,101 +2460,4564 @@ Human-centeredness requires understanding people
 ##### Experience is shaped by memory, context, goals, and interpretation
 ##### Designers influence but do not determine experience
 
-### Collaboration
 
-### Communication
+### 8 Collaboration
+#### Introduction
+##### Collaboration
+##### Coordination
+##### Articulation work
+##### Group cognition
+##### Computer-supported cooperative work
 
+#### Understanding collaboration
+##### Prisoner's dilemma
+###### Cooperation can fail without communication
+
+##### Collaboration and cooperation
+###### Collaboration emphasizes joint goals and shared responsibility
+###### Cooperation involves division of labor
+
+##### Size of collaboration
+###### Small groups
+###### Project organizations
+###### Organizations
+###### Social networks
+
+##### Types of collaboration
+###### Synchronous vs asynchronous
+###### Co-located vs remote
+###### Two-axis model
+
+##### Additional factors
+###### Scale
+###### Communities of practice
+###### Nascence
+###### Planned permanence
+###### Turnover
+
+##### Collaborative tasks
+###### Generate
+###### Negotiate
+###### Choose
+###### Execute
+
+##### Group interactions
+###### Task
+###### Environment
+###### Individual attributes
+###### Group structure and relations
+###### Behavioral patterns
+
+##### Communication acts
+###### Task-focused
+###### Interpersonal purposes
+
+#### Coordination
+##### Definition
+###### Construction and maintenance of a shared conception of a problem
+
+##### Articulation work
+###### Activities extraneous to the work itself
+###### Helps decide how tasks are scheduled, divided, managed
+
+##### Awareness
+###### Ability to follow what others are doing
+###### Hard to maintain when distributed in time and space
+
+##### Boundary objects
+###### Shared objects that help collaborators coordinate
+
+#### Group cognition
+##### Intersubjectivity
+###### Shared understanding between actors
+
+##### Grounding
+###### Active creation of shared knowledge
+###### Embodied vs linguistic grounding
+
+##### Theory of mind
+###### Ability to attribute mental states
+###### Computers struggle with this
+
+#### Why collaborative systems fail
+##### Disparity between work and benefit
+##### Critical mass and prisoner's dilemma
+##### Disruption of social processes
+##### Exception handling
+##### Infrequently used features
+##### Difficulty of evaluation
+##### Failure of intuition
+##### Adoption process
+
+#### Summary
+##### Collaboration is mutually beneficial work toward common goals
+##### Central challenge: rigid systems vs flexible social activity
+##### Articulation work makes collaboration possible
+##### Group cognition emerges through grounding and theory of mind
+
+
+### 9 Communication
+#### Introduction
+##### Communication
+##### Computer-mediated communication (CMC)
+##### Modalities and cues
+
+#### Beyond face-to-face communication
+##### Eight characteristics of CMC
+###### Modalities
+###### Cues
+###### Structure
+###### Synchronicity
+###### Audience
+###### Identity
+###### Power
+###### Norms
+
+##### Eye gaze in video conversations
+###### Camera placement creates gaze mismatch
+
+#### Conversations
+##### Conversation analysis (CA)
+###### Studies how order is interactionally achieved
+
+##### Interactional view of communication
+###### Outcome shaped by both parties
+
+##### Transcription system
+###### Rigorous, reproducible
+
+#### Turn-taking
+##### Three coordination techniques
+###### Turn constructions
+###### Speaker specifications
+###### Rule sets
+
+##### Recipient design
+###### Selecting the next speaker
+
+#### Interactional sequences
+##### Turn adjacency
+##### Adjacency disruption
+
+#### Repair
+##### Correcting misunderstandings
+
+#### Common ground
+##### Shared beliefs and goals
+##### Hard for artificial agents to achieve
+
+#### Compensation mechanisms
+##### Emoticons and emojis
+##### Smartwatch micro-interactions
+
+#### Online behavior
+##### Cues-filtered-out hypothesis
+###### Lack of nonverbal cues hampers social functions
+
+#### Social presence
+##### Avatar effects
+##### Anthropomorphism and trust
+
+#### Media richness
+##### Media richness theory
+###### Cue systems, immediacy, natural expression, audience specificity
+##### Equivocality
+
+#### Signaling and reciprocity
+##### Signaling theory
+###### Cost of signals affects reliability
+
+#### Social information processing
+##### Lack of cues does not impede interaction
+##### Slower relationship formation
+
+#### Self-presentation
+##### Active construction of self
+##### Audience cues
+
+#### Social networks and online communities
+##### Social network sites (SNSs)
+##### Online communities
+##### Weak ties vs strong ties
+
+#### Online social relationships
+##### Identity and authenticity
+##### Audience and self-presentation
+##### Affordances for communication
+##### Privacy
+
+#### Online communities
+##### Group-centric
+##### Silent majority
+##### Dark sides (harassment, filter bubbles)
+
+#### Communication affects social relationships
+##### Mere presence of devices
+##### Phubbing
+##### Long-term societal effects
+
+#### Computers as communication partners
+##### Computers as social actors
+##### Anthropomorphic systems
+##### Criticisms of anthropomorphism
+
+#### Summary
+##### CMC differs from face-to-face communication
+##### CA reveals turn-taking and repair structures
+##### Social networks produce both capital and harms
+##### Design affects authenticity, audience, privacy
 
 ## Part III User Research
 
 ### 10 Introduction to user research
+##### Introduction
+###### User research
+###### Empirical knowledge about users
+###### Design-neutral descriptions
+
+##### You are not the user
+###### Developers and designers differ from real users
+###### Neglecting users can be unethical
+
+##### Why user research is hard
+###### Say–do gap
+###### Tacit knowledge
+###### Users cannot articulate future needs
+###### Social reasons make work invisible
+
+#### Goals of user research
+##### PACT framework
+###### People
+###### Activities
+###### Contexts
+###### Technologies
+
+##### People
+###### Skills, personalities, socioeconomic status
+###### Abilities, beliefs, habits, motivations
+
+##### Activities
+###### Tasks users perform
+###### Practices they engage in
+
+##### Contexts
+###### Physical context
+###### Social context
+###### Organizational context
+###### Historical context
+###### Cultural context
+
+##### Technologies
+###### Existing systems users interact with
+###### Perceived pros and cons
+
+##### Is–ought problem
+###### Cannot derive how things should be from how they are
+###### Research rarely prescribes designs directly
+
+##### Other goals of user research
+###### Involve users in design
+###### Create empathy
+###### Produce knowledge
+
+#### Who is the user in user research?
+##### Three-step process
+###### Target audience
+###### Other stakeholders
+###### Sampling
+
+##### Target audience
+###### Inclusion criteria
+###### Behavioral, technological, demographical criteria
+###### Initial profile and revision
+
+##### Selecting users
+###### Representative users
+###### Extreme or extraordinary users
+###### Early adopters / Lead users
+###### Variety in user groups
+
+##### Other stakeholders
+###### People affected indirectly
+###### Stakeholder analysis
+###### Power, legitimacy, urgency
+
+##### Latent and dormant stakeholders
+###### Latent: affected through mediating mechanisms
+###### Dormant: silent until special circumstances
+###### Non-human stakeholders (animals, environment)
+
+##### Sampling considerations
+###### Representativeness
+###### Variability
+###### Statistical power
+###### Access and availability
+###### Cost efficiency
+###### Participation costs
+
+#### User research methods
+##### Common methods
+###### Interview
+###### Contextual inquiry
+###### Observation
+###### Ethnography
+###### Survey
+###### Diary
+###### Log file analysis
+###### Archival analysis
+
+##### Open-ended vs close-ended
+###### Open-ended: let the data speak
+###### Close-ended: predefined factors
+
+##### First-person vs third-person
+###### Ethnography: lived experience
+###### Log analysis: distant accounts
+
+##### Research strategy
+###### Methods bound what we can learn
+###### Strategy trades off conflicting criteria
+###### Triangulation compensates for limits
+
+##### Three trade-off criteria
+###### Realism
+###### Precision
+###### Generalizability
+
+##### Triangulation
+###### Combine multiple methods
+###### Methods can corroborate, complement, contradict
+
+#### Methodological quality
+##### Validity
+###### Internal validity
+###### Construct validity
+###### Statistical conclusion validity
+###### External validity
+
+##### Reliability
+###### Consistent results across applications
+
+##### Transparency
+###### Open scholarship and replicability
+###### Share data, protocols, derivations
+
+##### Ethics
+###### Allegiances to participants, clients, field, society
+
+#### Data analysis and representation
+##### Representation techniques
+###### Personas
+###### Scenarios
+###### Artifact and context models
+###### Quotes
+###### Journey maps
+
+#### Does user research work?
+##### Mixed evidence
+###### Many systems built without systematic user involvement
+###### Best available approach despite limits
+
+##### Norman's critique
+###### Human-centered design can produce incoherent systems
+###### Feature creep from following weak signals
+###### Users adapt to valuable systems
+
+#### Summary
+##### Empirical research required to know users
+##### All methods have trade-offs in realism, generalizability, precision
+##### Quality requires validity, reliability, transparency, ethics
+
 
 ### 11 Interviews
+##### Introduction
+###### Interview
+###### Subjective experience
+###### Systematic conversation
+
+##### What interviews are good for
+###### Beliefs, attitudes, experiences
+###### Not for statistical counts
+
+##### Interviewing is hard
+###### Requires preparation, listening, craft
+###### Years of practice to master
+
+##### Three types of interviews
+###### Structured
+###### Semi-structured (open-ended)
+###### Unstructured
+
+#### Open-ended interviews
+##### Responsive interview
+###### Questions partly developed during interview
+###### Retain theme, structure, focus
+
+##### Conversation-like
+###### Flexible content and structure
+###### Continuity
+###### Listening and respect
+
+##### Four phases
+###### Develop themes
+###### Plan questions
+###### Conduct interview
+###### Analyze
+
+#### Themes
+##### Themes
+###### Topics interviewer wants to learn about
+###### Can be specific or broad
+
+##### Theme sources
+###### Technology-centered
+###### Research questions
+###### Hypotheses
+
+#### Questions
+##### Three types of questions
+###### Main questions
+###### Probes
+###### Follow-up questions
+
+##### Main question types
+###### Tour question
+###### Grounded question
+###### Your-experience question
+###### Key concept question
+###### Stage question
+###### Comparison question
+
+##### Probes
+###### Make interviewee comfortable
+###### "mmh, then what...", echoing, nodding
+
+##### Follow-up questions
+###### Clarify answers
+###### Get concrete answers
+###### Compare or contrast
+###### Understand variation
+###### Ensure thoroughness
+###### Understand personal attitude
+
+##### Wording rules
+###### Neutral
+###### Single-topic
+###### Jargon-free
+###### Avoid leading questions
+###### Sparingly use "why?"
+
+#### Conducting interview conversations
+##### Six parts
+###### Introduction
+###### Warm-up
+###### General issues
+###### Deep focus
+###### Retrospective
+###### Wrap-up
+
+##### Practical guidance
+###### Last about one hour
+###### Audio recording usually sufficient
+###### Interview guide with main questions
+
+#### Analysis of open-ended interviews
+##### Analyze soon after
+###### Captures hunches and associations
+###### Insights inform later interviews
+
+#### Structured interviews
+##### Predefined questions and structure
+###### Easier to conduct and analyze
+###### Quantitative or qualitative variants
+
+##### Quantitative structured interview
+###### Statistical survey data
+###### Demographic or market surveys
+
+##### Qualitative structured interview
+###### Set schedule and sequence
+###### Focus on content of answers
+
+#### Micro-phenomenological interviews
+##### Method
+###### Focuses on lived experience
+###### Small Q/A sequences iteratively elaborate
+
+##### Three aspects
+###### Focus on evocative experience
+###### Iteratively elaborate
+###### Content-free questions
+
+##### Interviewing techniques
+###### Shift between what and how
+###### Redirect to evocative experience
+###### Ask temporal order
+###### Deepen, reflect
+
+#### Contextual inquiry
+##### Method
+###### Watch users do activities and talk about them
+###### Sessions 1.5–2 hours
+
+##### Four principles
+###### Context
+###### Partnership
+###### Interpretation
+###### Focus
+
+##### Context
+###### Be close to the activity
+###### Pursue concreteness
+
+##### Partnership
+###### Master–apprentice relationship
+###### Move between withdrawal and return
+
+##### Interpretation
+###### Create meaning together
+###### Listen for "no", "but", "maybe"
+
+##### Focus
+###### Go for depth and insight
+###### Engage with strongest emotions
+
+#### Analysis of interviews
+##### Four phases
+###### Transcription
+###### Analysis
+###### Verification
+###### Reporting
+
+##### Expanding and condensing meaning
+###### Expansion: enrich interpretation
+###### Condensation: reduce to patterns
+
+##### Coding
+###### Bottom-up (data-driven)
+###### Top-down (theory-driven)
+
+#### Affinity diagramming
+##### KJ method
+###### Collaborative bottom-up coding
+###### Based on similarity
+
+##### Four phases
+###### Creating notes
+###### Clustering notes
+###### Walking the wall
+###### Documenting the analysis
+
+#### Thematic analysis
+##### Six steps
+###### Familiarizing with the data
+###### Generating initial codes
+###### Searching for themes
+###### Reviewing themes
+###### Defining and naming themes
+###### Producing a report
+
+##### Codes and themes
+###### Codes label important data features
+###### Themes capture patterns of meaning
+
+#### The say–do gap
+##### Definition
+###### Discrepancy between what users say and what they do
+
+##### Causes
+###### Inability to imagine the future
+###### Tacit knowledge
+###### Social reasons (exaggeration, omission)
+
+##### Mitigation
+###### Skilled interviewers recognize issues
+###### Use observation methods
+
+#### Summary
+##### Interviews provide first-person views
+##### Three main types
+##### Contextual inquiry combines interviews with observation
+##### Say–do gap requires methodological awareness
+
 
 ### 12 Field research
+##### Introduction
+###### Field research
+###### Naturalistic research
+###### In situ observation
+
+##### Strength of field research
+###### Realism
+###### Captures social and organizational complexity
+
+##### Three formative questions
+###### What to focus on
+###### How to gather data
+###### How to analyze the data
+
+#### Observation
+##### Observation method
+###### Pay close attention to what users do
+###### Make inferences about why
+
+##### Focus
+###### Cannot observe everything
+###### Choose based on research questions
+
+##### Gathering data
+###### Field notes
+###### Video, photos, audio
+###### Balance intrusion vs richness
+
+##### Analysis of observations
+###### Iterative interpretation
+###### Compare across instances and contexts
+
+#### Ethnography
+##### Ethnography
+###### Researcher engages and participates
+###### Studies people from within community
+
+##### Principles of ethnography
+###### Long engagement
+###### Studying ordinary practices
+###### Searching for participants' viewpoint
+###### Holistic understanding of context
+
+##### Rapid ethnography
+###### Compressed time scale
+###### Focused observation, key informants
+
+##### Ethnography in practice
+###### Access and entry to sites
+###### Building rapport
+###### Reflexivity about researcher role
+###### Ethical considerations
+
+##### Ethics
+###### Informed consent
+###### Privacy and confidentiality
+###### Power dynamics
+
+#### Can field observations inform design?
+##### Findings inform new systems
+###### Air traffic control paper strips example
+###### Reveals tacit work practices
+
+#### Summary
+##### Field research provides realism
+##### Observation, contextual inquiry, ethnography complementary
+##### Analysis turns observations into patterns and implications
+
 
 ### 13 Survey research
+##### Introduction
+###### Survey
+###### Questionnaire
+###### Self-reported data
+###### Large-scale sampling
+
+##### What surveys are good for
+###### Structured data at scale
+###### Statistical distributions
+
+##### What surveys cannot do
+###### Cannot capture deep meaning
+###### Subject to self-report biases
+
+#### Design of survey research
+##### Research focus
+###### Clear scope and questions before items
+
+##### Survey types
+###### Cross-sectional
+###### Longitudinal
+###### Online / Paper / Phone / In-person
+
+##### Sampling
+###### Probability sampling
+###### Convenience sampling
+###### Stratified sampling
+
+#### Selecting a questionnaire
+##### Use validated questionnaires
+###### Established psychometric properties
+###### Comparable across studies
+
+##### Finding appropriate questionnaires
+###### Search literature
+###### Validated instrument repositories
+
+#### Developing questions
+##### Wording questions
+###### Clear and neutral
+###### Single-topic
+###### Jargon-free
+###### Avoid leading or loaded items
+
+##### Question types
+###### Closed-ended
+###### Open-ended
+###### Likert scale
+###### Semantic differential
+
+##### Question order and presentation
+###### Earlier questions can prime later ones
+###### Easy and engaging questions first
+
+##### Question sets and scales
+###### Likert scales
+###### Multiple items improve reliability
+
+##### Biases in answering questions
+###### Acquiescence bias
+###### Social desirability
+###### Anchoring
+###### Order effects
+
+#### Questionnaire piloting
+##### Test before full deployment
+###### Catch ambiguities
+###### Estimate completion time
+
+#### Data collection
+##### Distribution of surveys
+###### Email, web, paper, in-person
+
+##### Compensation and treatment of participants
+###### Fair compensation
+###### Ethical treatment
+
+##### Improving the response rate
+###### Reminders
+###### Incentives
+###### Short questionnaires
+###### Clear purpose
+
+#### Analysis
+##### Preprocessing
+###### Clean data
+###### Handle missing values
+
+##### Assessing reliability
+###### Cronbach's alpha
+###### Test-retest reliability
+
+##### Descriptive analysis
+###### Means, medians, distributions
+
+##### Exploratory analysis
+###### Factor analysis
+###### Correlations
+
+##### Drawing conclusions
+###### Generalize cautiously
+###### Acknowledge limitations
+
+##### Reporting
+###### Transparent methods
+###### Honest interpretation
+
+#### Situating questionnaires
+##### Context matters for interpretation
+###### Cultural variations
+###### Time-bound responses
+
+#### Summary
+##### Surveys efficiently gather structured data at scale
+##### Question wording critically affects validity
+##### Combining closed and open questions adds richness
+
 
 ### 14 Unobtrusive research
+##### Introduction
+###### Unobtrusive research
+###### Log files
+###### Archival data
+###### Reactivity
+
+##### Why unobtrusive methods matter
+###### Avoid Hawthorne effect
+###### Capture behavior at scale
+
+##### Trade-offs
+###### Rich behavioral data
+###### Limited insight into motivations
+###### Ethical concerns
+
+#### Log files
+##### Log file analysis
+###### Automated records of system use
+###### Captures actual behavior at scale
+
+##### What logs reveal
+###### Frequency of feature use
+###### Session length and patterns
+###### Errors and failures
+###### Funnels and drop-offs
+
+##### Limits of log files
+###### Cannot reveal intent or context
+###### Identity inferred, not given
+
+#### Instrumenting people, things, and places
+##### Sensor-based capture
+###### Wearable sensors
+###### Environmental sensors
+
+##### Privacy concerns
+###### Informed consent
+###### Data minimization
+
+#### Archival data
+##### Archival data
+###### Existing records and artifacts
+###### Forums, emails, documents, social media
+
+##### Content analysis
+###### Systematic coding of media content
+###### Quantitative or qualitative categories
+
+#### Why are we not doing unobtrusive research all the time?
+##### Limitations
+###### Hard to infer motivations
+###### Ethical and legal complications
+###### Requires complementary methods
+
+#### Summary
+##### Unobtrusive methods capture natural behavior at scale
+##### Logs and archives powerful but limited
+##### Best combined with intent-revealing methods
+
 
 ### 15 Representations of user research
+##### Introduction
+###### Representation
+###### Personas
+###### Scenarios
+###### Journey maps
+###### Requirements
 
+##### Why representation matters
+###### Communicates findings to stakeholders
+###### Synthesizes data into actionable form
+###### Preserves insights through design
+
+#### Representations of people
+##### Personas
+###### Fictional characters representing user segments
+###### Include goals, skills, contexts, behaviors
+
+##### Building personas
+###### Based on research data
+###### Several personas cover audience
+
+##### Limits of personas
+###### Can reinforce stereotypes
+###### Must be updated as understanding evolves
+
+#### Representations of activities
+##### Scenarios
+###### Narrative accounts of users achieving goals
+###### Concrete situations with actors and outcomes
+
+##### Customer journeys
+###### Temporal map of user encounters
+###### Identifies pain points and opportunities
+
+##### Task analysis
+###### Decomposes tasks into subtasks
+###### Hierarchical task analysis (HTA)
+
+#### Representations of context
+##### Rich pictures
+###### Capture context visually
+###### Show relationships and tensions
+
+#### Requirements
+##### Requirements specification
+###### Translates insights into design constraints
+###### Functional vs non-functional
+
+##### Requirements quality
+###### Clear, testable, traceable
+###### Connects research to engineering
+
+#### Can representations be both valid and informative?
+##### Trade-off
+###### Faithful to data vs useful for design
+
+#### Summary
+##### Representations bridge research and design
+##### Personas, scenarios, journeys, requirements serve different goals
+##### Good representations preserve voice of users
 
 ## Part IV Understanding Interaction
 
 ### 16 Introduction to interaction
+##### Introduction
+###### Interaction
+###### Mutual determinacy
+###### Theory of interaction
+###### Emergent properties
+
+##### Interaction is hard to define
+###### Different units of analysis
+###### Different timescales (ms to months)
+###### Different contexts
+
+##### Theories of interaction
+###### Explain mutual determinacy
+###### Distinct from user theories and UI technology
+
+#### What is a theory of interaction?
+##### A theory consists of propositions
+###### Claims about the world linking entities
+###### Some entities are conceptual
+
+##### Mutual determinacy
+###### Cannot attribute outcome to human or computer alone
+###### Both must be considered together
+
+##### Mutual determination types (Bunge)
+###### Mechanical determination
+###### Statistical determination
+###### Structural determination
+###### Quantitative determination
+###### Teleological determination
+
+##### Intentionality
+###### Litmus test for HCI theories
+###### Users have goals
+###### AI systems also have objectives
+
+#### Example: Six views of text entry
+##### Information transmission
+###### Bits over noisy channel
+###### Throughput from information theory
+
+##### Control problem
+###### Continuous body movement
+###### Closed-loop feedback
+
+##### Dialogue
+###### Turn-based exchange
+###### Word prediction list
+
+##### Tool use
+###### Utility and usability
+###### Accessibility for diverse users
+
+##### Task sharing with automation
+###### Autocorrect
+###### Word prediction
+
+##### Rational pursuit
+###### Bounded by perception and motor limits
+###### Trade-offs in visual attention
+
+##### Practice
+###### Shaped by norms and social factors
+###### Evolving conventions like emojis
+
+#### Phenomena explained by HCI theories
+##### Commanding
+###### Communication system view
+###### Closed-loop control view
+
+##### Communicating
+###### Dialogue beyond single act
+###### Finite-state machines, embodied action, communication
+
+##### Tool use
+###### Utility, usability, fit, accessibility
+###### Computers as rational tools
+
+##### Augmenting capabilities
+###### Acquisition / Analysis / Decision / Action automation
+###### Levels of automation
+
+##### Situated use
+###### Practice in real life
+###### Embedded in social and organizational contexts
+
+#### What makes a good HCI theory?
+##### Theories should be informative
+###### Tell us something not obvious
+###### Explanatory power
+
+##### Latent factors
+###### Gulf of evaluation
+###### Limited-capacity channel
+###### Controller process
+###### Norms
+###### Utility reward
+
+##### Emergence
+###### High-level properties arise in interaction
+###### Usability, accessibility, fit are emergent
+
+##### Theories should make predictions
+###### Models link predictions to measurable factors
+###### Hard mechanisms + soft parameters
+###### Forward and inverse modeling
+
+##### Common modeling approaches
+###### Regression models
+###### Probability theory
+###### Logic and rule-based systems
+###### Machine learning models
+###### Simulations
+
+##### Theories should aid evaluation
+###### Quantify and optimize interaction
+###### Observe metric changes with design
+
+##### Theories should guide measurements
+###### Decide what to measure
+###### Throughput, words per minute, social processes
+
+##### Theories should inform design
+###### Abduction: observations to theory
+###### Deduction: theory to world
+
+#### Summary
+##### Theories of interaction explain mutual determinacy
+##### Six complementary views illuminate different aspects
+##### Theories support design, evaluation, prediction
+
 
 ### 17 Information and control
+##### Introduction
+###### Information theory
+###### Control theory
+###### Messages over noisy channel
+###### Closed-loop feedback
+
+##### Origins
+###### Information theory: communication systems
+###### Control theory: cybernetics, dynamic systems
+
+##### HCI applications
+###### Improve input methods
+###### Compare devices using throughput
+###### Assist motor-impaired users
+
+#### Information
+##### Communication system
+###### Source → Transmitter → Channel → Receiver → Destination
+###### Noise affects transmission
+
+##### Message and vocabulary
+###### Message m in vocabulary
+###### Represented as bits
+
+#### Self-information
+##### Self-information formula
+###### I(m) = -log2(P(m))
+###### Less probable messages carry more info
+
+##### Surprisal
+###### Self-information measures surprise
+###### Known outcomes carry no information
+
+##### Example: coin flips
+###### Single flip: 1 bit
+###### Four heads in a row: 4 bits
+
+#### Entropy, redundancy, and perplexity
+##### Entropy
+###### Average self-information of all messages
+###### Measure of uncertainty
+###### Lower bound on bits for optimal coding
+
+##### Binary entropy function
+###### H2(p) = -p log2(p) - q log2(q)
+###### Maximized at p = q = 0.5
+
+##### Redundancy
+###### Extra bits beyond optimal coding
+###### Natural languages highly redundant
+
+##### Perplexity
+###### Weighted average choices a variable has
+###### PP = 2^H
+###### Lower means better prediction
+
+##### Dasher example
+###### Text entry via 2D navigation
+###### Language model drives layout
+###### Information-efficient but effortful
+
+#### Rate
+##### Mutual information
+###### Bits about one variable from observing another
+###### Captures uncertainty reduction
+
+##### Rate formula
+###### R = I(X;Y) / t
+###### H(X) - H(X|Y) divided by time
+
+##### Conditional entropy
+###### Bits needed to describe outcome given another
+
+#### Throughput
+##### Throughput (TP)
+###### Bits/second
+###### Independent of target
+
+##### Two definitions
+###### TP = ID_avg / MT_avg
+###### TP = 1 / b (Fitts' slope)
+
+##### Compare input devices
+###### Smartphone two-hands highest
+###### Tablet and laptop lower
+
+#### Example: Text entry
+##### Dasher revisited
+###### Language model + 2D navigation
+###### Capacity = log2(n) / t
+###### Noise reduces capacity dramatically
+
+#### Example: Choice reaction
+##### Hick–Hyman model
+###### T = b * H (entropy in decision)
+###### Equally likely: T = b log2(n+1)
+
+#### Example: Target acquisition
+##### Fitts' law from information theory
+###### MT = a + b * ID
+###### ID = log2(D/W + 1)
+###### Bits the motor system must communicate
+
+#### Control
+##### Control view
+###### User moves body to articulate intention
+###### Goal: drive system to desired state
+###### Feedback regulates action
+
+##### Joint human-computer system
+###### Effectors → Sensors → Computer state
+###### Display → Perception → User correction
+
+##### Closed-loop vs open-loop
+###### Closed-loop: feedback-driven (mouse pointing)
+###### Open-loop: no feedback (swipe gestures)
+###### Closed-loop slower but more precise
+
+#### Elements of a control system
+##### Six elements
+###### Goal selection system
+###### Controller
+###### Power source
+###### Control junction
+###### Control effector
+###### Feedback sensor
+
+##### Controller principles
+###### Proportional integral derivative (PID)
+###### Bang-bang
+###### Model predictive control
+
+#### Closed-loop human–computer systems
+##### Simple muscle-powered loop
+###### User controls effector directly
+###### Receives feedback about controlled variable
+
+##### Tool-mediated loop
+###### Tool between user and variable
+###### Feedback from both tool and variable
+
+##### Externally powered loop
+###### Muscle power + external power
+###### Used for tools and devices
+
+##### Focused and casual interactions
+###### Focused: full engagement, many bits/s
+###### Casual: minimal effort, few bits/s
+###### Continuum for interaction design
+
+#### Example: Target acquisition
+##### Control view of Fitts' law
+###### Step change in reference variable
+###### First-order controller with gain k
+###### Exponential response
+###### Time to reach target proportional to log2(2A/W)
+
+##### Mechanistic explanation
+###### Beyond regression fit
+###### Explains why Fitts' law holds
+
+#### The limited scope of information and control in HCI
+##### Information theory limits
+###### Need message, vocabulary, speed, correctness
+###### Limited to pointing and text entry
+
+##### Control theory limits
+###### Inadequate perception models
+###### Technical controllers ≠ human supervisory
+###### Complex task structures hard to model
+
+#### Summary
+##### Information theory: messages over noisy channel
+##### Control theory: feedback-guided goal pursuit
+##### Both succeed in input methods, limited beyond
+
 
 ### 18 Dialogue
+##### Introduction
+###### Dialogue
+###### Turn-based interaction
+###### Communication context
+###### Mixed-initiative
+
+##### Evolved over computing history
+###### From command lines to GUIs
+###### Modern AI brings natural dialogue
+
+##### Key idea: turns redefine context
+###### Each turn creates context for next
+###### Meaning conditional on prior exchanges
+
+##### Not limited to speech
+###### Graphical and speech dialogues share structure
+###### Concepts apply across modalities
+
+#### Dialogue as goal-directed action
+##### Norman's seven-stage model
+###### Goal
+###### Form intention
+###### Specify action
+###### Execute action
+###### Perceive state
+###### Interpret state
+###### Evaluate state
+
+##### Gulf of execution
+###### Knowing what to do to change state
+###### Distance between intention and action
+
+##### Gulf of evaluation
+###### Interpreting system feedback
+###### Distance between system state and understanding
+
+##### Design implications
+###### Reduce gulfs through visible affordances
+###### Match interface to user mental models
+
+#### Dialogue as state-based interaction
+##### Finite-state machines
+###### Model dialogues as states and transitions
+###### Reason about emergent properties
+###### Analyze recovery paths
+
+##### Computational perspective
+###### Formal analysis of dialogue
+###### Helps identify trapped states
+
+#### Dialogue from a communication perspective
+##### Embodied action
+###### Goal-directed view too narrow
+###### Users learn through exploration
+###### Plans as resources, not blueprints
+
+##### Communication context shapes meaning
+###### Users interpret based on situation
+###### Designed feedback must support understanding
+
+##### Human-computer dialogue is distinct
+###### Different register and style than human-human
+###### Users adapt their language
+
+#### Mixed-initiative interaction
+##### Either partner can initiate
+###### System prompts, suggests, warns
+###### User interrupts, redirects, overrides
+
+##### Principles of mixed-initiative
+###### Significant value
+###### Consider uncertainty
+###### Infer goals
+###### Direct invocation
+###### Social conventions
+###### Maintain interaction history
+
+##### Prompt engineering (LLMs)
+###### Search for adequate prompts
+###### Few responses enough for ideas
+###### Subject can get lost in style
+
+#### Limits of turn-taking as a model of interaction
+##### When dialogue breaks down
+###### Concurrent inputs
+###### Continuous interaction
+###### Non-verbal cues
+
+#### Summary
+##### Dialogue organizes interaction as turn-based exchanges
+##### Norman's gulfs explain user inference effort
+##### Mixed-initiative critical for AI interaction
+
 
 ### 19 Tool use
+##### Introduction
+###### Tool
+###### Utility
+###### Usability
+###### Acceptability
+###### Accessibility
+
+##### Tools as central HCI concept
+###### Allow users to achieve goals
+###### Quality shapes adoption
+
+##### Four central considerations
+###### Utility
+###### Usability
+###### Accessibility
+###### Acceptability
+
+##### Key insights
+###### Usability predicts adoption willingness
+###### Utility centers user wants
+###### Users repurpose tools
+
+#### Utility
+##### Definition
+###### Match between tool and user tasks
+###### Hard to predict because users discover wants
+
+##### Assessing utility
+###### Perceived utility surveys
+###### Functionality criteria
+
+##### Getting the right design vs design right
+###### Right design = utility
+###### Design right = usability
+
+#### Usability
+##### Definition
+###### Easy operation by users completing tasks
+###### ISO 9241-11: effectiveness, efficiency, satisfaction
+
+#### Characteristics of usability
+##### Relational
+###### Interplay of people, tasks, tools
+###### Quality-of-use
+
+##### Measurable
+###### Quantify through behavior and opinions
+###### Set explicit usability goals
+
+##### Multidimensional
+###### Multiple measures needed
+###### Subjective and objective separately
+
+#### Models of usability
+##### ISO 9241-11 model
+###### Effectiveness
+###### Efficiency
+###### Satisfaction
+
+##### Nielsen's five dimensions
+###### Easy to learn
+###### Efficient to use
+###### Easy to remember
+###### Few errors
+###### Subjectively pleasing
+
+#### How to select goals for measuring usability?
+##### Critical parameters approach
+###### Performance parameters serving purpose
+###### Validity of measurement
+
+##### Validated questionnaires
+###### System Usability Scale (SUS)
+###### Questionnaire for User Interface Satisfaction
+###### UMUX-Lite
+###### Subjective Mental Effort Questionnaire (SMEQ)
+
+##### System Usability Scale
+###### 10 items
+###### Likert scale 1-5
+###### Score 0-100
+
+#### Acceptability
+##### Practical acceptability
+###### Costs, reliability, compatibility
+###### Includes utility and usability
+
+##### Social acceptability
+###### Match with social norms and roles
+###### "Disturbing", "creepy", "impolite" indicators
+
+##### Choice not to use
+###### Studies of non-use
+###### Bias and accessibility considerations
+
+#### Technology acceptance model
+##### TAM
+###### Intention to use depends on ease and usefulness
+###### Ease affects usefulness
+
+##### Strengths and limitations
+###### Empirically validated
+###### Says little about interaction itself
+
+#### Task–technology fit
+##### TTF theory
+###### Technology supports task demands
+###### Matches user skills
+
+##### Statistical models
+###### Predict willingness to use
+###### Task requirements + Tool functionality
+
+##### Criticism
+###### Assumes user rationality
+###### Misses attitudinal factors
+
+#### Accessibility
+##### Definition
+###### Usability for widest range of capabilities
+###### ISO 9241-171
+
+##### Communities
+###### Blind or low-vision
+###### Deaf or hard of hearing
+###### Autism
+###### Intellectual disability
+###### Motor or physical impairment
+###### Cognitive impairment
+###### Older adults
+
+##### Reasons to design accessibly
+###### Ethical right thing
+###### Large user population
+###### Legal requirements
+###### Curb-cut argument
+
+#### Designing accessible interfaces
+##### Ability-based design
+###### Design tailored to abilities
+###### Co-design with target users
+
+##### Inclusive design
+###### Wide spectrum of users
+###### Toolkits and process-oriented
+
+#### Designing speech-generating devices
+##### SGD types
+###### Symbol-based for illiterate AAC users
+###### Text-based for literate users
+
+##### Scanning keyboards
+###### Single-switch input
+###### Row-then-letter highlighting
+###### Slow but accessible
+
+##### Eye-typing
+###### Gaze controls keyboard
+###### Midas touch problem
+###### Dwell timeout disambiguates
+
+##### Dwell-free eye-typing
+###### Statistical decoder
+###### Higher entry rates
+
+#### Tools change how we think and perceive
+##### Cognitive offloading via tools
+###### Extends human capability
+###### Changes practice over time
+
+#### Summary
+##### Tools succeed via utility, usability, acceptability, accessibility
+##### Validated questionnaires measure usability dimensions
+##### Accessibility benefits everyone
+
 
 ### 20 Automation
+##### Introduction
+###### Automation
+###### Task sharing
+###### Task allocation
+###### Levels of automation
+###### Interactive AI
+
+##### Automation defined
+###### Device or system doing what humans previously did
+###### Complexity challenge for users
+
+##### Safety-critical origins
+###### Stock analysis / Aviation / ATC
+###### Balance between automation and control
+
+#### Human–automation interaction
+##### Task sharing types
+###### Time-sharing (multiple tasks)
+###### Control-sharing (assign to another agent)
+
+#### Task sharing
+##### Time-sharing theories
+###### Single channel theory
+###### Multiple resources model
+###### Information processing analysis
+
+##### Three ways to share control
+###### Extension (amplify ability)
+###### Relief (reduce burden)
+###### Partitioning (decompose task)
+
+##### Shared control and H-metaphor
+###### Like riding a horse
+###### Loose rein vs tight rein control
+###### Asymmetric capabilities
+
+##### Four levels of shared control
+###### Strategic (setting destination)
+###### Tactical (specific maneuver)
+###### Operational (maintaining distance)
+###### Execution (lowest level)
+
+#### Task allocation
+##### Maximum automation
+###### Automate everything possible
+###### Risk of leaving hard residual tasks
+
+##### Most-capable-agent strategy
+###### Assign to who does it best
+###### Fitts' lists guide decisions
+
+##### Economic efficiency
+###### Maximize cost-benefit
+###### Risky due to modeling difficulties
+
+##### Human-centered automation
+###### Human retains final control
+###### Authority problem
+
+#### Types and levels of automation
+##### Four types
+###### Acquisition (sensory processing)
+###### Analysis (perception/working memory)
+###### Decision (decision-making)
+###### Action (response selection)
+
+##### Ten levels
+###### Level 1: human decides all
+###### Level 10: computer fully autonomous
+###### Mid-levels share involvement
+
+##### Adaptive automation
+###### Context-dependent variation
+###### Aircraft and car examples
+
+#### What makes automation good?
+##### User-centric criteria
+###### Mental workload
+###### Situation awareness
+###### Complacency
+###### Skill degradation
+
+##### System-level criteria
+###### Automation reliability
+###### Costs of decisions and outcomes
+
+##### Reliability factors
+###### True positive rate (sensitivity)
+###### False positive rate (false alarm)
+
+##### Application workflow
+###### Identify types
+###### Identify levels
+###### Apply primary criteria
+###### Determine preliminary type/level
+###### Apply secondary criteria
+###### Determine final type/level
+
+#### Interactive AI
+##### Augmentation
+###### Amplify user abilities
+###### Autocorrect, prediction
+
+##### Dialogue
+###### Conversational interaction
+###### Siri, Alexa, LLMs
+
+##### Monitoring
+###### Background reaction
+###### Gesture recognition
+
+##### Recommendations
+###### Recommender systems
+###### Navigation, shopping, streaming
+
+#### Ironies of automation
+##### Deskilling
+###### Users lose manual and cognitive skills
+###### Pilots, navigation, spell-check
+
+##### Vigilance
+###### Bored users cannot intervene
+###### Semi-autonomous vehicles
+
+##### Agency
+###### Felt control may decrease
+###### Auto-aim reduces sense of skill
+###### Affects autonomy and competence
+
+#### Explainable AI
+##### Techniques
+###### Model visualizations
+###### Interactive trials
+###### Counterfactual explanations
+
+##### Explainability-accuracy trade-off
+###### Simpler explanations less accurate
+###### Users may not understand complex ones
+
+##### Design implications
+###### Support forward reasoning
+###### Show coherent factors and uncertainty
+###### Integrate multiple explanations
+
+#### Summary
+##### Automation problems are function allocation problems
+##### Interactive AI enables collaborative work
+##### Increasing automation makes human role more critical
+
 
 ### 21 Rationality
+##### Introduction
+###### Rationality
+###### Utility maximization
+###### Bounded rationality
+###### Satisficing
+
+##### Why study rationality in HCI
+###### Explain why behaviors emerge
+###### Predict user behavior
+
+##### Choice maximizes expected utility
+###### Considers what user could have done
+
+##### Users are not fully rational
+###### Limited by perception and cognition
+###### Limited by environment
+
+#### Economic models
+##### Normative economic view
+###### People maximize utility
+###### Real people deviate
+
+##### Risk preferences
+###### Risk averse vs risk seeking
+###### Same expected return, different preferences
+
+##### Descriptive view
+###### Captures actual behavior
+###### Bounded rationality
+
+##### Satisficing
+###### Settle for satisfactory
+###### Stop when "good enough" found
+###### Reference points determine threshold
+
+##### HCI examples of satisficing
+###### Not beyond first search page
+###### Menu instead of shortcut
+
+##### Users as agents
+###### Choose actions toward goals
+###### Even low-level acts are choices
+
+##### Five concepts for modeling agents
+###### States
+###### Actions
+###### Rewards
+###### Policy
+###### Transitions
+
+#### Rational analysis
+##### Approach
+###### Assume user is optimal given environment
+###### Predict from environment structure
+
+##### Steps
+###### Specify goal
+###### Specify environment
+###### Specify constraints
+###### Derive optimal behavior
+###### Compare to observed behavior
+
+#### Information foraging
+##### Information foraging theory
+###### Users forage for information
+###### Trade time and effort for gain
+
+##### Information patches
+###### Pages, sites, documents
+###### Each has yield rate
+
+#### Patch departure
+##### When to leave a patch
+###### Charnov's marginal value theorem
+###### Diminishing returns trigger departure
+
+#### Information diet
+##### Choose patches to maximize gain
+###### Skip low-yield patches
+###### Specialize on rich sources
+
+#### Information scent
+##### Definition
+###### Cues that predict link value
+###### Strong scent guides faster navigation
+
+##### Weak scent
+###### Users wander
+###### Cannot judge relevance
+
+#### Computational rationality
+##### Definition
+###### Optimal behavior given cognitive constraints
+###### Combines rational analysis with bounded resources
+
+#### Modeling interactions
+##### Reinforcement learning
+###### Learns policies
+###### Predicts reaction time, exploration
+
+##### Beyond cognitive architectures
+###### Adds ML to traditional models
+###### Models adaptive strategies
+
+#### Are users rational?
+##### Common deviations
+###### Loss aversion
+###### Anchoring
+###### Framing effects
+###### Availability bias
+###### Status quo bias
+
+##### Why "rational" despite deviations
+###### Bounded by cognitive limits
+###### Rational under different effort assumptions
+
+##### Implications for HCI
+###### Designs consider bounded agents
+###### Optimize cost/reward presentation
+###### Help users implement near-optimal strategies
+
+#### Summary
+##### Rationality explains behavior as utility-maximizing
+##### Users are bounded rational
+##### Information foraging is productive HCI application
+
 
 ### 22 Practice
+##### Introduction
+###### Practice
+###### Adoption
+###### Adaption
+###### Appropriation
+###### Context of interaction
 
+##### Practice as a view
+###### Beyond single users and tasks
+###### Embedded in social, organizational, cultural settings
+###### Long timescales
+
+##### Why practice matters
+###### Reveals actual technology use
+###### Exposes intended vs actual use gaps
+
+#### Adoption and adaption
+##### Adoption
+###### Decision to use a system
+###### Shaped by utility, usability, acceptability
+
+##### Personalization
+###### User adapts system to personal needs
+###### Configurations, preferences, themes
+
+##### Tailoring
+###### Modify system within designed limits
+###### Customize defaults and behaviors
+
+##### Appropriation
+###### Repurposing for unintended uses
+###### Creative and design-relevant
+###### Messaging apps for personal notes
+
+#### The context of interaction
+##### Division of labor and contradictions
+###### Work distributed among people and tools
+###### Contradictions reveal tensions
+
+##### Activity theory
+###### Subjects, objects, tools
+###### Rules, division of labor, community
+###### Tensions drive change
+
+##### Infrastructures
+###### Hidden technical support layers
+###### Become visible when broken
+
+##### Ecology of tools
+###### Tools used together
+###### Form ecologies of practice
+
+##### Identity and attachment
+###### Emotional bonds with technology
+###### Self-expression through artifacts
+
+##### Workarounds
+###### Solutions to system limitations
+###### Reveal practical challenges
+
+#### Putting practice into practice
+##### Design for practice
+###### Anticipate appropriation
+###### Support evolving use
+
+##### Study real-world use
+###### Longitudinal observation
+###### Diary studies
+
+#### Summary
+##### Interaction shaped by social and cultural practice
+##### Adoption, personalization, appropriation reveal practice
+##### Designers must consider context beyond individual use
 
 ## Part V User Interfaces
 
 ### 23 Introduction to user interfaces
+##### Introduction
+###### User interface
+###### DIRA model
+###### Interaction styles
+###### Design objectives
+
+##### What makes a UI good
+###### Determined by humans
+###### Cross-disciplinary
+
+##### Integrative theme
+###### Match user needs and capabilities
+###### Draws on people, research, theories
+
+#### Definition and elements of a user interface
+##### Devices
+###### Input devices
+###### Output devices
+###### Mice, keyboards, touchscreens, eye trackers
+###### Displays, audio, rumble, force-feedback
+
+##### Interaction techniques
+###### Translate input to operations
+###### Gain function maps mouse to cursor
+
+##### Representations
+###### How data appears to user
+###### Text, sounds, icons
+
+##### Assemblies
+###### Spatial and temporal organization
+###### Pages, links, updates
+
+#### Interaction styles
+##### Command-line interfaces
+###### Type commands, wait for response
+###### Powerful for experts, requires recall
+
+##### Forms
+###### Structured data entry
+###### Widgets like text boxes and checkboxes
+
+##### Menus
+###### Set of options to select
+###### Support exploration
+###### Scalability limited
+
+##### Graphical user interfaces
+###### Direct manipulation of objects
+###### Dominant since Xerox Star (1981)
+
+##### Reality-based interaction
+###### Mobile / Tangible / Mixed reality
+###### Draw on real-world experience
+
+#### Design objectives
+##### Sources of objectives
+###### Understanding of people
+###### Theories of interaction
+###### UI attributes and structure
+
+#### Supporting novice, intermediate, and expert performance
+##### Floor and ceiling performance
+###### Initial performance
+###### Extended learnability
+###### Ultimate performance
+
+##### Initial performance strategies
+###### Exploratory learning
+###### Reversal of actions (undo)
+###### Visibility of actions and status
+###### Gradually add complexity (training wheels)
+
+##### Extended learnability strategies
+###### Shortcuts / hotkeys
+###### Modeless interfaces support habits
+###### Battle satisficing (ExposeHK)
+
+##### CommandMaps example
+###### Flatten hierarchy
+###### Spatial memory enhances expert speed
+
+##### Ultimate performance
+###### Theoretical limits of input rate
+###### Inspired by science fiction "superpowers"
+
+#### Usability and accessibility
+##### Heuristics for usability
+###### Help users recognize and recover from errors
+###### Prevent errors with confirmations
+###### Make efficient operations
+
+##### Tailoring for proficiency
+###### Keyboard shortcuts for experts
+###### Customizable interfaces
+###### Adaptive interfaces
+
+#### Structure and attributes of the user interface
+##### Explorability
+###### Support exploratory learning
+###### Important for first-time users
+
+##### Discoverability
+###### Effort to find possible actions
+###### Visibility of system status
+
+##### Consistency
+###### Similar representations and interactions
+###### Internal and external consistency
+###### Style guides (Apple HIG)
+
+#### Trade-offs among objectives
+##### Common trade-offs
+###### Speed vs accuracy
+###### Recognition vs recall
+###### Familiarity vs novelty
+###### Expert vs novice
+###### Workers vs beneficiaries
+
+##### Pareto frontier
+###### Set of equally optimal designs
+###### Different compromises
+
+#### Design space analysis
+##### Three forms
+###### Morphological analysis
+###### Joint system analysis
+###### Questions, options, and criteria
+
+#### Morphological analysis
+##### Idea
+###### UI as points in parametric space
+###### Origin: Zwicky and Simon
+
+##### Design space tuple
+###### Manipulation operator
+###### Input domain
+###### State
+###### Resolution function
+###### Output domain
+###### Device properties
+
+#### Joint system analysis
+##### Controllable parameters
+###### Color, size, animation
+###### Designer can tune them
+
+##### Uncontrollable parameters
+###### System delay
+###### Algorithm accuracy
+###### User recall ability
+
+##### Critical parameters
+###### Critical to system success
+###### Sensitivity analysis
+
+##### Operating point
+###### Position in design space
+###### Set explicitly or implicitly
+
+#### Questions, options, and criteria
+##### Design rationale
+###### Document why design choices made
+###### Questions structure alternatives
+
+##### QOC structure
+###### Questions: design alternatives
+###### Options: possible answers
+###### Criteria: evaluate and choose
+
+#### Summary
+##### UI consists of devices, techniques, representations, assemblies
+##### Five interaction styles cover most UIs
+##### Design objectives include performance, usability, structure
+##### Design space analysis aids systematic choice
+
 
 ### 24 Input devices
+##### Introduction
+###### Input device
+###### Transducing
+###### Transfer functions
+###### Sensing hardware
+
+##### Input is user side of interaction
+###### Sense human action, convert to signals
+###### Keypads, mice, touch, voice, gesture
+
+#### Principles of sensing
+##### Sensing fundamentals
+###### Transduce physical signal to digital
+###### Core mechanism of input
+
+#### Transducing
+##### Converting physical to electrical
+###### Mechanical, optical, capacitive
+###### Each modality requires sensor
+
+#### Sensing hardware
+##### Sensor types
+###### Switches
+###### Capacitive sensors
+###### Cameras
+###### Microphones
+
+##### Properties
+###### Bandwidth and noise profile
+###### Resolution and range
+
+#### Transfer functions
+##### Map sensor data to actions
+###### Linear, exponential, sigmoid mappings
+###### Mouse gain function example
+
+##### Control-display (C/D) ratio
+###### Relationship between input and output motion
+###### Affects precision and reach
+
+#### Filtering
+##### Remove noise
+###### Smoothing
+###### Kalman filters
+###### Low-pass filters
+
+##### Trade-off
+###### Reduce noise vs add latency
+
+#### Engineering challenges in sensing
+##### Common challenges
+###### Latency
+###### Accuracy
+###### Drift and calibration
+###### Power consumption
+
+#### Keypads and keyboards
+##### Keyboards as primary text input
+###### QWERTY dominant
+###### Optimized for old constraints
+
+##### Alternative layouts
+###### Dvorak Simplified Keyboard
+###### Optimize for typing performance
+###### Not widely adopted
+
+##### Soft keyboards
+###### On touchscreens
+###### Limited tactile feedback
+###### Compensated by language models
+
+#### Pointing devices
+##### Direct control
+###### Touch directly at locus
+###### Touchscreens, styluses
+
+##### Indirect control
+###### Manipulate cursor at distance
+###### Mice, trackpads, joysticks
+###### Allows transfer function shaping
+
+#### Uncertain control
+##### Switches
+###### Binary input devices
+###### Used in accessibility
+
+##### Accelerometers and gyroscopes
+###### Motion sensors
+###### Used in phones and wearables
+
+##### Brain–computer interface
+###### Direct neural signals
+###### EEG, fNIRS, invasive electrodes
+###### Slow and noisy
+
+##### Electromyography (EMG)
+###### Muscle electrical signals
+###### Possible silent input
+
+##### Eye tracking
+###### Gaze as input
+###### Midas touch problem
+###### Dwell timeouts disambiguate
+
+##### Hand and finger tracking
+###### Camera-based hand tracking
+###### Gesture recognition
+
+##### Microphone input and speech recognition
+###### Speech as input modality
+###### Hands-free and accessible
+###### Limited by noise and privacy
+
+#### Expanding the limits of sensing
+##### Beyond traditional sensors
+###### Implantable sensors
+###### Body-pose sensing
+###### Bio-signals
+
+##### Multimodal input
+###### Combine modalities for robustness
+###### Pen + touch, voice + gesture
+
+#### Summary
+##### Input devices transduce, filter, transfer
+##### Keyboards still dominate but soft and alternative inputs grow
+##### Uncertain modalities expand reach but introduce ambiguity
+
 
 ### 25 Displays
+##### Introduction
+###### Display
+###### Encoding and rendering
+###### Visual encoding
+###### Modalities of output
+
+##### Displays present system state
+###### Visual, auditory, haptic, multimodal
+###### Bridge state to perception
+
+#### Encoding and rendering
+##### Types of value
+###### Nominal
+###### Ordinal
+###### Quantitative
+
+##### Visual encoding
+###### Position
+###### Color
+###### Shape
+###### Size
+###### Orientation
+###### Texture
+
+##### Bertin's semiology of graphics
+###### Effectiveness varies by data type
+###### Position most effective for quantitative
+
+##### Encoding in other modalities
+###### Sonification: data through sound
+###### Haptic encoding: vibration patterns
+
+##### Rendering
+###### Generate display output
+###### Data to pixels (or waves)
+
+#### Simple displays
+##### n-segment displays
+###### Seven-segment LED for digits
+###### Cheap and low-power
+
+##### Dot matrix display
+###### Grid of dots
+###### Used in older devices
+
+#### Visual displays
+##### Display technology
+###### LCD, OLED, e-ink
+###### Resolution and refresh rate
+
+##### Head-mounted displays
+###### VR and AR headsets
+###### Field of view, resolution, latency
+
+##### Stereoscopic display
+###### Two views for depth perception
+###### Risk of cybersickness
+
+#### Audio
+##### Audio displays
+###### Sound for notifications and information
+###### Spatial audio for immersion
+
+##### Sonification
+###### Map data to sound parameters
+###### Pitch, timbre, rhythm
+
+#### Haptics
+##### Vibration
+###### Haptic notifications
+###### Pattern variations
+
+##### Force feedback
+###### Resistance simulates physical contact
+###### Surgical training, gaming
+
+##### Haptic textures
+###### Simulate surfaces via vibration patterns
+###### Touchscreens with texture
+
+#### Emerging forms of displays
+##### Flexible and foldable
+###### Roll-able, bendable
+###### Attached to skin
+
+##### Shape-changing displays
+###### Physical shape mirrors data
+###### Pin arrays, shape-shifting surfaces
+
+##### Volumetric displays
+###### True 3D without glasses
+###### Light field displays
+
+##### On-skin and ambient displays
+###### Less attention-demanding
+###### Notifications via lighting, posture
+
+#### Summary
+##### Displays encode information in many modalities
+##### Encoding choice should match data type
+##### Emerging displays push beyond flat screens
+
 
 ### 26 Interaction techniques
+##### Introduction
+###### Interaction technique
+###### Pointing
+###### Selection
+###### Manipulation
+###### Text entry
+
+##### Techniques bridge low-level input and operations
+###### Drag-and-drop, pinch-to-zoom
+###### Autocomplete
+
+#### Objectives for interaction techniques
+##### Performance objectives
+###### Speed and accuracy
+###### Quantified via throughput
+
+##### Learnability and discoverability
+###### Easy to find and learn
+###### Visible affordances
+
+##### Robustness
+###### Work across users and contexts
+###### Tolerate errors
+
+#### Pointing techniques
+##### Control-to-display functions
+###### Map physical input to cursor
+###### Linear, accelerated, predictive
+
+##### Pointing aids
+###### Bubble cursor expands selection
+###### Sticky targets attract cursor
+
+##### Pointing for small targets
+###### Zoom techniques
+###### Magnification
+###### Snapping
+
+#### Selection and manipulation techniques
+##### Simple selection
+###### Click, tap, dwell
+###### Single object operation
+
+##### Menu selection
+###### Linear menus
+###### Hierarchical menus
+###### Pie menus
+###### Marking menus
+
+##### Selection in groups
+###### Lasso
+###### Rectangle
+###### Filter-based
+
+##### Manipulation of objects
+###### Drag-and-drop
+###### Resize, rotate
+###### Direct manipulation
+
+#### Text entry
+##### Correcting and completing phrases
+###### Autocorrect detects and fixes errors
+###### Autocomplete predicts continuations
+
+##### Going beyond entering characters
+###### Word and phrase prediction
+###### Voice dictation
+###### Gesture typing
+
+##### Other modalities for text entry
+###### Speech-to-text
+###### Eye-typing
+###### Brain-computer interfaces
+
+##### Text editing
+###### Cursor movement
+###### Selection and replacement
+###### Copy-paste
+
+#### Camera control
+##### Panning and zooming
+###### Navigate viewports of large spaces
+###### Speed-dependent automatic zooming
+
+##### 3D navigation
+###### Walking, flying, teleporting metaphors
+###### Cybersickness risk
+
+#### Control and learnability
+##### Control
+###### Fine-grained adjustment
+###### Sliders, knobs, gestures
+
+##### Learning
+###### Skill development for techniques
+###### Hint systems, tutorials, gradual difficulty
+
+#### Summary
+##### Techniques translate input into actions
+##### Pointing, selection, text entry are foundational
+##### Balance performance, learnability, robustness
+
 
 ### 27 Commands and navigation
+##### Introduction
+###### Command
+###### Navigation
+###### Recognition
+###### Recall
+###### Information organization
+
+#### Naming objects and actions
+##### Techniques for finding names
+###### Command search
+###### Menu browsing
+###### Hybrid command palette
+
+#### Command-line interfaces
+##### Powerful for experts
+###### Compose commands and pipes
+###### Scripting and automation
+
+##### Drawbacks
+###### Steep learning curve
+###### Requires recall
+
+#### Organizing information
+##### Ordering information
+###### Alphabetical
+###### Chronological
+###### By frequency
+
+##### Placing information in hierarchies
+###### Folders and trees
+###### Depth-breadth trade-off
+
+##### Hypertext
+###### Linked information
+###### Web as universal hypertext
+
+##### Techniques for organizing information
+###### Tags and labels
+###### Search-based retrieval
+
+#### Menu user interfaces
+##### Menu techniques
+###### Linear menus
+###### Pull-down menus
+###### Pie menus
+###### Marking menus
+
+##### Pie menus
+###### Radial layout
+###### Equal access times
+###### Exploits muscle memory
+
+##### Marking menus
+###### Gestures replace visible items for experts
+###### Smooth novice → expert transition
+
+##### Keyboard shortcuts
+###### Faster than navigating menus
+###### Cognitive load to remember
+
+#### Notational systems
+##### Types of notation use activities
+###### Read, write, edit
+###### Search and reference
+
+##### Cognitive dimensions of notation
+###### Viscosity
+###### Visibility
+###### Premature commitment
+###### Hidden dependencies
+###### Role-expressiveness
+###### Closeness of mapping
+
+#### Recognition versus recall
+##### Recognition easier than recall
+###### GUIs show options
+###### Command lines require recall
+
+##### Trade-off with performance
+###### Recognition supports novices
+###### Recall faster for experts
+
+##### Hybrid designs
+###### Menus with shortcuts shown
+###### Support novice-to-expert transition
+
+#### Summary
+##### Commands and navigation organize access to functions
+##### Recognition and recall serve different expertise
+##### Menu techniques balance space, speed, learnability
+
 
 ### 28 Graphical user interfaces
+##### Introduction
+###### Graphical user interface (GUI)
+###### Direct manipulation
+###### Visibility
+###### Consistency
+
+#### A brief history of the GUI
+##### Xerox Star, Apple Macintosh, Windows
+###### Made computers accessible to non-experts
+###### Direct manipulation paradigm
+
+#### Design objectives
+##### Visibility
+###### Make actions and state visible
+###### Reduces memory load
+
+##### Consistency
+###### Same look and behavior
+###### Internal and external
+
+##### Minimizing errors
+###### Confirm destructive actions
+###### Provide undo
+###### Clear error messages
+
+##### Accessibility
+###### Screen readers and alternative input
+###### Color contrast and font sizes
+
+#### The principle of direct manipulation
+##### Shneiderman's principles
+###### Visible objects of interest
+###### Rapid, reversible, incremental actions
+###### Replace command language
+
+##### Benefits and limits
+###### Easy to learn through exploration
+###### Encourages experimentation
+###### Inefficient for large repetitive tasks
+###### Lower performance ceiling than CLI
+
+#### Anatomy of a graphical user interface
+##### Graphical user interface elements
+###### Windows
+###### Icons
+###### Menus
+###### Pointers
+###### Widgets (buttons, sliders, etc.)
+
+#### Designing a graphical user interface
+##### Visual organization
+###### Hierarchy
+###### Alignment
+###### Proximity
+###### Grouping
+
+##### Icons
+###### Concrete vs abstract
+###### Cultural and convention-dependent
+###### Recognizable at small sizes
+###### Hybrid with labels
+
+##### Metaphors
+###### Desktop, files, folders
+###### Trash can
+###### Help users build mental models
+
+#### Why do we still have GUIs?
+##### GUI strengths
+###### Easy to learn
+###### Direct manipulation intuitive
+###### Visual feedback rich
+
+##### Limits
+###### Performance ceiling
+###### Not always optimal for experts
+###### Coexists with other paradigms
+
+#### Summary
+##### GUIs use direct manipulation, visibility, consistency
+##### Visual organization applies perceptual principles
+##### Icons balance recognition and clarity
+
 
 ### 29 Reality-based interaction
+##### Introduction
+###### Reality-based interaction
+###### Mobile user interfaces
+###### Ubiquitous computing
+###### Tangible user interfaces
+###### Mixed reality
 
+##### RBI umbrella
+###### Mobile / Tangible / Augmented / Virtual / Ubiquitous
+###### Draw on real-world experience
+
+#### Mobile user interfaces
+##### Characteristics of the mobile user interface
+###### Small screen
+###### Touch input
+###### On-the-go use
+###### Constant connectivity
+###### Sensors
+
+##### Small-screen interaction
+###### Limited real estate
+###### Single-window dominance
+###### Touch-optimized targets
+
+##### Mobility
+###### Use during walking, transit
+###### Fragmented attention
+###### Glanceable interfaces
+
+##### Habit formation and addiction
+###### Notifications drive checking
+###### Dark patterns and dopamine loops
+###### Digital self-control tools
+
+##### Discussion
+###### Mobile transformed daily life
+###### Always-on, always-with-you
+
+#### Ubiquitous computing
+##### Weiser's vision
+###### Computers disappear into environment
+###### Calm technology
+###### Ambient information
+
+##### Embedded input and output
+###### Sensors in environments
+###### Ambient displays
+###### Smart homes
+
+##### Context awareness
+###### Detect user situation
+###### Adapt behavior accordingly
+
+##### Natural and implicit interaction
+###### System responds to natural behavior
+###### No explicit commands needed
+
+##### Is implicit interaction realistic?
+###### Privacy concerns
+###### Misinterpretation of intent
+###### Lack of control
+
+#### Tangible user interfaces
+##### Elements of tangible user interfaces
+###### Physical objects as controls
+###### Spatial relationships matter
+###### Embodied interaction
+
+##### Models of tangible user interfaces
+###### MCRpd (model-control-representation)
+###### Tokens-and-constraints
+###### Container-conduit-tool roles
+
+##### Pros and cons of tangible user interfaces
+###### Pros: physical, intuitive, multi-user
+###### Cons: bulky, hard to update, single-purpose
+
+#### Mixed reality
+##### Mixed reality spectrum
+###### Reality / AR / Augmented Virtuality / VR
+###### Milgram's continuum
+
+##### Virtual reality
+###### Fully simulated environment
+###### Immersion through stereoscopic display
+###### Head-tracked rendering
+
+##### Augmented reality
+###### Virtual content overlaid on physical world
+###### Head-mounted (HoloLens) or handheld (phone AR)
+
+##### Pros and cons of mixed reality
+###### Pros: spatial computing, presence, training
+###### Cons: bulk, latency, motion sickness, social acceptability
+
+#### Should we imitate reality or go beyond it?
+##### Design tension
+###### Reality-based familiarity
+###### Beyond-reality affordances
+
+#### Summary
+##### Reality-based interaction draws on real-world experience
+##### Mobile, ubiquitous, tangible, mixed reality each have unique considerations
+##### Implicit interaction raises privacy and control concerns
 
 ## Part VI Design
 
 ### 30 Introduction to design
+##### Introduction
+###### Design
+###### Design as product
+###### Design as process
+###### Design as change
+###### Interaction design
+
+##### Design pervades computing
+###### Every UI element is the outcome of decisions
+###### Easy to overlook
+
+##### Design matters
+###### To people: affects perception, experience, habits
+###### To business: drives innovation and revenue
+###### To society: renews economies
+
+#### What is design?
+##### Four views of design
+###### Design as product
+###### Design as process
+###### Research through design
+###### Design as change
+
+##### Design as product
+###### Artifact or plan from design activity
+###### "Ultimate particulars" materialize ideas
+###### Sketches, wireframes, prototypes
+
+##### Design as process
+###### Activity of designing
+###### Problem-solving through iteration
+###### Creating new ideas
+
+##### Research through design
+###### Design produces new knowledge
+###### Reveal new perspectives
+###### Design probes
+
+##### Design as change
+###### Buchanan: design as cultural change
+###### Transformative potential beyond artifacts
+###### Designers take political positions
+
+##### Distinction from natural sciences
+###### Sciences: how things are
+###### Design: how things ought to be
+
+#### Interaction design
+##### Two characteristics in HCI
+###### Focus on interactive technology
+###### Human-centeredness
+
+##### Four rationales for design
+###### Improving
+###### Creating
+###### Informing
+###### Producing knowledge
+
+##### Design vs engineering
+###### Design: knowing what to design
+###### Engineering: knowing how to design
+
+#### User-centered design
+##### Seven principles
+###### User focus
+###### User involvement
+###### Iterative and incremental development
+###### Prototyping
+###### Evaluation in context
+###### Holistic design
+###### Process customization
+
+##### User-centeredness defined
+###### Purpose of system is to serve user
+###### Needs of users dominate
+
+#### Generating creative ideas
+##### Combinatorial design space is huge
+###### 50 functions: 10^15 combinations
+###### Hierarchies: 10^158 ways
+
+#### Problem-solving
+##### Identify alternatives and translate
+###### Decompose problems
+###### Enumerate options
+###### Judgment, memory, intuition
+
+##### Solutionism critique
+###### Cannot first define then search
+###### Problems and solutions co-evolve
+
+#### Creative ideation
+##### Three types (Boden)
+###### Combinatorial creativity
+###### Exploratory creativity
+###### Transformative creativity
+
+##### Combinatorial creativity
+###### New combination in existing space
+###### Example: Dvorak keyboard
+
+##### Exploratory creativity
+###### New conceptual approach
+###### Example: ubiquitous computing
+
+##### Transformative creativity
+###### Replace conceptual space
+###### Example: desktop metaphor
+
+#### Design thinking
+##### Key message: emancipatory
+###### Anyone can develop creativity
+###### Not just design heroes
+
+##### Two thinking modes
+###### Divergent thinking
+###### Convergent thinking
+
+##### Two knowledge-creation activities
+###### Knowing what to design (creative)
+###### Knowing how to design (problem-solving)
+
+##### Double diamond model
+###### Discover
+###### Define
+###### Develop
+###### Deliver
+
+##### Design thinking principles
+###### Put people first
+###### Communicate visually and inclusively
+###### Collaborate and co-create
+###### Iterate
+
+#### Practicing design
+##### The reflective practitioner
+###### Designers develop ways of knowing via practice
+###### Reflection critical to context understanding
+###### Contextualization through placements
+
+##### Wicked problems
+###### Hopelessly constrained or underdefined
+###### No stopping rule or clear goal
+###### Cracked through repeated reflection
+
+#### Practices of participation
+##### Participatory design
+###### Stakeholders at heart of process
+###### Scandinavian origins
+###### Democratizing workplaces
+
+##### Co-design
+###### Designers as collaborators
+###### More authorship to user communities
+###### Internet enables new co-design
+
+##### Action research
+###### Designer becomes part of community
+###### Change-oriented approach
+
+##### Five principles of action research
+###### Researcher-client agreement
+###### Cyclical process model
+###### Theory
+###### Change through action
+###### Learning through reflection
+
+##### Value-sensitive design
+###### Build designs rooted in user values
+###### Continuous stakeholder consideration
+
+##### Five steps of value-sensitive design
+###### Understand the people involved
+###### Create prototypes
+###### Elaborate methods for users
+###### Learn from deployment
+###### Assess the outcomes
+
+#### Managing design projects
+##### Structural view of creativity
+###### Rational activity that can be managed
+###### Process organizes design work
+
+##### Situational view of creativity
+###### Emergent and stochastic
+###### Nurtured but not managed
+
+##### Balance is needed
+###### Rigid process stifles creativity
+###### Unregulated process fails to facilitate
+
+#### What should be designed?
+##### Human-centricity implications
+###### Outcomes must be demonstrably beneficial
+###### Empirical data required
+
+##### Critical design
+###### Recognize ethical issues
+###### Use as basis for emancipation
+###### Be ready to NOT design
+
+#### Summary
+##### Design reaches beyond UI
+##### Design changes users' practices and experiences
+##### Process and creativity work together
+##### Design is the nexus of HCI
+
 
 ### 31 Design cognition
+##### Introduction
+###### Design cognition
+###### Creative ideation
+###### Design fixation
+###### Cognitive heuristics
+###### Reconceptualizing problems
+
+##### Designer's thinking
+###### Creating new ideas
+###### Solving problems
+###### Reflecting on practice
+
+#### Cognitive processes in design
+##### Cognitive heuristics and biases
+###### Mental shortcuts in design
+###### Anchoring on initial ideas
+###### Confirmation bias
+
+##### Design fixation
+###### Stick to initial ideas
+###### Hard to think past examples
+###### Common cause of inferior designs
+
+#### Generating solutions
+##### Generating creative ideas
+###### Wide-ranging exploration
+###### Strategies to overcome fixation
+
+##### Sketch many alternatives
+###### Quick low-fidelity sketches
+###### Many ideas before commitment
+
+##### External inspiration
+###### Other domains, products, examples
+###### Avoid copying single source
+
+#### Ideation methods
+##### Brainstorming
+###### Defer judgment
+###### Build on others
+###### Wild ideas welcome
+
+##### Brainwriting
+###### Silent ideation
+###### Build on others' written ideas
+
+##### SCAMPER
+###### Substitute / Combine / Adapt
+###### Modify / Put to other uses
+###### Eliminate / Reverse
+
+##### Bisociation
+###### Combine disparate concepts
+###### Lateral thinking
+
+##### Analogical reasoning
+###### Apply solutions from other domains
+###### Risk of inappropriate transfer
+
+##### Sketching
+###### External representations support thinking
+###### Quick sketches over polished mockups
+###### Iterative refinement
+
+#### Converging in design
+##### Convergence challenges
+###### Selecting among many alternatives
+###### Avoiding premature commitment
+
+##### Selection criteria
+###### User needs
+###### Feasibility
+###### Originality
+###### Risk
+
+##### Group convergence
+###### Voting, ranking
+###### Affinity diagramming
+
+#### Reconceptualizing problems
+##### Reframing problems
+###### Problems constructed, not given
+###### Reframing reveals new solutions
+
+##### Co-evolving problems and solutions
+###### Learn objectives while exploring
+###### Solutions can change problem
+
+##### Design as inquiry
+###### Each move tests hypothesis
+###### Reveals what is possible
+
+#### Does design happen in the mind?
+##### Distributed cognition view
+###### Design happens through sketches and artifacts
+###### Not purely mental
+
+#### Summary
+##### Design cognition combines creativity and problem-solving
+##### Designers face fixation but can train past it
+##### Generating, converging, reframing are core activities
+
 
 ### 32 Design practice
+##### Introduction
+###### Design practice
+###### Experimentation
+###### Prototyping
+###### Design tools
+###### Participatory practices
+
+##### Practice vs process
+###### Practice: how designers actually work
+###### Process: normative prescriptions
+
+#### Experimentation
+##### Prototyping
+###### Low-fidelity: paper, sketches, wireframes
+###### High-fidelity: clickable, working code
+
+##### Prototype purposes
+###### Communicate ideas
+###### Test hypotheses
+###### Explore options
+###### Learn from users
+
+##### Design tools
+###### Figma, Sketch, Adobe XD
+###### Code-based tools and toolkits
+###### Selection affects what is easy to design
+
+#### Reflection and critique
+##### Interpretative activities
+###### Designers interpret data and situations
+###### Multiple valid interpretations
+
+##### Design critique
+###### Studio culture
+###### Pinup boards and walk-throughs
+###### Expose ideas to criticism
+
+##### Design fiction
+###### Fictional scenarios for future tech
+###### Provoke reflection and discussion
+
+#### Participatory practices
+##### Workshops
+###### Structured sessions with stakeholders
+###### Brainstorm, sketch, role-play
+
+##### Co-designing visions
+###### Collaborative future-making
+###### Build shared aspirations
+
+##### Playing and acting
+###### Role-play and bodystorming
+###### Embodied exploration
+
+#### Collaboration
+##### Coordinating practices in a team
+###### Multiple designers with specialties
+###### Shared artifacts and meetings
+
+##### Design systems
+###### Reusable components and patterns
+###### Material Design, Apple HIG
+
+##### Communities of practice
+###### Learning through participation
+###### Mentorship and peer feedback
+
+#### Growing as a designer
+##### Designer development
+###### Beyond technical skills
+###### Develop judgment, taste, ethics
+
+##### Practice over theory
+###### Years of doing make experts
+###### Reflection accelerates growth
+
+##### Specialization
+###### UX, UI, interaction, service roles
+###### T-shaped designers
+
+#### Summary
+##### Design practice is lived experience
+##### Experimentation through prototypes essential
+##### Participation and collaboration shape practice
+
 
 ### 33 Design processes
+##### Introduction
+###### Design process
+###### Usability engineering
+###### Human-centered design
+###### Human factors engineering
 
+##### Why have a process
+###### Coordinate complex work
+###### Avoid common pitfalls
+###### Make outcomes predictable
+
+#### User-centered design processes
+##### Multiple frameworks
+###### Usability engineering
+###### Human-centered design (ISO)
+###### Human factors engineering
+
+#### Usability engineering
+##### Usability engineering
+###### Iterative discipline focused on usability
+###### Nielsen's framework foundational
+
+##### Phases
+###### Know the user
+###### Competitive analysis
+###### Goal setting
+###### Parallel design
+###### Participatory design
+###### Prototyping
+###### Empirical testing
+###### Iterative design
+###### Follow-up
+
+##### Quantitative usability goals
+###### Specific measurable targets
+###### Compare empirical results
+
+#### A standard for human-centered design
+##### ISO 9241-210
+###### Standard for human-centered design
+###### Four iterative activities
+
+##### Four activities
+###### Understand context of use
+###### Specify user requirements
+###### Produce design solutions
+###### Evaluate against requirements
+
+##### Iteration is central
+###### Activities repeated until satisfied
+###### Each cycle refines understanding
+
+##### A standard for ethical system design
+###### ISO/IEC TR 24368
+###### Stakeholder values throughout
+
+#### Agile development
+##### Iterative software development
+###### Short cycles (sprints)
+###### Regular delivery
+
+##### Integration with UCD
+###### User stories
+###### Continuous feedback
+
+#### Human factors engineering
+##### Focus on safety-critical systems
+###### Originated in aviation, military, healthcare
+
+##### Methods
+###### Task analysis
+###### Hazard analysis
+###### Workload analysis
+###### Human reliability assessment
+
+##### Trade-offs
+###### Safety vs usability
+###### Regulations matter
+###### Slow iteration
+
+#### Following a process is better than ad hoc practices
+##### Benefits of process
+###### Predictability
+###### Quality assurance
+###### Knowledge sharing
+
+##### Limits
+###### Cannot replace creativity
+###### Must be customized
+
+#### Summary
+##### Processes coordinate complex collaborative work
+##### Usability engineering focuses on quantitative goals
+##### ISO 9241-210 is general human-centered framework
+##### Human factors engineering protects users in safety-critical settings
 
 ## Part VII Engineering
 
 ### 34 Introduction to engineering
+##### Introduction
+###### Engineering
+###### Verification
+###### Validation
+###### Systems thinking
+
+##### Engineering vs design
+###### Engineering: how to build correctly
+###### Design: what to build
+
+#### Structure of this part
+##### Five chapters of engineering
+###### Systems
+###### Design engineering
+###### Safety and risk
+###### Software
+###### Computational representations and models
+
+#### Engineering perspectives in HCI
+##### Building the right thing
+###### Identify the right problem
+###### Match users' needs
+
+##### Building the thing right
+###### Correctness and reliability
+###### Performance and safety
+
+##### Verification and validation
+###### Verification: built it right
+###### Validation: built the right thing
+
+##### Systems thinking
+###### See whole, not just parts
+###### Components interact in complex ways
+
+##### Understanding risk and keeping people safe
+###### Identify hazards
+###### Mitigate risks
+
+##### Managing the process
+###### Coordinate teams and resources
+###### Track progress and quality
+
+##### Systematic approaches to HCI problems
+###### Apply engineering rigor
+###### Document decisions and rationale
+
+#### Summary
+##### Engineering complements design
+##### Verification + Validation + Systems thinking
+##### Manage process for safe, reliable systems
+
 
 ### 35 Systems
+##### Introduction
+###### System
+###### Systems thinking
+###### System mapping
+###### Complex sociotechnical systems
+
+##### Systems are more than parts
+###### Components interact
+###### Emergent behavior
+
+#### Systems thinking
+##### Holistic view
+###### Whole is greater than sum
+###### Feedback loops drive behavior
+
+##### Systems thinking principles
+###### Identify boundaries
+###### Trace flows
+###### Understand interdependencies
+
+##### Wicked problems
+###### Hard to define
+###### Solutions create new problems
+
+#### System mapping
+##### Task diagram
+###### Decomposes activities
+###### Identifies user actions
+
+##### Information diagram
+###### Maps information flows
+###### Source and destination of data
+
+##### Organizational diagram
+###### Roles and responsibilities
+###### Power and authority structures
+
+##### System diagram
+###### Components and connections
+###### Architecture overview
+
+##### Process diagram
+###### Sequence of activities
+###### Decision points and branches
+
+##### Communication diagram
+###### Who talks to whom
+###### Channels and frequencies
+
+#### Principles for legal and ethical systems
+##### Privacy by design
+###### Build privacy into structure
+###### Minimize data collection
+
+##### Accessibility by design
+###### Inclusive from the start
+###### Not an afterthought
+
+##### Transparency
+###### Explainable behavior
+###### Clear data practices
+
+##### Accountability
+###### Identifiable decision-makers
+###### Audit trails
+
+#### Is systems thinking actionable?
+##### Strengths
+###### Reveals hidden complexity
+###### Predicts unintended consequences
+
+##### Limits
+###### Hard to apply concretely
+###### Abstract diagrams may not drive action
+
+#### Summary
+##### Systems thinking reveals complex interactions
+##### Multiple diagrams capture different aspects
+##### Legal and ethical considerations shape design
+
 
 ### 36 Design engineering
+##### Introduction
+###### Design engineering
+###### Function modeling
+###### Concept selection
+###### Product architecture
+
+##### Design engineering bridges
+###### User-centered design and engineering
+###### Translate requirements to systems
+
+#### Design process
+##### Stages of design engineering
+###### Identify purpose
+###### Specify requirements
+###### Conceptual design
+###### Embodiment design
+###### Detailed design
+###### Verification and validation
+
+#### Identifying the purpose
+##### Define problem
+###### Stakeholder needs
+###### Constraints
+###### Success criteria
+
+##### Initial scope
+###### Boundary conditions
+###### Resource limits
+
+#### Specifying requirements
+##### Functional requirements
+###### What the system should do
+###### Behaviors and outputs
+
+##### Non-functional requirements
+###### Performance
+###### Reliability
+###### Usability
+###### Security
+
+##### Requirement quality
+###### Clear, testable, traceable
+###### Prioritized
+
+#### Conceptual design
+##### Function modeling
+###### Decompose system into functions
+###### Function trees and structures
+
+##### Translating functions into function carriers
+###### Map functions to physical/logical components
+###### Multiple carriers possible
+
+##### Concept selection
+###### Generate alternative concepts
+###### Evaluate against criteria
+###### Pugh matrix method
+
+##### Product architecture
+###### High-level structure
+###### Modules and interfaces
+###### Integral vs modular
+
+##### Embodiment and detailed design
+###### Specific shapes, sizes, materials
+###### Component-level decisions
+
+#### Verification and validation
+##### Verification
+###### Did we build it right?
+###### Match against specifications
+###### Testing and inspection
+
+##### Validation
+###### Did we build the right thing?
+###### Match against user needs
+###### Field testing
+
+#### Design engineering and user-centered design
+##### Integration
+###### Design engineering provides structure
+###### UCD provides user focus
+
+##### Iterative refinement
+###### Engineering feedback informs UCD
+###### User insights drive engineering
+
+#### Summary
+##### Design engineering bridges design and implementation
+##### Conceptual design generates alternatives
+##### Verification and validation ensure quality
+
 
 ### 37 Safety and risk
+##### Introduction
+###### Safety
+###### Risk
+###### Reliability
+###### Security
+
+##### Why safety matters
+###### Errors can have severe consequences
+###### Risk management is engineering responsibility
+
+#### Human error
+##### Skills, rules, and knowledge (Rasmussen)
+###### Skill-based behavior
+###### Rule-based behavior
+###### Knowledge-based behavior
+
+##### Skill-based behavior
+###### Automatic, learned responses
+###### Slip errors
+
+##### Rule-based behavior
+###### Apply learned rules
+###### Mistake errors
+
+##### Knowledge-based behavior
+###### Reasoning from first principles
+###### Slowest and most error-prone
+
+##### Taxonomies for understanding error
+###### Slips vs mistakes
+###### Lapses
+###### Violations
+
+##### Analysis of human error
+###### Root cause analysis
+###### Fault tree analysis
+###### Event tree analysis
+
+#### Risk management
+##### Risk
+###### Probability × Severity
+###### Quantifies potential harm
+
+##### Risk assessment
+###### Identify hazards
+###### Estimate likelihood
+###### Estimate consequences
+###### Prioritize
+
+##### Risk mitigation
+###### Eliminate hazard
+###### Reduce likelihood
+###### Reduce consequence
+###### Transfer risk
+
+#### Reliability
+##### Reliability
+###### Probability of correct operation
+###### Function of time and conditions
+
+##### Series and parallel systems
+###### Series: one fails, all fails
+###### Parallel: redundancy improves reliability
+
+##### Reliability and failure rate
+###### Failure rate (lambda)
+###### Mean time between failures (MTBF)
+
+##### Hazard function
+###### Bathtub curve
+###### Infant mortality, useful life, wear-out
+
+#### Security
+##### Security in HCI
+###### User behavior affects security
+###### Usable security designs
+
+##### Authentication
+###### Passwords
+###### Biometrics
+###### Multi-factor authentication
+
+##### Phishing and social engineering
+###### Exploit user trust
+###### Design for resilience
+
+##### Privacy threats
+###### Data leaks
+###### Surveillance
+###### Tracking
+
+#### Are there risk-free systems?
+##### No system is risk-free
+###### Accept residual risk
+###### Continuous monitoring needed
+
+##### Risk-benefit balance
+###### Some risk worth taking
+###### Communicate clearly to users
+
+#### Summary
+##### Human error follows skill-rule-knowledge model
+##### Risk management requires systematic assessment
+##### Reliability and security are engineering concerns
+
 
 ### 38 Software
+##### Introduction
+###### Software architecture
+###### Toolkits
+###### End-user development
+###### Formal methods
+
+#### Software design and architecture
+##### Layout
+###### Spatial arrangement of UI elements
+###### Constraint-based layout
+###### Responsive layout
+
+##### Event handling
+###### User actions trigger events
+###### Event loops process actions
+###### Callbacks and handlers
+
+##### Model-view-controller and other design patterns
+###### MVC separates concerns
+###### MVP, MVVM variants
+###### Observer pattern
+
+#### Toolkits
+##### UI toolkits
+###### Pre-built widgets and components
+###### Examples: Qt, GTK, Win32, SwiftUI
+
+##### Cross-platform toolkits
+###### React Native, Flutter, Electron
+###### Trade-offs in fidelity
+
+#### End-user development
+##### Macros
+###### Record-and-replay
+###### Customize repetitive tasks
+
+##### Programming by example
+###### Demonstrate intended behavior
+###### System generalizes
+
+##### Visual programming languages
+###### Graphical programming
+###### Scratch, Node-RED
+###### Lower barrier to coding
+
+#### Formal methods
+##### Finite-state machines
+###### Model dialogue and interaction
+###### Verify properties
+
+##### Formal modeling of undo
+###### Specify undo semantics
+###### Prove correctness
+
+#### How do we know if systems and toolkits are useful?
+##### Evaluation criteria
+###### Adoption rate
+###### Developer satisfaction
+###### Application quality
+
+##### Limits of evaluation
+###### Hard to compare across paradigms
+###### Long-term effects emerge slowly
+
+#### Summary
+##### Software architecture organizes complexity
+##### Toolkits speed up UI development
+##### End-user development empowers non-programmers
+##### Formal methods provide rigorous guarantees
+
 
 ### 39 Computational representations and models
+##### Introduction
+###### Representation
+###### Model
+###### Optimization
+###### Machine learning
 
+##### Why representations matter
+###### Make problems tractable
+###### Enable computation
+
+#### Representations and models
+##### Representations
+###### Encode problem state
+###### Variables and structures
+
+##### Feature engineering
+###### Choose informative features
+###### Affects model quality
+
+##### Modeling
+###### Predict behavior
+###### Compare design alternatives
+
+#### Envelope analysis
+##### Envelope analysis
+###### Bound possible outcomes
+###### Best/worst case analysis
+
+##### Conducting envelope analysis
+###### Identify parameters
+###### Compute upper and lower bounds
+###### Make decisions within envelope
+
+#### Optimization
+##### Optimization problem
+###### Maximize or minimize objective
+###### Subject to constraints
+
+##### Example: The assignment problem
+###### Assign items to slots
+###### Minimize cost or maximize value
+###### Apply to keyboard layout, menu layout
+
+##### Optimization methods
+###### Linear programming
+###### Integer programming
+###### Heuristic search
+
+#### Machine learning and pattern recognition
+##### Machine learning in HCI
+###### Pattern recognition
+###### Predict user behavior
+###### Personalization
+
+##### Linear machines
+###### Linear regression and classification
+###### Foundation for more complex models
+
+##### Deep learning
+###### Neural networks
+###### Generative models
+
+#### Limits of a model and its applications
+##### Model limits
+###### Cannot capture everything
+###### Domain shift breaks predictions
+
+##### Application limits
+###### Ethical concerns
+###### Bias and fairness
+###### Need for human oversight
+
+#### Summary
+##### Representations make problems computable
+##### Envelope analysis bounds outcomes
+##### Optimization and ML enable systematic design
+##### Models have limits requiring human judgment
 
 ## Part VIII Evaluation
 
 ### 40 Introduction to evaluation
+##### Introduction
+###### Evaluation
+###### Yardsticks
+###### Validity
+###### Reliability
+###### Impact
+
+##### Why evaluate?
+###### Verify design works
+###### Improve through iteration
+###### Compare alternatives
+
+#### Goals of evaluation
+##### Formative evaluation
+###### Improve a design under development
+###### Iterative feedback
+
+##### Summative evaluation
+###### Assess a finished design
+###### Compare against alternatives
+
+##### Comparative evaluation
+###### Test A vs B
+###### Inform design choices
+
+#### Yardsticks of evaluation
+##### Quantitative yardsticks
+###### Time, accuracy, errors
+###### Throughput, completion rate
+
+##### Qualitative yardsticks
+###### User experience
+###### Satisfaction
+###### Mental effort
+
+##### Usability metrics
+###### Effectiveness
+###### Efficiency
+###### Satisfaction
+
+#### Evaluation methods
+##### Analytical evaluation
+###### Inspection-based
+###### No users required
+
+##### Empirical evaluation
+###### Studies with users
+###### Quantitative and qualitative data
+
+##### Tailoring evaluation methods
+###### Match method to question
+###### Consider available resources
+
+##### Choosing an evaluation method
+###### Stage of design
+###### Available users
+###### Required confidence
+
+##### Validity, reliability, and impact
+###### Validity: measures what we think
+###### Reliability: consistent results
+###### Impact: drives design decisions
+
+#### Is evaluation needed?
+##### Arguments for evaluation
+###### Catches problems early
+###### Improves quality
+
+##### Arguments against
+###### Costly and time-consuming
+###### May miss novel uses
+
+#### Summary
+##### Evaluation drives quality and iteration
+##### Multiple methods serve different goals
+##### Choose method based on questions and resources
+
 
 ### 41 Analytical evaluation methods
+##### Introduction
+###### Heuristic evaluation
+###### Cognitive walkthrough
+###### Keystroke-level modeling
+###### Identification of human error potential
+
+##### Analytical methods
+###### No users required
+###### Done by experts
+###### Cheaper and faster than empirical
+
+#### Heuristic evaluation
+##### Method
+###### Inspect interface against heuristics
+###### Multiple evaluators
+
+##### Nielsen's 10 heuristics
+###### Visibility of system status
+###### Match between system and real world
+###### User control and freedom
+###### Consistency and standards
+###### Error prevention
+###### Recognition over recall
+###### Flexibility and efficiency
+###### Aesthetic and minimalist design
+###### Help users recover from errors
+###### Help and documentation
+
+##### How to do a heuristic evaluation?
+###### Brief evaluators
+###### Independent evaluations
+###### Aggregate findings
+###### Prioritize by severity
+
+##### Reliability of heuristic evaluation
+###### Single evaluators miss many issues
+###### Aggregating evaluators improves reliability
+###### Inter-rater agreement varies
+
+#### Identification of human error potential
+##### Method
+###### Predict where users will err
+###### Use task analysis and human factors knowledge
+
+##### Tools
+###### Predictive Human Error Analysis (PHEA)
+###### Systematic Human Error Reduction (SHERPA)
+
+#### Cognitive walkthrough
+##### Method
+###### Walk through tasks step-by-step
+###### Predict user reasoning
+
+##### How to do a cognitive walkthrough?
+###### Define tasks
+###### Specify user profile
+###### Walk through actions
+###### Ask key questions at each step
+
+##### Four questions
+###### Will user try to achieve this effect?
+###### Will user notice correct action?
+###### Will user associate action with effect?
+###### Will user see progress toward goal?
+
+##### A theory of how people learn via exploration
+###### CE+ theory
+###### Learning by doing in exploration
+###### Predicts breakdowns
+
+#### Keystroke-level modeling
+##### KLM
+###### Predict task completion time
+###### Decompose into elementary operations
+
+##### How to do a KLM analysis?
+###### List task steps
+###### Identify operators
+###### Sum times
+
+##### KLM operators
+###### K: Keystroke
+###### P: Point
+###### H: Home (hand movement)
+###### D: Draw
+###### M: Mental preparation
+###### R: System response
+
+##### Worked example
+###### Apply operators to real task
+###### Predict time and compare to observed
+
+##### Limits of KLM
+###### Skilled, error-free performance only
+###### Ignores cognition complexity
+###### Routine tasks only
+
+#### Automated usability evaluation
+##### Algorithmic methods
+###### Automate parts of evaluation
+###### Apply heuristics computationally
+
+##### Interactive modeling workbenches
+###### Build cognitive models
+###### Predict performance and errors
+
+#### Which analytical evaluation method to use?
+##### Selection criteria
+###### Stage of design
+###### Type of issues sought
+###### Available expertise
+
+##### Use multiple methods
+###### Triangulation improves coverage
+###### Each catches different issues
+
+#### Summary
+##### Analytical methods are cheap and fast
+##### Heuristic evaluation finds many usability problems
+##### Cognitive walkthrough predicts learning issues
+##### KLM predicts task time for routine tasks
+
 
 ### 42 Think-aloud studies
+##### Introduction
+###### Think-aloud
+###### Verbal protocol
+###### User tasks
+###### Concurrent vs retrospective
+
+##### Method overview
+###### Users verbalize thoughts while using
+###### Observer records and analyzes
+
+#### Understanding thought processes
+##### Why think-aloud?
+###### Reveal cognition during interaction
+###### Find usability issues quickly
+
+##### Concurrent vs retrospective
+###### Concurrent: speak while doing
+###### Retrospective: report after
+
+##### Limitations
+###### Verbalization may alter behavior
+###### Cannot capture unconscious processes
+
+#### Instructions and tasks
+##### Instructions
+###### Clear think-aloud prompt
+###### Encourage continuous speech
+###### Avoid leading questions
+
+##### Tasks
+###### Realistic and representative
+###### Cover key features
+###### Vary difficulty
+
+#### Analysis
+##### Transcription
+###### Audio/video to text
+###### Mark significant moments
+
+##### Coding
+###### Identify usability issues
+###### Categorize by type and severity
+
+##### Counting and reporting
+###### Frequency of issues
+###### Severity prioritization
+
+#### Variations of think-aloud studies
+##### Teach-back method
+###### User explains system to evaluator
+###### Reveals mental models
+
+##### Co-discovery
+###### Two users work together
+###### Natural verbalization
+
+##### Constructive interaction
+###### Pair users with different expertise
+###### Reveals knowledge gaps
+
+#### Verbal protocols: A forgotten secret?
+##### Underused method
+###### Powerful for cognitive insight
+###### Easier than once thought
+
+##### Modern revival
+###### Eye-tracking integration
+###### AI-assisted transcription
+
+#### Summary
+##### Think-aloud reveals user cognition during interaction
+##### Tasks must be realistic and representative
+##### Variations adapt to different research questions
+
 
 ### 43 Experiments
+##### Introduction
+###### Experiment
+###### Hypothesis
+###### Independent variable
+###### Dependent variable
+###### Confounds
+
+##### Why experiments?
+###### Test causal claims
+###### Compare designs rigorously
+
+#### Research questions
+##### Question types
+###### Effect of A on B
+###### Difference between conditions
+###### Predictive relationships
+
+#### Research hypotheses
+##### Null hypothesis
+###### No effect
+###### Default assumption
+
+##### Alternative hypothesis
+###### Predicted effect
+###### Direction may be specified
+
+##### Statistical hypotheses
+###### Operationalized claims
+###### Testable with data
+
+#### Independent variables
+##### Levels of independent variables
+###### Discrete conditions to compare
+###### At least two levels
+
+##### Eliminating confounds
+###### Variables that vary with IV
+###### Threaten internal validity
+
+##### Selecting meaningful baselines
+###### Compare to existing standard
+###### Or to control condition
+
+#### Participants
+##### Recruitment
+###### Representative of target population
+###### Sample size considerations
+
+##### Power analysis
+###### Estimate required sample size
+###### Trade-off effect size and confidence
+
+##### Ethical treatment of participants
+###### Informed consent
+###### Right to withdraw
+###### Privacy protection
+
+#### Experimental design
+##### Between-participants design
+###### Different users in each condition
+###### Avoids learning effects
+
+##### Within-participants design
+###### Same users in all conditions
+###### Counterbalance order
+
+##### Mixed designs
+###### Combine between and within
+###### Increase efficiency
+
+##### Counterbalancing
+###### Order conditions systematically
+###### Latin square designs
+
+#### Dependent variables
+##### Measure outcomes
+###### Time, errors, accuracy
+###### Satisfaction, mental effort
+
+##### Multiple DVs
+###### Capture different aspects
+###### Adjust for multiple comparisons
+
+#### Experimental situation
+##### Lab vs field
+###### Lab: more control, less realism
+###### Field: more realism, less control
+
+##### Controlled conditions
+###### Same setting for all participants
+###### Reduce noise
+
+#### Analysis and interpretation
+##### Descriptive statistics
+###### Means, standard deviations
+###### Distributions and outliers
+
+##### Effect size
+###### Practical significance
+###### Beyond statistical significance
+
+#### Hypothesis testing
+##### Statistical significance testing
+###### p-value < threshold (usually 0.05)
+###### Reject null hypothesis
+
+##### Limitations of p-values
+###### Sensitive to sample size
+###### Does not measure effect size
+
+#### Example: Between-participant analysis of variance
+##### ANOVA
+###### Compare multiple groups
+###### F-statistic and p-value
+
+##### Post-hoc tests
+###### Identify which groups differ
+###### Adjust for multiple comparisons
+
+#### Explaining experiments
+##### Report all relevant details
+###### Sample, design, materials
+###### Procedures and analyses
+
+##### Discuss limitations honestly
+###### What does and doesn't generalize
+###### Confounds and alternative explanations
+
+#### Summary
+##### Experiments test causal claims
+##### Design carefully to eliminate confounds
+##### Report transparently with effect sizes and limitations
+
 
 ### 44 Field evaluations
+##### Introduction
+###### Field evaluation
+###### Pilot study
+###### Deployment study
+###### Longitudinal study
 
+##### Why field evaluation?
+###### Real contexts and users
+###### Long-term effects
+
+#### Field evaluations
+##### Definition
+###### Evaluate in real settings
+###### With real users and tasks
+
+##### Degrees of a field
+###### Lab → semi-controlled → field
+###### Continuum of control vs realism
+
+##### Evaluation methods for the field
+###### Observation
+###### Interviews
+###### Log analysis
+###### Surveys
+
+##### Experiments in the field
+###### Quasi-experiments
+###### A/B tests
+###### Limited control over conditions
+
+#### Pilot studies
+##### Pilot study
+###### Small-scale test of method
+###### Refine before full deployment
+
+##### Goals of piloting
+###### Catch problems with instruments
+###### Estimate effect sizes
+###### Improve materials
+
+#### Deployment studies
+##### Analysis of user feedback
+###### Reviews, support requests
+###### Continuous improvement
+
+##### Log file analysis
+###### Track usage patterns
+###### Identify problems and successes
+
+##### App store deployment
+###### Beta releases
+###### Staged rollouts
+
+##### Longitudinal studies
+###### Track changes over weeks/months
+###### Habituation, learning, attrition
+
+#### Is it worth the hassle?
+##### Benefits
+###### Real-world insights
+###### Long-term effects visible
+
+##### Costs
+###### Time and resources
+###### Logistical complexity
+###### Variability hard to control
+
+#### Summary
+##### Field evaluations reveal real-world use
+##### Pilot studies refine methods before deployment
+##### Trade off realism vs control
 
 ## Part IX Conclusion
 
 ### 45 Growing into the HCI discipline
+##### Introduction
+###### Growing as practitioner and researcher
+###### Eight themes for HCI development
+
+##### Eight themes
+###### Learning from research
+###### Choosing problems that matter
+###### Turning research ideas into plans
+###### Appreciating rigor and its limitations
+###### Envisioning better interactions
+###### Practicing HCI ethically
+###### Contributing to research
+###### Impacting the world
+
+#### Learning from research
+##### Two ways to follow literature
+###### Technical: academic search engines
+###### Social: social media and reading groups
+
+##### Academic sources
+###### Google Scholar
+###### SemanticScholar
+###### ACM Digital Library
+###### IEEE Xplore
+
+##### HCI conferences
+###### CHI (Human Factors in Computing Systems)
+###### CSCW (Computer-Supported Cooperative Work)
+###### UIST (User Interface Software and Technology)
+###### UbiComp (Pervasive and Ubiquitous Computing)
+###### IUI (Intelligent User Interfaces)
+###### DIS (Designing Interactive Systems)
+
+##### Practitioner conferences
+###### IxDA
+###### UXPA
+
+##### Engage with plurality
+###### Diverse disciplinary backgrounds
+###### Different methods and approaches
+
+##### Avoid citation bias
+###### Researchers cite those they know
+###### Seek differing opinions
+
+##### Critical reading
+###### Five core aspects
+###### Argumentation
+###### Evidence
+###### Contribution
+###### Impact
+###### Significance
+
+#### Choosing problems that matter
+##### Great problem statement
+###### Addresses knowledge or capability gap
+###### Important to people
+###### Tractable with available resources
+
+##### Stakeholder-centric problems
+###### Start from end: what do people need?
+###### Value-sensitive design tools
+
+##### Level of abstraction
+###### Too low: specific to single context
+###### Too high: too broad for one study
+###### Right level affects millions of users
+
+##### Solution-neutral formulation
+###### Avoid confounding with method
+###### Allow multiple approaches
+
+##### Refutable formulation
+###### No presumed answer
+###### Allow more than one outcome
+
+##### Know prior work
+###### Avoid claiming naive novelty
+###### Most problems have precursors
+
+##### Critical thinking
+###### Avoid hype
+###### Look at neglected user groups
+###### Accessibility, underprivileged users
+
+#### Turning research ideas into plans
+##### Good research plan
+###### Detailed enough to guide execution
+###### Prepares for contingencies
+###### Ensures validity across circumstances
+
+##### Operationalization
+###### Translate abstract problem to concrete plan
+###### Multiple operationalizations possible
+
+##### Plan covers
+###### Methods
+###### Rationale
+###### Underpinning theories
+###### Alternative explanations
+
+##### Plans as boundary objects
+###### Shareable for scrutiny
+###### Pre-registration of studies
+###### Participatory research
+
+#### Appreciating rigor (and its limitations)
+##### What is rigor
+###### Thorough and careful research
+###### Quality of process and outcomes
+
+##### Most important principle
+###### Claims commensurate with evidence
+###### Avoid overclaiming
+
+##### Validity and reliability
+###### Reproducibility of findings
+###### Some uncertainty always remains
+
+##### Truthful presentation
+###### Honest about limits
+###### Titles and conclusions accurate
+
+##### Rigor in design
+###### Justify artifacts
+###### Ground decisions in observations and theories
+
+##### Limits of rigor
+###### Dogmatic rigor can stifle creativity
+###### Balance with stakeholder needs
+
+#### Envisioning better interactions
+##### HCI offers visions
+###### Engelbart, Sutherland, Weiser
+###### Many areas open for exploration
+
+##### Sources of inspiration
+###### Academic literature
+###### Market and industry
+###### Art, science fiction
+###### Interactive exhibitions
+
+##### Expressing visions
+###### Design fiction
+###### Narratives offer richer exploration
+###### Subject to stakeholder scrutiny
+
+##### Goofing around with technology
+###### Tinkering and what-if questions
+###### Rapid design-build-evaluate cycles
+###### Serendipitous discoveries
+
+##### Thought experiments
+###### Ultimate user interface
+###### Maximal social sharing
+###### Mind-reading interface
+###### Perfect display
+###### Perfect AI partner
+
+##### Critical thought required
+###### Visions raise dilemmas
+###### Privacy, autonomy, agency
+
+#### Practicing HCI ethically
+##### ACM Code of Conduct principles
+###### Contribute to society and human well-being
+###### Avoid harm
+###### Be honest and trustworthy
+###### Be fair and do not discriminate
+
+##### Professional responsibilities
+###### Produce robust, secure systems
+###### Evaluate impact on users, organizations, society
+
+##### Responsibility cannot be washed away
+###### Bunge: skill carries responsibility
+###### Engineer and manager have greater moral duty
+
+#### Contributing to research
+##### Seven types of research contributions
+###### Empirical
+###### Artifact
+###### Methodological
+###### Theoretical
+###### Survey
+###### Dataset
+###### Opinion
+
+##### Empirical contributions
+###### New findings from research
+###### Experiments, surveys, observations
+
+##### Artifact contributions
+###### New possibilities for computing
+###### Systems, tools, sketches, visions
+
+##### Methodological contributions
+###### Improve how we do science or design
+###### New methods or improvements
+
+##### Theoretical contributions
+###### Explanations and models
+###### Link propositions about interaction
+
+##### Survey contributions
+###### Reviews and syntheses
+###### Reveal trends and gaps
+
+##### Dataset contributions
+###### Systematically collected corpora
+###### Support reproducibility
+
+##### Opinion contributions
+###### Essays and arguments
+###### Bridge HCI to other fields
+
+#### Impacting the world
+##### Pay back society
+###### Moral obligation
+###### Especially with taxpayer funding
+
+##### Stakeholder groups
+###### End-users
+###### Public sector
+###### Companies
+###### Disadvantaged communities
+
+##### Channels of impact
+###### Academic publishing
+###### Social media
+###### Popular media
+###### Application markets
+###### Start-ups and consultancy
+
+##### Open science
+###### Open access
+###### Open data
+###### Open-source code
+###### Open hardware
+
+##### Open educational resources
+###### Open access books
+###### Shared teaching materials
+
+##### Public engagement
+###### Press releases, interviews, blogs
+###### Action research
+###### Avoid misrepresentation and overhype
+
+#### Summary
+##### HCI principles guide effective engagement
+##### Critical evaluation of research is essential
+##### Many ways to contribute to and impact the world
+
 
 ### 46 Summary: HCI principles
+##### Introduction
+###### Human-centeredness ties everything together
+###### Principles for reasoning about HCI problems
+
+##### Three types of principles
+###### Observations: recurring factors to consider
+###### Models: formal relationships
+###### Guidance: concrete suggestions
+
+#### Principles from Introduction
+##### Be human centered
+###### Focus on people and their needs (Guidance)
+
+#### Principles from Understanding People
+##### Use general understanding of people
+###### Across the seven areas (Guidance)
+
+##### Top-down and bottom-up perception
+###### Driven by expectations and stimulus (Observation)
+
+##### Fitts' law
+###### Movement time relates to index of difficulty (Model)
+
+##### Hick–Hyman law
+###### Decreasing uncertainty improves choice reaction time (Model)
+
+##### Signal detection
+###### Difficulty depends on discriminability from noise (Observation)
+
+##### Power law of practice
+###### Learning follows this model (Model)
+
+##### Don't make me think
+###### Minimize cognitive energy and effort (Guidance)
+
+##### Psychological needs drive behavior
+###### Autonomy, competence, relatedness (Model)
+
+##### Experiences influenced indirectly
+###### Cannot design experiences directly (Observation)
+
+##### Support awareness
+###### Collaborator's ability to follow others (Guidance)
+
+##### CMC differs from face-to-face
+###### Communication mediated by interactive systems (Observation)
+
+##### CMC characteristics
+###### Channel features, uses, individual and social impact (Observation)
+
+#### Principles from User Research
+##### You are not the user
+###### Intuition is insufficient; research is needed (Observation)
+
+##### Methods are limited
+###### Realism, generalizability, precision trade-offs (Model)
+
+##### Interviews develop understanding
+###### Understand lives of others (Observation)
+
+##### Field research provides realism
+###### Insights into natural environments (Observation)
+
+##### Surveys for generalizability
+###### Many respondents (Observation)
+
+##### Use unobtrusive methods
+###### Study without affecting activities (Guidance)
+
+##### Data needs representation
+###### To obtain insights for design (Observation)
+
+#### Principles from Interaction
+##### Mutual determinacy
+###### Human and computer considered together (Observation)
+
+##### Information theory view
+###### Messages over noisy channel (Guidance)
+
+##### Control theory view
+###### Signal changing toward goal via feedback (Guidance)
+
+##### Turn-based dialogue
+###### Series of turns model (Observation)
+
+##### Dialogue as computation
+###### Formal analysis of properties (Guidance)
+
+#### Principles from User Interfaces
+##### Systems are tools
+###### Users achieve objectives (Observation)
+
+##### Automation as function allocation
+###### Which functions, what type, what level (Guidance)
+
+##### Mixed-initiative interface
+###### Both user and system can initiate (Guidance)
+
+##### Interaction maximizes utility
+###### Through user choices (Observation)
+
+##### Interaction needs practice
+###### Aligns with needs and contexts (Observation)
+
+##### Interaction advances life goals
+###### Beyond single tasks (Observation)
+
+##### UI structure
+###### Devices, techniques, representations, assemblies (Model)
+
+##### UI trade-offs
+###### Speed/accuracy, novice/expert, etc. (Observation)
+
+##### Three levels of input device
+###### Computational, representational, hardware (Guidance)
+
+##### Display ensures intended information
+###### Avoid biased or incomplete transmission (Guidance)
+
+##### Technique couples input and output
+###### Programmatic coupling (Guidance)
+
+##### Balance learnability and performance
+###### Trade-off in technique design (Guidance)
+
+##### Incentivize learning
+###### Not just ultimate performance (Guidance)
+
+##### Information organization affects access
+###### Through commands, navigation, search (Observation)
+
+##### Vocabulary problem
+###### Users name things differently (Observation)
+
+##### Direct manipulation elements
+###### Continuous representations
+###### Physical actions or button presses
+###### Rapid, reversible, incremental actions (Model)
+
+##### Reality-based interface
+###### Use physical surroundings (Guidance)
+
+#### Principles from Design
+##### Iteration is necessary
+###### Cannot know specifics from outset (Observation)
+
+##### Divergent and convergent design
+###### Double diamond model (Model)
+
+##### Cognitive biases cause fixation
+###### Lead to design fixation (Observation)
+
+##### Use creative methods systematically
+###### Manage idea generation (Guidance)
+
+#### Principles from Engineering
+##### Build the right thing and right
+###### Verification and validation
+###### Both perspectives needed (Guidance)
+
+##### Systems thinking
+###### See whole, not parts (Guidance)
+
+##### Risk management
+###### Systematic assessment and mitigation (Guidance)
+
+##### Software architecture
+###### Separation of concerns (Guidance)
+
+##### Representations enable computation
+###### Models, optimization, ML (Model)
+
+#### Principles from Evaluation
+##### Evaluation drives quality
+###### Formative and summative (Guidance)
+
+##### Analytical methods are cheap
+###### Heuristic evaluation, walkthrough, KLM (Guidance)
+
+##### Empirical methods reveal real behavior
+###### Think-aloud, experiments, field studies (Guidance)
+
+##### Field evaluation for realism
+###### Real users, real contexts (Observation)
+
+#### Summary
+##### Human-centeredness ties HCI together
+##### Three types of principles: observations, models, guidance
+##### Principles serve as foundation for reasoning
+
