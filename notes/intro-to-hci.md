@@ -177,52 +177,15 @@ markmap:
 ###### Interdependence of the seven areas
 - Specific projects may emphasize some areas, but the others remain relevant
 
-#### Special application areas
 ##### Special application areas
-###### Work / Games / Health / Leisure / Sustainability / Creativity / Learning
 
-##### Application areas require general HCI knowledge
-###### Specific theories + General principles
-
-##### Games
-###### Motivation + Immersion + Flow + Player behavior
-
-##### Health and well-being
-###### Behavior change + Motivation
-
-##### Security and privacy
-###### Personal safety + User needs
-
-##### Computer-supported cooperative work
-###### Collaboration + Communication
-
-#### User groups
 ##### User groups
-###### Differentiated by interests, capabilities, and systems used
 
-##### Older adults
-###### Sensory, motor, cognitive capabilities + Disabilities
-
-##### Other researched user groups
-###### Children / Users with disabilities / People in low-income countries / Families
-
-##### User group differences
-###### May affect all seven areas of understanding people
-
-#### Individual differences
-##### Everyone is different
-###### Significant differences between individuals are the norm, not the exception
-
-##### Individual differences in HCI tasks
-###### Performance gaps can be practically significant
-
-##### Mechanisms behind differences
-###### Age / Gender / Education / Capability / Experience
+##### Individual differences
+###### Everyone is different
+- Significant differences between individuals are the norm, not the exception
 
 #### Applying our understanding of people
-##### HCI values actionable knowledge
-###### Understanding people helps solve problems in design, evaluation, and research
-
 ##### Direct attention
 ###### General theories help researchers and designers notice important user issues
 
