@@ -12,7 +12,7 @@ markmap:
 ##### Humans are complex
 ##### Computers are complex
 ##### Contexts are complex
-##### Design is hard
+##### Design is hard 
 
 #### Human–computer interaction as a field
 ##### The term HCI has been in use since the mid-1970s
@@ -76,7 +76,7 @@ markmap:
 ## Part II Understanding People
 
 ### 2 Introduction to understanding people
-#### Types of understanding
+#### Introduction
 
 ##### Human-centeredness requires understanding people
 ###### Design decisions should be justified by how people feel, think, and behave
@@ -147,44 +147,35 @@ markmap:
 
 ##### Seven areas of understanding people
 ###### Perception
+- How people see, feel, hear, taste, and smell
+- Informs the design of user interfaces
+
 ###### Motor control
+- How people plan and execute movements
+- Informs the design of input devices and interaction techniques
+
 ###### Cognition
+- How people remember, pay attention, and think
+- Informs the design of complex interactive tasks requiring memory and reasoning
+
 ###### Needs
+- How needs motivate people
+- Tells us what is important for users in and beyond computer use
+
 ###### Experience
+- How people experience and form experiences
+- Tells us how users experience events involving computers
+
 ###### Communication
+- How people communicate with each other
+- Informs services and applications for human-human communication
+
 ###### Collaboration
+- How people achieve joint goals
+- Informs collaborative software design
 
-#### Seven areas of understanding people
-##### Perception
-###### How people see, feel, hear, taste, and smell
-###### Informs the design of user interfaces
-
-##### Motor control
-###### How people plan and execute movements
-###### Informs the design of input devices and interaction techniques
-
-##### Cognition
-###### How people remember, pay attention, and think
-###### Informs the design of complex interactive tasks requiring memory and reasoning
-
-##### Needs
-###### How needs motivate people
-###### Tells us what is important for users in and beyond computer use
-
-##### Experience
-###### How people experience and form experiences
-###### Tells us how users experience events involving computers
-
-##### Communication
-###### How people communicate with each other
-###### Informs services and applications for human-human communication
-
-##### Collaboration
-###### How people achieve joint goals
-###### Informs collaborative software design
-
-##### Interdependence of the seven areas
-###### Specific projects may emphasize some areas, but the others remain relevant
+###### Interdependence of the seven areas
+- Specific projects may emphasize some areas, but the others remain relevant
 
 #### Special application areas
 ##### Special application areas
