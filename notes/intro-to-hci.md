@@ -275,86 +275,42 @@ markmap:
 
 ##### Comparing modalities
 ###### Mechanosensitivity
+- Kinaesthesia / Touch / Hearing / Equilibrium
 ###### Chemosensitivity
+- Gustation + Olfaction
 ###### Photosensitivity
+- Retina + Light stimulation
 
-##### Mechanosensitivity
-###### Kinaesthesia / Touch / Hearing / Equilibrium
+###### Exteroceptive modalities
+- Vision / Hearing / Feeling / Smelling / Tasting
+- Vision: Fast + High bandwidth + Parallel processing
+- Hearing: Very fast + Serial presentation + 360-degree detection
+- Tactition: Fast + Requires physical contact
 
-##### Chemosensitivity
-###### Gustation + Olfaction
 
-##### Photosensitivity
-###### Retina + Light stimulation
-
-##### Exteroceptive modalities
-###### Vision / Hearing / Feeling / Smelling / Tasting
-
-##### Interoceptive modalities
-###### Proprioception + Vestibular sense
-
-##### Important differences among modalities
-###### Information rate
-###### Parallelism
-###### Sensitivity
-###### Receptive field
-###### Adaptation
-
-##### Vision
-###### Fast + High bandwidth + Parallel processing
-###### Visual, spatial, and lexical information
-
-##### Hearing
-###### Very fast + Serial presentation + 360-degree detection
-###### Sound, voice, pitch, timbre, melody, and phrasing
-
-##### Tactition
-###### Fast + Requires physical contact
-###### Haptic stimulation, vibration, and texture
-
-##### Alternative sensory modalities
-###### Thermal sensing + Pain
-
-#### Constructing percepts from sensory information
-##### Perception constructs actionable percepts
+##### Constructing percepts from sensory information
+###### Perception constructs actionable percepts
 ###### Users perceive meaningful objects, not isolated sensations
 
-##### Integration
-###### Sensory inputs are combined into organized percepts
 
-##### Topographical projection
-###### Receptor structure is preserved in brain representation
+##### Multimodal perception
+###### Everyday interaction is multimodal
+- Vision + Touch + Audition + Proprioception
 
-##### Convolution
-###### Hierarchical integration from local details to larger regions
+###### Cross-modal perception
+- One sensory modality can alter another
 
-##### Adaptation
-###### Sensory systems tune themselves to maximize information gain
+###### McGurk effect
+- Vision can alter speech perception
 
-##### Habituation
-###### Continued stimulation becomes less informative
+###### Ventriloquist effect
+- Visual location can dominate perceived sound location
 
-##### Strategic adaptation
-###### Users learn statistical patterns in interfaces and environments
+###### Pseudo-haptics
+- Visual feedback can create a tactile sensation without real tactile force
 
-#### Multimodal perception
-##### Everyday interaction is multimodal
-###### Vision + Touch + Audition + Proprioception
-
-##### Cross-modal perception
-###### One sensory modality can alter another
-
-##### McGurk effect
-###### Vision can alter speech perception
-
-##### Ventriloquist effect
-###### Visual location can dominate perceived sound location
-
-##### Pseudo-haptics
-###### Visual feedback can create a tactile sensation without real tactile force
-
-##### Multimodal interaction in HCI
-###### Technical combination of speech, gesture, touch, facial expression, and other input modalities
+###### Multimodal interaction in HCI
+- Technical combination of speech, gesture, touch, facial expression, and other input modalities
 
 #### Elementary functions of perception in HCI
 ##### Functional understanding of perception
@@ -387,96 +343,6 @@ markmap:
 ##### Ontogenetic change
 ###### Learning through experience
 
-#### Detection
-##### Detection task
-###### Decide whether a signal is present or absent
-
-##### Signal detection theory
-###### Sensitivity + Response bias
-
-##### Sensitivity
-###### Ability to discriminate signal from noise
-
-##### d′
-###### Index of how far apart signal and noise distributions are
-
-##### Response bias
-###### Tendency toward a particular response depending on risk, cost, or interface design
-
-##### Response criterion
-###### Low criterion: more hits + more false alarms
-###### High criterion: fewer hits + fewer false alarms
-
-#### Discrimination
-##### Discrimination task
-###### Decide whether a level of stimulation is present or changed
-
-##### Discrimination threshold
-###### Minimum stimulation required for sensing
-
-##### Psychophysics
-###### Relates physical stimulation to perceptual response
-
-##### Just noticeable difference
-###### Minimum change users can reliably perceive
-
-##### Weber’s law
-###### Equal stimulus ratios produce equal subjective ratios
-
-##### HCI applications
-###### Video compression
-###### Haptic display design
-###### Progress bars
-###### System response time perception
-
-#### Recognition
-##### Recognition task
-###### Classify a stimulus as one member of a set
-
-##### Recognition difficulty
-###### Larger candidate set makes recognition harder
-
-##### Visual recognition
-###### Used in icons, words, faces, alarm sounds, and graphical interfaces
-
-##### Precision
-###### True positives / True positives + False positives
-
-##### Recall
-###### True positives / True positives + False negatives
-
-##### HCI relevance
-###### Direct manipulation interfaces
-###### Human annotation for machine learning
-###### Conflict resolution in classification tasks
-
-#### Estimation
-##### Estimation task
-###### Assess a property of an object from sensory information
-
-##### Cue integration theory
-###### Users combine multiple cues to estimate properties
-
-##### Prior experience
-###### Helps users become more sensitive to likely properties
-
-##### Optimal integration
-###### Users combine cues into one estimate when enough experience is available
-
-##### HCI examples
-###### Estimating distance in VR
-###### Estimating product color online
-###### Estimating speed in virtual games
-
-#### Search
-##### Search task
-###### Determine the location of an object in space
-
-##### Visual search
-###### Locate icons, labels, commands, or interface elements
-
-##### Auditory search
-###### Locate the source of a sound
 
 #### Visual perception and attention
 ##### Visual perception
@@ -490,185 +356,118 @@ markmap:
 
 ##### Three visual pathways
 ###### What
+- Encodes object identity
 ###### Where and how
+- Encodes object location and possible action
 ###### Who
+- Processes social movement, gaze, expression, intention, and mood
 
-##### What pathway
-###### Encodes object identity
+###### Visual primitives
+- Shape + Size + Orientation + Color + Motion
 
-##### Where and how pathway
-###### Encodes object location and possible action
+###### Bottom-up processing
+- Visual features attract perception from the stimulus itself
 
-##### Who pathway
-###### Processes social movement, gaze, expression, intention, and mood
+###### Top-down processing
+- Expectations and goals guide perception
 
-##### Visual primitives
-###### Shape + Size + Orientation + Color + Motion
+##### Limits to the human visual system
 
-##### Bottom-up processing
-###### Visual features attract perception from the stimulus itself
+###### Foveated vision
+- High-fidelity perception around fixation point
 
-##### Top-down processing
-###### Expectations and goals guide perception
+###### Peripheral vision
+- Lower-fidelity perception outside the fovea
 
-#### Limits to the human visual system
-##### Windows of visibility
-###### Physiological limits of visual perception
+###### Drop-off functions
+- Perceptual information decreases with eccentricity
 
-##### Visible spectrum
-###### Humans perceive only a limited range of light
+###### Visual impairments
+- Color blindness / Low vision / Blindness / Eye movement deficiencies
 
-##### Field of view
-###### Visual access is spatially limited
+##### Eye movements
 
-##### Contrast
-###### Detail perception depends on luminance and color differences
+###### Fixations
+- Sample visual information from the environment
 
-##### Foveated vision
-###### High-fidelity perception around fixation point
+###### Saccades
+- Ballistic leaps between fixation points
 
-##### Peripheral vision
-###### Lower-fidelity perception outside the fovea
-
-##### Drop-off functions
-###### Perceptual information decreases with eccentricity
-
-##### Visual impairments
-###### Color blindness / Low vision / Blindness / Eye movement deficiencies
-
-##### Color blindness
-###### GUI design should not encode critical information through color alone
-
-#### Eye movements
-##### Oculomotor system
-###### Controls where users look
-
-##### Fixations
-###### Sample visual information from the environment
-
-##### Saccades
-###### Ballistic leaps between fixation points
-
-##### Smooth pursuit
-###### Following moving targets without saccades
-
-##### Overt attention
-###### Moving the eyes to attend
-
-##### Covert attention
-###### Processing information without moving the eyes
-
-##### Reading text
-###### Eye movements are shaped by word frequency, word length, and contextual predictability
-
-##### EMMA model
-###### Predicts encoding time, saccade movement time, and eye movement accuracy
-
-#### Perceptual organization
+###### Smooth pursuit
+- Following moving targets without saccades
 ##### Perceptual organization
 ###### Turns pixels into meaningful regions, objects, and hierarchies
 
-##### Figure/ground perception
-###### Separates foreground objects from background
+###### Figure/ground perception
+- Separates foreground objects from background
 
-##### Screen hierarchy
-###### Defines which visual elements belong to which interface regions
+###### Screen hierarchy
+- Defines which visual elements belong to which interface regions
 
-##### Visual grouping
-###### Users organize display elements into groups
+###### Visual grouping
+- Users organize display elements into groups
 
-##### Gestalt laws
-###### Heuristics for how users perceive visual wholes
+###### Gestalt laws
+- Heuristics for how users perceive visual wholes
 
-##### Proximity
-###### Elements close to each other are grouped together
+###### Proximity
+- Elements close to each other are grouped together
 
-##### Common area
-###### Elements inside the same closed region are grouped together
+###### Common area
+- Elements inside the same closed region are grouped together
 
-##### Similarity
-###### Elements similar in color, size, or orientation are grouped together
+###### Similarity
+- Elements similar in color, size, or orientation are grouped together
 
-##### Continuation
-###### Elements connected by flow are grouped together
+###### Continuation
+- Elements connected by flow are grouped together
 
-##### HCI design implication
-###### Visual grouping helps users understand menu structure and interface hierarchy
+###### HCI design implication
+- Visual grouping helps users understand menu structure and interface hierarchy
 
-#### Visual attention
-##### Attention
-###### Focusing perceptual processing on a region or object
+##### Visual attention
+###### Selective attention
+- Direct attention to a desired object or location
 
-##### Selective attention
-###### Direct attention to a desired object or location
-
-##### Vigilance
-###### Sustain attention over time
+###### Vigilance
+- Sustain attention over time
 
 ##### Divided attention
-###### Split attention between multiple objects, locations, or tasks
+- Split attention between multiple objects, locations, or tasks
 
-##### Situation awareness
-###### Track events and objects in a dynamic setting
 
-##### Mobile attention
-###### Visual attention is fragmented when users walk while using a device
+##### Visual search
+###### Visual search in GUIs
+- Find an icon, label, command, or visual element
 
-#### Visual search
-##### Visual search in GUIs
-###### Find an icon, label, command, or visual element
+###### Three factors guide search
+- Visual features of the display
+- Learning
+- Strategic search decisions
 
-##### Three factors guide search
-###### Visual features of the display
-###### Learning
-###### Strategic search decisions
+###### Disjunctive search / Feature search
+- Target is unique in one visual primitive
 
-##### Disjunctive search / Feature search
-###### Target is unique in one visual primitive
+###### Conjunctive search
+- Target requires a combination of features
 
-##### Conjunctive search
-###### Target requires a combination of features
+###### Feature integration theory
+- Feature maps + Attentional spotlight + Object recognition
 
-##### Feature integration theory
-###### Feature maps + Attentional spotlight + Object recognition
 
-##### Active vision
-###### Users choose where to look based on the target and available peripheral information
-
-##### Guided Search model
-###### Priority map combines bottom-up features and top-down memory
-
-##### Long-term memory
-###### Experienced users remember where interface elements are located
-
-##### Exploration and exploitation
-###### Users decide whether to learn the layout or directly search for the target
-
-#### Visual saliency
 ##### Visual saliency
 ###### Probability that a graphical element attracts attention in the first seconds of viewing
 
-##### Bottom-up saliency
-###### Unique visual primitives attract attention
 
-##### Top-down saliency
-###### Task goals, expectations, and learned patterns guide attention
+###### Clutter
+- Too many elements compete for saliency
 
-##### UI saliency differs from natural scenes
-###### Top-left quadrant, large text, logos, and faces often attract attention
+###### Visual clutter
+- Everything attempts to be salient, so nothing stands out
 
-##### Clutter
-###### Too many elements compete for saliency
-
-##### Visual clutter
-###### Everything attempts to be salient, so nothing stands out
-
-##### Design implication
-###### Reduce clutter to improve recognition, search, and memory
 
 #### Perception as an active process
-##### Users are not passive recipients of display stimulation
-###### They actively construct percepts
+##### Users are not passive recipients of display stimulation. They actively construct percepts
 
 ##### Active perception
 ###### Sampling, exploring, and learning to support action
@@ -690,13 +489,13 @@ markmap:
 
 #### Summary
 ##### Perception depends on display design + Expectations + Attention strategies
-##### Perception serves elementary HCI tasks
-###### Detection + Discrimination + Recognition + Estimation + Search
+##### Perception serves elementary HCI tasks: Detection + Discrimination + Recognition + Estimation + Search
 
 ##### Perception organizes sensory chaos into actionable structure
 ##### Visual saliency predicts what attracts attention
 ##### Clutter reduces the ability to make elements stand out
 ##### Active perception means users strategically sample, learn, and act
+##### note: Designing UI is about designing how users perceive, pay attention to, search for, understand, and act.
 
 ### 4 Motor control
 ##### Introduction
@@ -713,88 +512,50 @@ markmap:
 ###### Steering a car
 ###### Reacting to prompts
 
-##### Predictive models of motor control
-###### Movement time can be predicted from task properties
-###### Models support interface design and evaluation
-
-##### Applications of motor control models
-###### Personalized graphical layouts
-###### Target selection techniques
-###### Keyboard layout optimization
-###### Input method and device comparison
-
 #### Elements of a motor control task in HCI
 ##### Movement control
 ###### Nervous system produces purposeful and coordinated movement
 
-##### End-effector
-###### The body part used to perform an action
-###### Fingers / Hands / Head / Feet / Whole body
+###### End-effector: The body part used to perform an action (Fingers / Hands / Head / Feet / Whole body)
 
 ##### Degrees of freedom
 ###### End-effectors differ in movement possibilities
 ###### Roll + Pitch + Yaw
 
-##### Movement variability
-###### Joints + Environment + Fatigue create variation in movement
+###### Movement variability
+- Joints + Environment + Fatigue create variation in movement
 
-##### Open-loop control
-###### Movement without feedback correction during execution
+###### Open-loop control
+- Movement without feedback correction during execution
 
-##### Closed-loop control
-###### Movement adjusted through feedback during execution
+###### Closed-loop control
+- Movement adjusted through feedback during execution
 
-##### Aimed movements
-###### Movements whose success depends on external constraints
+###### Spatially constrained aimed movements
+- Discrete aimed movements
+- Continuous aimed movements
 
-##### Non-aimed movements
-###### Gestures / Walking / Swiping
+###### Temporally constrained aimed movements
+- Target must be hit within a defined period
 
-##### Spatially constrained aimed movements
-###### Discrete aimed movements
-###### Continuous aimed movements
+###### Interception task: Spatial constraint + Temporal constraint
 
-##### Discrete aimed movements
-###### Moving toward a bounded target
-###### Buttons / Icons / Links / Widgets
 
-##### Continuous aimed movements
-###### Keeping control point within a bounded region
-###### Steering through menus or tunnels
-
-##### Temporally constrained aimed movements
-###### Target must be hit within a defined period
-
-##### Interception task
-###### Spatial constraint + Temporal constraint
-###### Catching, hitting, or selecting a moving object
-
-##### Speed–accuracy trade-off
-###### Users cannot be maximally fast and maximally accurate at the same time
+###### Speed–accuracy trade-off
+- Users cannot be maximally fast and maximally accurate at the same time
 
 #### Target acquisition
-##### Target acquisition
-###### Discrete, spatially constrained aimed movement
+##### Discrete, spatially constrained aimed movement
 
-##### Pointing
-###### Move a control point onto a target area
 
-##### Performance objectives
-###### Be fast
-###### Avoid missing the target
+##### Point target: Target defined as a point in space
 
-##### Point target
-###### Target defined as a point in space
+##### Line / Surface target: Target defined as a line or surface to cross
 
-##### Line / Surface target
-###### Target defined as a line or surface to cross
-
-##### Postural / Angular target
-###### Body joints must match a specific posture or angle
+##### Postural / Angular target: Body joints must match a specific posture or angle
 
 #### Fitts’ law
-##### Fitts’ law
-###### Predicts average movement time for pointing tasks
+##### Fitts’ law: Predicts average movement time for pointing tasks
 
 ##### Movement time
 ###### Depends on distance to target and width of target
@@ -813,38 +574,22 @@ markmap:
 ###### D = Distance to target
 ###### W = Width of target
 
-##### Reciprocal tapping task
-###### Experimental paradigm used to study target selection
+##### Reciprocal tapping task: Experimental paradigm used to study target selection
 
-##### Interpretation of ID
-###### How difficult it is to select the intended target among possible targets
+##### Interpretation of ID: How difficult it is to select the intended target among possible targets
 
-#### Using Fitts’ law to assess input performance
-##### Throughput
-###### A metric for comparing input devices and methods
+##### Using Fitts’ law to assess input performance
+###### Throughput: A metric for comparing input devices and methods
 
-##### Higher throughput
-###### Better pointing performance
+###### Higher throughput: Better pointing performance
 
-##### Comparing input devices
-###### Mouse / Stylus / Touchpad / Joystick / In-air input
+###### Comparing input devices: Mouse / Stylus / Touchpad / Joystick / In-air input
 
-##### Empirical parameters
-###### a and b vary by task, user group, input device, and context
+###### Empirical parameters: a and b vary by task, user group, input device, and context
 
-#### Worked example
-##### Applying Fitts’ law
-###### Systematically manipulate distance and width
-###### Measure movement time
-###### Fit model parameters
+##### Worked example
+###### Applying Fitts’ law: Systematically manipulate distance and width, Measure movement time, Fit model parameters
 
-##### Linear regression
-###### Used to estimate intercept and slope
-
-##### Model fit
-###### Indicates how well the model explains movement time
-
-#### Effective width
 ##### Effective width
 ###### Target size users can effectively hit most of the time
 
@@ -852,51 +597,25 @@ markmap:
 ###### Designed width is defined by interface
 ###### Effective width is defined by user performance
 
-##### Motor variability
-###### Spread of movement endpoints around target center
-
-##### Effective width and speed–accuracy trade-off
-###### Faster movement increases variability
-###### Increased variability increases effective width
-
 #### Applications of Fitts’ law
 ##### Designing better layouts
 ###### Place frequent targets closer or make them larger
 
-##### Designing interaction techniques
-###### Support faster and more accurate target selection
 
-##### Designing input devices
-###### Compare performance across different devices
 
-##### Keyboard optimization
-###### Arrange keys to minimize expected selection time
+##### Limits of Fitts’ law
+###### Simplification: Models average movement time, not full movement dynamics
 
-##### Analytical use
-###### Predict mean movement time before empirical testing
+###### Hidden variability: Strategy / Feedback / Muscle groups / Context
 
-##### Interface comparison
-###### When a and b are equal, compare tasks through ID
+###### Brittleness: Small task or context changes may require new data
 
-#### Limits of Fitts’ law
-##### Simplification
-###### Models average movement time, not full movement dynamics
+###### Model variants: Account for corrective movements and submovements
 
-##### Hidden variability
-###### Strategy / Feedback / Muscle groups / Context
-
-##### Brittleness
-###### Small task or context changes may require new data
-
-##### Model variants
-###### Account for corrective movements and submovements
-
-##### Corrective movements
-###### Pointing can involve ballistic movement + feedback-based correction
+###### Corrective movements: Pointing can involve ballistic movement + feedback-based correction
 
 #### Simple reactions
-##### Simple reaction
-###### User responds to one event as quickly as possible
+##### User responds to one event as quickly as possible
 
 ##### Motor response
 ###### Appropriate movement triggered by a stimulus
@@ -921,49 +640,12 @@ markmap:
 ##### Evidence accumulation model
 ###### Reaction depends on accumulating evidence toward a response
 
-##### Stimulus onset
-###### Event appears
 
-##### Perceptual encoding
-###### Event becomes a candidate for response
-
-##### Evidence accumulation
-###### Evidence for or against response is sampled
-
-##### Decision
-###### Threshold is reached
-
-##### Motor action
-###### Response is executed
-
-##### Decision time
-###### Time required to accumulate enough evidence
-
-##### Nondecision time
-###### Perceptual encoding + Motor execution
-
-##### Interface implication
-###### Noisy, complex, or hard-to-interpret displays slow reactions
 
 #### Choice reaction
-##### Choice reaction
-###### Multiple response options are available
+##### Multiple response options are available
 
-##### Cue-response mapping
-###### Each cue corresponds to a specific response
-
-##### Choice reaction time
-###### Time between cue presentation and selected response
-
-##### Two-alternative forced choice
-###### Two response options and one must be chosen
-
-##### Error handling
-###### Wrong response / No response / Delayed response
-
-#### Hick–Hyman law
-##### Hick–Hyman law
-###### More response options increase choice reaction time
+##### Hick–Hyman law: More response options increase choice reaction time
 
 ##### CRT = a + b log2(n)
 ###### n = Number of equally probable response options
@@ -977,9 +659,8 @@ markmap:
 ##### Entropy
 ###### Captures uncertainty across response options
 
-#### Applications in HCI
-##### Less is better
-###### Fewer possible responses can reduce reaction time
+##### Applications in HCI
+###### Less is better: Fewer possible responses can reduce reaction time
 
 ##### More is sometimes better
 ###### Showing all options can be faster than deeply nested choices
@@ -1000,37 +681,17 @@ markmap:
 ###### Be careful when n is greater than 10
 
 #### Gesturing
-##### Gestural interfaces
-###### Continuous shapes used as input
+##### Gestural interfaces: Continuous shapes used as input
 
-##### Gesture recognition
-###### Shape properties must be recognizable by the system
 
-##### Handwriting as input
-###### Segment length + Curvature + Stroke shape
+##### Crossing
+###### Crossing task: User crosses a target instead of stopping inside it
 
-#### Crossing
-##### Crossing task
-###### User crosses a target instead of stopping inside it
 
-##### Relaxed stopping constraint
-###### User does not need to stop at the target
+##### Steering
+###### Steering task: User moves a cursor through a tunnel-like constraint
 
-##### Crossing law
-###### Similar statistical relationship to Fitts’ law
-
-##### Chained crossing
-###### Multiple targets can be crossed in one motion
-
-##### HCI example
-###### Pen-based command input
-
-#### Steering
-##### Steering task
-###### User moves a cursor through a tunnel-like constraint
-
-##### Steering law
-###### Predicts time required to move through constrained paths
+###### Steering law: Predicts time required to move through constrained paths
 
 ##### Tunnel width
 ###### Narrower tunnels increase difficulty
@@ -1038,15 +699,10 @@ markmap:
 ##### Path constraint
 ###### Difficulty depends on path shape and width
 
-##### HCI example
-###### Hierarchical drop-down menu navigation
+##### Viviani’s power law of curvature
+###### Curved trajectory modeling: Describes smooth gesture and drawing movements
 
-#### Viviani’s power law of curvature
-##### Curved trajectory modeling
-###### Describes smooth gesture and drawing movements
-
-##### Kinematics model
-###### Position + Velocity + Acceleration + Curvature
+###### Kinematics model: Position + Velocity + Acceleration + Curvature
 
 ##### Curvature and velocity
 ###### Larger curvature slows end-effector movement
@@ -1065,569 +721,900 @@ markmap:
 ##### Interface design should respect human movement limits
 ##### Movement is shaped by speed, accuracy, feedback, practice, and task constraints
 
+### Chapter 5 Cognition
 
-### 5 Cognition
-##### Introduction
-###### Cognition
-###### Control
+#### Introduction
+
+##### What is cognition
+###### Mental activities
+- Thinking
+- Understanding
+- Perceiving
+- Learning
+- Remembering
+- Reasoning
+- Using knowledge
+
+##### Cognition in HCI
+###### Computers are non-transparent systems
+- Users cannot directly see what happens inside the computer
+- Users rely on interface cues, feedback, memory, and reasoning
+- Cognition helps users decide what to do next
+
+##### Five elementary cognitive capabilities
+###### Cognitive control
+- Directing thinking and action toward goals
+- Allocating cognitive resources
+- Changing actions when needed
+
 ###### Memory
+- Forming and accessing beliefs about non-visible objects
+- Remembering interface elements and previous interactions
+
 ###### Attention
+- Selecting relevant information
+- Ignoring irrelevant stimuli
+- Focusing on task-related interface elements
+
 ###### Reasoning
+- Forming new beliefs from existing beliefs
+- Inferring what a system can do
+- Predicting system behavior
+
 ###### Decision-making
-
-##### Computer as a non-transparent system
-###### Users cannot directly see what happens inside the computer
-
-##### Role of cognition in interaction
-###### Choose actions
-###### Reason about systems
-###### Learn from experience
-###### Decide what to do next
-
-##### Control
-###### “What should I press now?”
-
-##### Memory
-###### Remembering objects, locations, commands, and previous experiences
-
-##### Attention
-###### Selectively processing part of the perceptual field
-
-##### Reasoning
-###### Forming new beliefs from existing beliefs
-
-##### Decision-making
-###### Choosing among possible options
+- Choosing between possible actions
+- Evaluating cost, risk, and benefit
+- Selecting a path toward a goal
 
 #### General findings about cognition
-##### Cognition helps us set goals
-###### Goals define desirable states of affairs
 
-##### Goals shape information processing
-###### Users attend to information relevant to their current goal
+##### Cognition helps us set goals and maintain focus on them
+###### Goals
+- Desired states users want to achieve
+- Often involve what users want computers to do
+- Shape what users notice, process, and remember
 
-##### Inattentional blindness
-###### Goal-relevant information is remembered
-###### Goal-irrelevant information may be ignored even when seen
+###### Goal-directed processing
+- Goals affect memory, attention, and expectations
+- Users process goal-relevant information more deeply
+- Goal-irrelevant information may be ignored
+
+###### Inattentional blindness
+- Users may fail to recall information unrelated to their current goal
+- Looking at something does not mean processing it
+- Eye-tracking evidence may show looking without later recall
 
 ##### Cognition is limited
-###### Working memory is limited
-###### Long-term memory involves forgetting
-###### Visual attention is limited
-###### Abstract reasoning and planning are limited
+###### Working memory limits
+###### Long-term memory limits
+###### Attention limits
+###### Reasoning and planning limits
 
-##### External aids
-###### Calculators / Notes / Browsers / Documents
+###### HCI implications
+- Keep important information visible
+- Reduce recall demands
+- Avoid overloading users
+- Provide cues, labels, and external supports
 
-##### Cognition is based on internal models
-###### Users reason about things that are not directly perceivable
+##### Cognition is based on internal models of reality
+###### Internal models
+- Users reason about things that are not directly perceivable
+- Internal models help users formulate goals and plans
+- Users predict system behavior through these models
 
-##### Metaphors
-###### Help users understand what to expect from an interface
+###### Metaphors
+- Metaphors help users understand interfaces
+- Desktop metaphor uses familiar spatial concepts
+- Folders, documents, and trash transfer physical-world expectations into digital systems
 
-##### Desktop metaphor
-###### Folders / Documents / Trash / Spatial organization
+###### HCI implications
+- Use familiar concepts carefully
+- Support useful expectations
+- Avoid metaphors that mislead users
 
 ##### Cognition is necessary for learning and adaptation
-###### Users revise plans and adapt to changing systems
+###### Plans are noncommittal sketches
+- Human action is not simply execution of fixed plans
+- Plans often need to be revised and updated
+- Users adapt while interacting
 
-##### Plans are noncommittal sketches
-###### Users often improvise and update actions during interaction
+###### Situated action
+
+###### Continuous adaptation
+
+###### HCI implications
+- Support exploration
+- Support recovery from errors
+- Design for flexible and adaptive use
 
 ##### Cognition actively supports itself
-###### Users change the environment to reduce cognitive effort
+###### External aids
+- Notes
+- Calculators
+- Browsers
+- Documents
+- Interface cues
 
-##### Mental effort
-###### Energy used to control thinking toward goals
+###### Externalized cognition
+- Users change the environment to reduce cognitive effort
+- Knowledge can be stored outside the head
+- External supports change how cognition works in interaction
 
-##### Task effort
-###### Extra energy required by computational demand
+##### Cognition requires energy and effort
+###### Mental effort
+- Energy used to control thinking toward goals
+- Effort increases when tasks are complex or unfamiliar
 
-##### State effort
-###### Extra energy required to protect performance from fatigue
+###### Task effort
+###### State effort
+
+###### HCI implications
+- Reduce unnecessary cognitive effort
+- Avoid forcing effort for low-value actions
+- Make difficult tasks worth the user’s effort
 
 #### Cognitive control
-##### Cognitive control
-###### Ability to direct thinking and action toward a goal
+
+##### Definition
+###### Cognitive control
+- Ability to direct thinking and action toward a goal
+- Needed for choosing actions in information-rich environments
+- Helps activate relevant representations
 
 ##### Basic problem of cognitive control
-###### Allocate limited resources to the right task at the right time
+###### Resource allocation
+- Many stimuli compete for attention
+- Many actions are possible
+- Cognitive control allocates limited resources to the right task at the right time
 
-##### Information-rich environments
-###### Notifications / Pop-ups / Multiple tasks / Dynamic systems
+##### Role in HCI
+###### Interaction relevance
+- Helps users perform multi-part tasks
+- Helps regulate multitasking
+- Helps users avoid distraction
+- Helps users act predictively in dynamic environments
 
-##### Design relevance
-###### Multi-part tasks
-###### ATM interactions
-###### Driving and multitasking regulation
+##### Activating goals
 
-#### Activating goals
-##### Subgoals
-###### Complex tasks are broken into manageable parts
+###### Goal activation
+- Complex tasks are broken into subgoals
+- Cognition activates the right subgoal at the right time
+- Contextual cues prime relevant subgoals
 
-##### Goal activation model
-###### Contextual cues prime subgoals
+###### Priming
+- Subconscious activation of concepts by perceived cues
+- Familiar situations prepare likely next actions
 
-##### Priming
-###### Subconscious activation of concepts by perceived cues
+###### Goal interference
+- Previously activated goals can interfere with current goals
+- Cognitive control suppresses irrelevant goals
 
-##### Goal interference
-###### Previously activated goals can interfere with current goals
+###### Postcompletion errors
+- Users forget an action that should happen after achieving the main goal
+- Example: taking cash from an ATM but forgetting the card
 
-##### Postcompletion error
-###### User forgets an action after achieving the main goal
+###### HCI implications
+- Remind users of final actions
+- Make task closure explicit
+- Prevent important final steps from being missed
 
-##### HCI example
-###### Forgetting to retrieve a card after receiving cash from an ATM
+##### Activating task representations
 
-#### Activating task representations
-##### Task representations
-###### Relevant information must be activated in memory
+###### Relevant task representations
 
-##### Activation
-###### Bring task-relevant representations into use
+###### Irrelevant task representations
 
-##### Inhibition
-###### Suppress irrelevant representations
+###### Inhibition of return
 
-##### Inhibition of return
-###### Avoid revisiting already-checked locations
+###### Internal locus of control
 
-##### Inhibitory control
-###### Prevent every blink, flash, or notification from capturing attention
+###### External locus of control
 
-##### Internal vs External locus of control
-###### Users balance self-directed action with environmental prompts
+###### HCI implications
+- Avoid unnecessary alerts
+- Reduce distracting interface events
+- Protect users’ focus
+- Support efficient search
 
-#### Choosing actions
-##### Sequential decision-making
-###### Users choose action sequences toward delayed rewards
+##### Choosing actions
 
-##### Delayed reward
-###### Desired outcome is not immediately available
+###### Sequential decision-making
+- Users often cannot reach the goal immediately
+- They must choose a sequence of actions
+- Effective action choice requires considering long-term rewards
 
-##### Value estimates
-###### Learned expectations about which actions are useful in a state
+###### Delayed rewards
+- Many interaction goals are distal
+- Current actions are valuable because they move users toward later outcomes
 
-##### Associative learning
-###### Actions become linked to contextual cues through experience
+###### Associative learning
+- Users learn associations between contextual cues and actions
+- Familiar states suggest possible actions
+- Frequent actions become easier to choose
 
-##### Long-term rewards
-###### Effective interaction requires evaluating future consequences
+###### Value estimates
+- Users learn which actions are useful in particular states
+- These estimates develop through experience
 
-#### Multitasking and resource competition
-##### Multiple resource theory
-###### Tasks compete for perceptual, motor, and cognitive resources
+###### Limits of associative learning
+- Slow to start
+- Slow to update
+- Interface changes require relearning
 
-##### Resource overlap
-###### Tasks using the same resource interfere with each other
+###### Reasoning and mental simulation
+- Users mentally compare possible actions
+- Useful in unfamiliar situations
+- Requires effort and cognitive control
 
-##### Interleaving
-###### Users switch between tasks when simultaneous processing is not possible
+###### HCI implications
+- Keep frequent layouts stable
+- Support learned associations
+- Provide cues for unfamiliar tasks
+- Avoid breaking established mappings without support
 
-##### Switching costs
-###### Task switching takes time and can cause forgetting
+##### Multitasking
 
-##### Natural breakpoints
-###### Users prefer to switch at boundaries between subtasks
+###### Multitasking as resource-sharing
+- Multiple tasks compete for limited resources
+- Cognitive control allocates resources among simultaneous tasks
 
-##### Dynamic environments
-###### Unattended tasks continue changing
+###### Resource types
+- Attention
+- Motor system
+- Working memory
 
-##### Uncertainty accumulation
-###### The longer a task is unattended, the less certain its state becomes
+###### Visual attention
+- Difficult to divide across spatial locations
+- Visual tasks often interfere with each other
 
-##### Driving example
-###### Attention away from the road increases uncertainty about the driving environment
+###### Auditory attention
+- Can sometimes be shared more flexibly
+- Still limited under demanding conditions
 
-#### Predictive control
+###### Manual response
+- The dominant hand cannot easily perform two tasks at once
+
+###### Working memory
+- Multiple tasks compete for active mental representations
+
+###### Multiple resource theory
+- Tasks interfere more when they share the same resource
+- Tasks interfere less when they use different resources
+
+###### Multiple resource theory dimensions
+- Perceptual modality
+- Processing stage
+- Cognitive code
+- Response type
+
+###### Task switching
+- Users switch between tasks when resources conflict
+- Switching causes time and memory costs
+- Resuming interrupted tasks requires effort
+
+###### Natural breakpoints
+- Users prefer switching between subtasks
+- Interruptions are less harmful at task boundaries
+
+###### Dynamic task uncertainty
+- Unattended tasks may keep changing
+- Longer absence increases uncertainty
+- Driving is a key example
+
+###### HCI implications
+- Avoid unnecessary multitasking demands
+- Support task resumption
+- Time interruptions around natural breakpoints
+- Match modality to context
+
 ##### Predictive control
-###### Anticipate future task demands before events occur
 
-##### Internal model of the world
-###### Predicts what might happen after an action
+###### Proactive control
+- Users prepare for likely future events
+- Prediction helps users act in dynamic environments
 
-##### Bayesian brain
-###### Brain as a statistical estimator
+###### Internal model of the world
+- Users estimate what will happen next
+- Predictions guide attention and action
 
-##### Belief updating
-###### New sensory information updates probabilities of hypotheses
+###### Bayesian brain
+- The brain assigns probabilities to hypotheses
+- Beliefs are updated through sensory information
+- Surprise occurs when expectations are violated
 
-##### Surprise
-###### Less expected experiences create greater prediction error
+###### Cue integration
+- Users combine multiple sources of information
+- More reliable cues receive more weight
+- Integrated estimates are more reliable than single cues
 
-##### HCI example
-###### Learning how an AI autocomplete feature may react
+###### HCI examples
+- AI autocomplete
+- Games with moving targets
+- Collaborative puzzle games
+- Dynamic interface feedback
 
-#### Memory
-##### Memory is not storage
-###### Memory is not like a hard disk or warehouse
+###### HCI implications
+- Make system behavior predictable
+- Provide reliable cues
+- Avoid random or inconsistent responses
+- Help users form stable expectations
+
+##### Cognitive workload
+
+###### Definition
+- Perceived effort and stress from maintaining cognitive control
+- Increases with difficulty, uncertainty, risk, and prolonged effort
+
+###### NASA-TLX
+- Questionnaire for measuring perceived workload
+- Used to assess subjective cognitive demand
+
+###### Minimum effort task strategies
+- Users develop routines to reduce workload
+- Experience reduces the need for executive control
+
+###### Automaticity
+- Learned skills become more automatic
+- Automatic skills reduce cognitive workload
+
+###### HCI implications
+- Reduce workload for novices
+- Support routine formation
+- Provide shortcuts for experts
+- Avoid unnecessary uncertainty and risk
+
+#### Memory and learning
+
+##### Role of memory in HCI
+###### Interface use
+- Filling forms
+- Changing settings
+- Navigating pages
+- Recognizing commands
+- Recalling previous actions
+
+##### Memory is not simple storage
+###### Dual process memory
+- Conscious remembering
+- Unconscious remembering
+
+###### Multiple memory systems
+- Different systems support different interaction functions
+- Memory affects performance both explicitly and implicitly
 
 ##### Working memory
-###### Temporary maintenance and manipulation of mental representations
+
+###### Definition
+- Temporary maintenance and manipulation of information
+- Used for immediate action
+
+###### Capacity limits
+- Earlier estimate: 7 ± 2 items
+- Later estimate: 4 ± 2 items
+- Often only a few items can remain active
+
+###### Working memory in interaction
+- Remembering instructions
+- Copying information between apps
+- Tracking form inputs
+- Resuming after interruptions
+
+###### HCI implications
+- Avoid relying on working memory
+- Keep relevant information visible
+- Reduce cross-page memory demands
+- Provide persistent context
 
 ##### Long-term memory
-###### Memory systems that exploit past experience
 
-##### Memory supports interaction
-###### Locate icons
-###### Remember commands
-###### Resume interrupted tasks
-###### Learn interface structures
+###### Definition
+- Memory system supporting past experience, knowledge, habits, and skills
+- Enables recognition, learning, and recall
 
-#### Working memory
-##### Working memory
-###### Time-limited and capacity-limited active memory
+###### Declarative memory
+- Conscious memory
+- Can be explicitly accessed
 
-##### Capacity limits
-###### Only a few items can be maintained at once
+###### Semantic memory
+- Facts and concepts
+- Example: knowing that folders contain documents
 
-##### Active rehearsal
-###### Required to keep items available
+###### Episodic memory
+- Memory of past events
+- Example: remembering how a task was solved before
 
-##### n-back task
-###### Demonstrates limits of maintaining and updating active information
+###### Non-declarative memory
+- Memory that affects behavior without conscious recall
 
-##### Design implication
-###### Avoid relying heavily on working memory
+###### Procedural memory
+- Skills and habits
+- Example: typing a password through motor memory
 
-##### HCI examples
-###### Copying text between applications
-###### Remembering position in a task
-###### Recovering after interruptions
+###### Priming
+- Prior exposure influences later responses
+- Can happen without conscious awareness
 
-#### Long-term memory
-##### Long-term memory
-###### Responsible for using past experiences
+###### Conditioning
+- Learned associations between cues and responses
+- Rewards can shape behavior
 
-##### Declarative memory
-###### Explicit memory that can be consciously experienced
+###### Non-associative learning
+- Basic learning such as habituation
 
-##### Non-declarative memory
-###### Implicit memory that affects behavior without conscious recollection
+###### HCI implications
+- Use stable patterns
+- Support procedural learning
+- Preserve familiar mappings
+- Avoid unnecessary disruption of habits
 
-##### Semantic memory
-###### Propositional knowledge and facts
+##### A three-stage view of memory functioning
 
-##### Episodic memory
-###### Re-experiencing past events
+###### Encoding
+- Memory traces are formed during interaction
+- Goal relevance affects encoding
+- Deeper processing improves memory
 
-##### Procedural memory
-###### Learned sequences of actions and thoughts
+###### Storage
+- Memory traces remain over time
+- Some traces weaken or become inaccessible
 
-##### Priming
-###### Previous stimuli affect responses to later stimuli
+###### Retrieval
+- Stored traces are accessed later
+- Retrieval depends on cues and context
 
-##### Classical conditioning
-###### Environment cues become associated with responses
+###### Levels of processing
+- Meaningful material is remembered better
+- Self-generated material is easier to remember
 
-##### Non-associative learning
-###### Reflex-like learning and habituated responses
+###### Free recall
+- Remembering without external cues
+- Common in command-line use
 
-##### Password example
-###### Remembering as semantic content
-###### Remembering as motor routine
+###### Cued recall
+- Remembering with partial cues
+- Supported by hints and prompts
 
-#### A three-stage view of memory functioning
-##### Encoding
-###### Memory traces are formed during interaction
+###### Recognition
+- Identifying something when it is shown
+- Easier than recall
+- Central to graphical user interfaces
 
-##### Storage
-###### Traces are retained and some are forgotten
+###### Paper Example: What makes a gesture memorable
+- User-defined gestures are easier to remember
+- Self-generated gestures create deeper encoding
+- Meaningful gestures require less effort to recall
 
-##### Retrieval
-###### Traces are accessed later during use
+###### HCI implications
+- Prefer recognition over recall
+- Provide cues
+- Let users create meaningful mappings when useful
 
-##### Levels of processing
-###### Deeper processing strengthens memory traces
+##### Forgetting
 
-##### Interface implication
-###### Interesting, meaningful, or task-relevant elements are remembered better
+###### Decay theory
+- Memory traces lose activation over time
+- Rarely used knowledge becomes hard to retrieve
 
-##### Recall
-###### Retrieve information from memory
+###### Interference theory
+- Similar memories compete with each other
+- Wrong traces may be activated
+- Memories become mixed up rather than simply lost
 
-##### Free recall
-###### Self-generate cues without external support
+###### Adaptive forgetting
+- Forgetting reduces interference
+- Memory adapts to current environments
+- Important memories should remain retrievable
 
-##### Cued recall
-###### Retrieve information through partial external cues
+###### Paper Example: Modeling how users remember where things are
+- UI elements can be modeled as nodes in associative memory
+- Repeated use strengthens associations
+- Activation decays over time
+- Cues can support retrieval through spreading activation
 
-##### Recognition
-###### Whole object is presented and user identifies it
+###### HCI implications
+- Keep frequent functions stable
+- Use cues to support retrieval
+- Avoid moving familiar elements unnecessarily
+- Support users returning after long gaps
 
-##### Recognition over recall
-###### GUIs reduce memory burden by showing recognizable options
+##### Learning over time
 
-##### Encoding–retrieval symmetry
-###### Retrieval is easier when retrieval conditions resemble encoding conditions
+###### Practice effects
+- Repeated use improves performance
+- Early gains are large
+- Later gains slow down
 
-#### Forgetting
-##### Decay theory
-###### Memory traces lose activation over time
+###### Power law of practice
+- RT = aP^-b + c
+- Reaction time decreases as practice increases
+- Improvement becomes smaller over time
 
-##### Interference theory
-###### Memories become mixed up with similar traces
+###### Stability
+- Performance becomes more stable
+- Users become more predictable and confident
 
-##### Adaptive forgetting
-###### Memory adapts to the statistical structure of environments
+###### Automaticity
+- Practiced skills become fast and effortless
+- Less cognitive control is required
 
-##### Base-level activation
-###### Frequently and recently used items are easier to retrieve
+###### Inflexibility of automaticity
+- Automatic actions can be hard to stop
+- Interface changes may harm expert users
 
-##### Spreading activation
-###### Related cues boost retrieval of relevant memories
+###### HCI implications
+- Support long-term learning
+- Preserve stable interaction patterns
+- Provide migration support after redesigns
 
-##### UI memory
-###### Users gradually remember where interface elements are located
+##### Designing practices
 
-#### Learning over time
-##### Learning
-###### Repeated action changes future performance
+###### Practice regime
+- Practice should improve skill efficiently
+- Mindless repetition is not enough
 
-##### Performance improvement
-###### Hard and effortful actions become more automatic
+###### Scheduling of practice
+- Defines when practice happens
+- Affects memory consolidation and learning
 
-##### Diminishing returns
-###### Early practice produces large gains; later practice produces smaller gains
+###### Massed practice
+- Practice compressed into one period
+- Least effective for long-term learning
 
-##### Power law of practice
-###### Performance improves predictably with repetition
+###### Equi-spaced practice
+- Practice distributed evenly over time
+- Better than massed practice
 
-##### Stability
-###### Practice reduces variance and increases confidence
+###### Expanding practice
+- Practice intervals gradually increase
+- Supports long-term retention
 
-##### Automaticity
-###### Fast and effortless performance after extensive practice
+###### Selection of practices
+- Defines which practices are done
+- Should focus on areas needing improvement
 
-##### Ballistic skill
-###### Automatic actions may be difficult to redirect once triggered
+###### Focused practice
+- Isolated practice with clear objectives
+- Includes corrective feedback
+- Targets weak skills
 
-##### Design risk
-###### Experienced users may become insensitive to design changes
+###### Feedback
+- Informs changes in user strategy
+- Helps users set goals and correct mistakes
 
-#### Designing practices
-##### Practice design matters
-###### Mindless repetition is inefficient
+###### Performance-indicating feedback
+- Scores
+- Speed
+- Accuracy
+- Level indicators
 
-##### Scheduling of practice
-###### When practice happens
+###### Performance-correcting feedback
+- Qualitative feedback identifying problems
+- Helps users correct mistakes
 
-##### Selection of practices
-###### Which practices are done
+###### Strategy-enhancing feedback
+- Helps users improve methods and tactics
 
-##### Feedback
-###### How performance information guides strategy change
+###### HCI implications
+- Design tutorials around focused practice
+- Space learning over time
+- Provide corrective feedback
+- Support gradual skill development
 
-##### Massed practice
-###### Compressed training with limited consolidation
+##### Stages of skill development
 
-##### Equi-spaced practice
-###### Training spaced at regular intervals
+###### Novice stage
+- Users struggle to complete tasks
+- Performance is low and variable
+- Strong guidance is needed
 
-##### Expanding practice
-###### Intervals increase over time and support long-term learning
+###### Strategy-specific learning
+- Skills may depend on a specific interaction strategy
+- Switching strategies may temporarily reduce performance
 
-##### Focused practice
-###### Isolated tasks with clear objectives and corrective feedback
+###### Intermediate stage
+- Performance is acceptable for regular activities
+- Skills are often self-taught
+- Skills may be device-specific
+- Users may lack deeper conceptual understanding
 
-##### Feedback types
-###### Performance-indicating
-###### Performance-correcting
-###### Strategy-enhancing
+###### Expert stage
+- Requires years of deliberate practice
+- Often involves thousands of hours
+- Practice is targeted, corrective, and isolated
 
-#### Stages of skill development
-##### Novice
-###### Struggles to complete tasks
-###### High variability
-###### Low and unstable performance
+###### Apprenticeship learning
+- Expert users guide practice
+- Mentors select practices, provide feedback, and motivate learners
 
-##### Intermediate
-###### Acceptable performance for regular tasks
-###### Skills often remain device-specific
-###### Limited transfer to new tasks
+###### HCI implications
+- Support different skill levels differently
+- Guide novices
+- Strengthen intermediates’ conceptual understanding
+- Give experts efficient control
 
-##### Expert
-###### Requires years of deliberate practice
-###### Robust, refined, and high-level performance
+##### Knowledge-in-the-world, knowledge-in-the-head
 
-##### Deliberate practice
-###### Focus on weak areas
-###### Corrective feedback
-###### Sustained motivation
+###### Knowledge-in-the-head
+- Knowledge stored in memory
+- Examples: passwords, shortcuts, command names
 
-##### Apprenticeship learning
-###### Expert guides practice, feedback, and motivation
+###### Knowledge-in-the-world
+- Knowledge externalized in the environment
+- Examples: labels, notes, checklists, documentation, interface cues
 
-#### Knowledge-in-the-world, knowledge-in-the-head
-##### Knowledge-in-the-head
-###### Internally remembered knowledge
+###### Externalization
+- Users use the environment to support remembering
+- External aids reduce internal memory demand
+- External dependence may weaken knowledge-in-the-head
 
-##### Knowledge-in-the-world
-###### Externalized knowledge in the environment
+###### Tetris example
+- Users may rotate pieces externally instead of mentally
+- Recognition can be faster than internal simulation
 
-##### External representations
-###### Notes / Password managers / Files / Checklists / Interface labels
+###### Distributed cognition
+- Cognition can be distributed across people, artifacts, procedures, and environments
+- Example: pilot, co-pilot, cockpit instruments, checklists, and communication
 
-##### Cognitive offloading
-###### Users manipulate the environment to reduce mental demands
-
-##### Tetris example
-###### Users rotate pieces externally instead of mentally simulating rotation
-
-##### Distributed cognition
-###### Cognition distributed across people, artifacts, practices, and communication
-
-##### Cockpit example
-###### Pilot + Co-pilot + Instruments + Procedures + Speech form a cognitive system
+###### HCI implications
+- Put useful knowledge into the interface
+- Use persistent cues
+- Support external memory
+- Treat cognition as distributed across user and system
 
 #### Reasoning and decision-making
+
 ##### Reasoning
-###### Thought processes that allow users to conclude something they do not already know
+###### Definition
+- Forming new beliefs from existing beliefs
+- Used when direct solutions are unavailable
 
 ##### Inference
-###### Form new beliefs from observations
+###### Observation-based belief
+- Users infer system properties from cues
+- Similar icons may suggest similar functions
 
 ##### Prediction
-###### Reasoning about future states
+###### Future-oriented reasoning
+- Users predict system outcomes
+- Important in dynamic interactive environments
 
-##### Reasoning in HCI
-###### What software can do
-###### What a command will cause
-###### What risks are involved in a decision
-
-#### Mental models
 ##### Mental models
-###### Memory-based representations used for reasoning, inference, and prediction
 
-##### System representation
-###### How users believe inputs affect system state
+###### Definition
+- Memory-based representations of how systems work
+- Help users reason, infer, and predict
 
-##### Simulation in the mind
-###### Users reason about invisible internal processes
+###### Role in HCI
+- Explain system state
+- Predict action effects
+- Support problem-solving
 
-##### Mental models are often incomplete
-###### Users’ knowledge is fragmented and multifaceted
+###### Fragmented mental models
+- User knowledge is often incomplete
+- User knowledge is often inconsistent
+- Users combine episodes, facts, habits, and guesses
 
-##### Practical problem-solving
-###### Users often prefer trying things over effortful reasoning
+###### Pump illustration example
+- Showing both parts and steps improves understanding
+- Helps users simulate system behavior
 
-##### Design implication
-###### Interfaces should support useful and coherent mental models
+###### HCI implications
+- Make useful mechanisms visible
+- Provide explanatory feedback
+- Use consistent mappings
+- Do not assume complete user understanding
 
-#### Decision-making
 ##### Decision-making
-###### Choosing one or more options from a set
 
-##### Options
-###### Each option has possible benefits, costs, and risks
+###### Definition
+- Choosing one or more options from alternatives
 
-##### Full evaluation is often impossible
-###### Too many options
-###### Too much uncertainty
-###### Limited working memory
+###### Risk and probability
+- Options involve gains, losses, risks, and probabilities
+- Users do not always choose rationally optimal options
 
-##### Satisficing
-###### Choose a good-enough option when found
+###### Prospect theory
+- Users evaluate choices relative to a reference point
+- Users may avoid risks for gains
+- Users may take risks to avoid losses
+- Losses feel stronger than equivalent gains
 
-##### External support
-###### Spreadsheets / Reviews / Advice / Comparison tools
+###### HCI decision examples
+- Privacy settings
+- Password length
+- Avatar clothing
+- Software installation
+- Security choices
 
-##### Experience
-###### Makes decisions faster and less mentally taxing
+###### Multi-attribute choice
+- Options have multiple attributes
+- Users compare across several dimensions
 
-#### Decision heuristics
-##### System 1
-###### Fast, intuitive, emotional, associative
+###### Multi-attribute examples
+- Price
+- Type
+- Size
+- Location
+- Quality
+- Reviews
 
-##### System 2
-###### Slow, monitoring, controlled, analytical
+###### Why multi-attribute choice is difficult
+- Requires visual comparison
+- Requires working memory
+- Requires reasoning across attributes
+- Causes scattered attention
 
-##### Cognitive heuristic
-###### Rule of thumb for quick solutions
+###### Satisficing
+- Users choose a good-enough option
+- Users often avoid full optimization
 
-##### Anchoring
-###### Start from a known reference solution
+###### HCI implications
+- Provide comparison tools
+- Support sorting and filtering
+- Highlight key differences
+- Reduce working-memory demands
+- Let users save and revisit options
 
-##### Decoying
-###### A reference point hides other possible options
+##### Decision heuristics
 
-##### Availability
-###### Easily recalled options feel more likely or more appropriate
+###### System 1
+- Fast
+- Intuitive
+- Emotional
+- Associative
+- Based on imagery and memory
 
-##### Status quo bias
-###### Existing or dominant solutions come to mind first
+###### System 2
+- Slow
+- Reflective
+- Effortful
+- Monitors System 1
+- Intervenes when intuition is insufficient
 
-##### Bandwagon bias
-###### Peer choices influence perceived value
+###### Cognitive heuristics
+- Rules of thumb for quick decisions
+- Useful under complexity and time pressure
+- Can introduce bias
 
-##### Bias
-###### Skewed sampling of possible options
+###### Anchoring
+- Users center choices around a known reference solution
 
-##### Design implication
-###### Heuristics help users decide quickly but can narrow what they consider
+###### Decoying
+- A reference point prevents users from seeing alternatives
+
+###### Availability
+- Easily remembered options seem more suitable or likely
+
+###### Status quo bias
+- Users prefer current, prevailing, or familiar choices
+
+###### Bandwagon bias
+- Users are influenced by what peers choose
+
+###### Bias
+- Heuristics speed decisions
+- Heuristics can hide alternatives
+- Bias means considering a skewed subsample of options
+
+###### HCI implications
+- Use defaults responsibly
+- Avoid manipulative choice architecture
+- Make alternatives visible
+- Support reflection in high-stakes decisions
 
 #### Simulating cognition in interactive tasks
+
 ##### Cognitive models
-###### Formal descriptions of what happens in the mind during interaction
+###### Definition
+- Formal descriptions of mental processes during interaction
+- Link task input to behavioral prediction
+- Explain how cognition mediates observable behavior
 
-##### Purpose of cognitive models
-###### Link task input to predictions about behavior
+##### Types of cognitive models
+###### Rule systems
+- Use rules or logical clauses
+- Describe mental information processing
 
-##### Rule systems
-###### Logical rules describing information processing
+###### Mathematical models
+- Use statistical or mathematical relationships
+- Link task factors, design factors, outcomes, and cognitive mediators
 
-##### Mathematical models
-###### Statistical relationships among task factors, design factors, cognitive mechanisms, and outcomes
+###### Simulations
+- Stepwise computer programs
+- Model cognitive capacities as interacting modules
 
-##### Simulations
-###### Stepwise computer programs modeling cognition
+###### Data-driven models
+- Learned from training data or trial and error
+- Example: neural networks for visual saliency
 
-##### Data-driven models
-###### Models learned from data or trial and error
+##### Cognitive modeling in early HCI
+###### Purpose
+- Predict task performance
+- Compare interface designs
+- Reduce reliance on costly user testing
 
-##### GOMS
-###### Goals + Operators + Methods + Selection rules
+##### GOMS model
+###### Components
+- Goals
+- Operators
+- Methods
+- Selection rules
 
 ##### Cognitive architectures
-###### Model cognition as interacting modules with capacities and processing times
+###### Inspiration
+- Modeled after computer architectures
+- Treat cognition as interacting processing components
 
-##### Peripherals
-###### Sensors and actuators interacting with the environment
+###### Peripherals
+- Sensors and actuators
+- Oculomotor system
+- Perception
+- Hearing
+- Motor actions
 
-##### Internal modules
-###### Independent processing units with capacity limits and internal states
+###### Internal modules
+- Memory systems
+- Processing systems
+- Capacity-limited components
 
-##### Production rules
-###### Conditions and actions that describe what is done
+###### Production rules
+- Condition-action rules
+- Define actions under mental states
 
-##### Central processing unit
-###### Limited-capacity executive processing serially
+###### Central processing unit
+- Limited central executive
+- Coordinates serial and parallel processing
 
-##### Benefits of cognitive modeling
-###### Reduce empirical evaluation costs
-###### Predict task completion time
-###### Reveal hidden cognitive demands
-###### Support adaptive systems and tutoring
+##### Uses of cognitive models
+###### Applications
+- Predict interaction time
+- Compare designs
+- Identify hidden cognitive costs
+- Support adaptive systems
+- Support tutoring systems
 
-##### Limits of cognitive modeling
-###### Requires deep task understanding
-###### Time-consuming to build
-###### Narrow application range
-###### Scaling problem
+##### Limitations of cognitive models
+###### Practical challenges
+- Require deep task understanding
+- Costly to build
+- Narrow in scope
+- Hard to transfer across tasks and designs
 
-##### Machine learning revival
-###### Neural networks and reinforcement learning may learn policies or representations
+##### Paper Example Project Ernestine
+###### Context
+- New workstation for telephone operators
+- Intended to improve efficiency
 
-##### Project Ernestine
-###### Cognitive modeling showed a new workstation was slower than expected
-###### Hidden recall demands affected performance
+###### Model prediction
+- New design was predicted to be slower
+- Manual operations decreased
+- Recall demands increased
+
+###### Real-world validation
+- Later call data supported the model prediction
+
+###### Key lesson
+- Reducing physical actions does not always reduce total interaction cost
+- Cognitive cost can outweigh motor savings
 
 #### Summary
-##### Cognition helps users deal with complex systems and situations
-##### Cognition is limited but adaptive
-##### Cognitive theories explain multitasking, learning, forgetting, reasoning, and decision-making
-##### Many HCI guidelines and evaluation models are rooted in cognition
+
+##### Core claim
+###### Cognition in HCI
+- Helps users control non-transparent computer systems
+- Enables goals, memory, reasoning, learning, and decisions
+
+##### Main HCI principles
+###### Design takeaways
+- Users have limited cognitive resources
+- Recognition is easier than recall
+- Working memory should not be overloaded
+- Interruptions harm cognitive control
+- Stable interfaces support learning
+- Decision-making is shaped by heuristics and bias
+- Cognitive models can reveal hidden interaction costs
+
+
 
 ### 6 Needs and motivations
 ##### Introduction
