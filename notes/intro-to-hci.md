@@ -721,7 +721,7 @@ markmap:
 ##### Interface design should respect human movement limits
 ##### Movement is shaped by speed, accuracy, feedback, practice, and task constraints
 
-### Chapter 5 Cognition
+### 5 Cognition
 
 #### Introduction
 
@@ -1615,49 +1615,22 @@ markmap:
 - Cognitive models can reveal hidden interaction costs
 
 
-
 ### 6 Needs and motivations
-##### Introduction
-###### Needs
-###### Motivations
-###### Wants
-###### Desires
-###### Behavior change
-
-##### Why needs and motivations matter in HCI
-###### Explain why people use, adopt, or reject technology
-###### Explain why the same technology works for one user group but fails for another
-###### Help designers understand what users value beyond usability
-
-##### Needs and technology use
-###### Technology is a means to satisfy needs
-###### Computers themselves are not basic needs
-###### Interactive systems can support or frustrate psychological needs
-
-##### Motivations and technology use
-###### Motivations explain why users choose particular actions
-###### Motivations are shaped by context, experience, and anticipated outcomes
 
 #### Psychological needs
-##### Basic psychological needs
-###### Universal drivers behind human behavior
-###### Shared across cultural, economic, and social circumstances
 
 ##### Maslow’s hierarchy of needs
 ###### Physiological needs
+
 ###### Safety needs
-###### Belongingness and love needs
-###### Esteem needs
+
+###### Belongingness and love
+
+###### Esteem
+
 ###### Self-actualization
 
-##### Maslow in HCI
-###### Less influential than later needs frameworks
-
 ##### Catalog of psychological needs
-###### Sheldon et al.’s basic psychological needs
-###### Hassenzahl’s HCI-oriented needs
-
-##### Six psychological needs for interactive systems
 ###### Relatedness
 ###### Meaning
 ###### Stimulation
@@ -1665,741 +1638,505 @@ markmap:
 ###### Popularity
 ###### Security
 
-##### Relatedness
-###### Need for social relationships
+##### The three needs in self-determination theory
+###### Autonomy
+###### Competence
+###### Relatedness
+###### Basic psychological needs
+###### Computers as means
 
-##### Meaning
-###### Need for purpose and direction
+##### Using needs in HCI
+###### Need satisfaction
+###### Need thwarting
+###### Needs for analysis
+###### Needs for design
+###### Awareness strategy
 
-##### Stimulation
-###### Need for novel sensations and thoughts
-
-##### Competence
-###### Need for the ability to perform well in important activities
-
-##### Popularity
-###### Need for recognition by others
-
-##### Security
-###### Need for protection of self from harm
-
-#### The three needs in self-determination theory
-##### Self-determination theory
-###### Prominent theory of needs and motivations in HCI
-
-##### Autonomy
-###### Sense that actions are performed willingly and aligned with the self
-
-##### Competence
-###### Feeling of mastery and control over outcomes
-
-##### Relatedness
-###### Sense of reciprocal belonging with other humans
-
-##### Need satisfaction
-###### Can lead to intrinsic motivation and better well-being
-
-##### Need thwarting
-###### Can lead to negative affect, frustration, and reduced motivation
-
-##### Optimal psychological functioning
-###### Requires autonomy + competence + relatedness
-
-#### Using needs in HCI
-##### Needs as analysis tools
-###### Help interpret user research findings
-
-##### Needs as design resources
-###### Help identify opportunities for technology development
-
-##### Need satisfaction in design
-###### Systems can support users’ autonomy, competence, relatedness, security, and meaning
-
-##### Need frustration in design
-###### Systems can make users feel controlled, incompetent, isolated, unsafe, or meaningless
-
-##### Relatedness example
-###### Technology can support distant partners by increasing awareness of each other
-
-##### Awareness design
-###### Sharing information about another person’s activity or feeling
-
-##### Risk of intrusive awareness
-###### Too much information too quickly can feel strange or invasive
-
-#### Needs and values
-##### Value-sensitive design
-###### Design approach that continuously considers stakeholder values
-
-##### Values
-###### What people consider important in life and morality
-
-##### Values and needs
-###### Values are conscious choices about how to realize needs
-
-##### Autonomy as value
-###### Users should have meaningful control over technology
-
-##### Privacy example
-###### A microphone without an on/off switch can threaten user autonomy
-
-##### Needs vs values
-###### Needs explain psychological drivers
-###### Values explain what stakeholders judge as important or right
+##### Needs and values
+###### Value-sensitive design
+###### Autonomy as value
+###### Needs versus values
 
 #### Motivations
-##### Motivation
-###### What moves people to action
 
-##### Needs vs motivations
-###### Needs are universal and slow-changing
-###### Motivations are individual, contextual, and more malleable
+##### Needs and motivations
+###### Needs
+###### Motivations
+###### Technology adoption
+#####  Wants and desires
+###### Wants
+###### Desires
+###### Limits of introspection
+##### Quasi-needs
+###### About Quasi-needs 
+- Feel like needs but are learned urges
+- Example: craving loot boxes or notifications
 
-##### Motivation as link
-###### Needs → Motivations → Actions
+###### Reinforcers
+###### Primary reinforcers
+###### Secondary reinforcers
+###### Risk in HCI
 
-##### Anticipated need satisfaction
-###### Users act because they expect a technology to satisfy certain needs
+#####  Motivation in self-determination theory
+###### Self-growth
+###### Intrinsic motivation
+###### Extrinsic motivation
+###### Amotivation
+###### Internalization
+###### External regulation
+###### Introjected regulation
+###### Identified regulation
+###### Integrated regulation
 
-##### Technology adoption
-###### Motivations can explain why technologies are adopted or rejected
+##### Applications of self-determination theory in HCI
+###### Innovation
+###### User research analysis
+###### Technology adoption
+###### Healthcare and behavior change
+###### Motivation measurement
+###### PENS scale
+- Used in game research
+- Measures competence, autonomy, relatedness, immersion, and intuitive controls
 
-#### Wants and desires
-##### Wants
-###### Things users say they want
-
-##### Desires
-###### Cravings for things users may not already have
-
-##### Wants are not always needs
-###### What people want may differ from what actually satisfies them
-
-##### User research implication
-###### Simply asking users what they want is not enough
-
-##### Introspection limitation
-###### Users may not know the true causes of their behavior
-
-#### Quasi-needs
-##### Quasi-need
-###### A felt urge that appears like a need but is not a basic psychological need
-
-##### Learned reinforcers
-###### Rewards learned through association
-
-##### Primary reinforcers
-###### Basic biological or psychological satisfactions
-
-##### Secondary reinforcers
-###### Money / Grades / Points / Status / Loot boxes
-
-##### Quasi-needs in technology
-###### Checking social media
-###### Acquiring a loot box
-###### Updating an app
-###### Maintaining digital status
-
-##### Design implication
-###### Not every intense user desire should be treated as a true need
-
-#### Motivation in self-determination theory
-##### SDT view of motivation
-###### People are active organisms pursuing self-growth, mastery, and fulfillment
-
-##### Self-growth
-###### Motivational mechanisms that drive social and psychological development
-
-##### Intrinsic motivation
-###### Activity is interesting or enjoyable in itself
-
-##### Extrinsic motivation
-###### Activity is driven by external outcomes, rewards, or pressures
-
-##### Amotivation
-###### Lack of appeal or motivation for an activity
-
-##### Controlled motivation
-###### Behavior driven by pressure, punishment, guilt, or external expectations
-
-##### Autonomous motivation
-###### Behavior aligned with personal values and sense of self
-
-##### Internalization
-###### Transforming external motivation into personally endorsed motivation
-
-##### External regulation
-###### Motivation controlled by external rewards or punishments
-
-##### Introjected regulation
-###### Partially internalized motivation based on guilt, shame, or self-pressure
-
-##### Identified regulation
-###### Activity is consciously valued as personally important
-
-##### Integrated regulation
-###### Activity is congruent with personal goals and needs
-
-#### Applications of self-determination theory in HCI
-##### Identify design opportunities
-###### Analyze how technology can support autonomy, competence, and relatedness
-
-##### Evaluate user motivation
-###### Understand why users continue or quit using a system
-
-##### Need satisfaction and motivation
-###### More self-determined motivation is associated with more positive attitudes toward technology
-
-##### User Motivation Inventory
-###### Questionnaire for measuring motivation in technology use
-
-##### Key design questions
-###### Can the feature be linked to need satisfaction?
-###### Are feedback and rewards supporting intrinsic motivation?
-###### Can users imagine the motivational outcomes of the feature?
-
-##### Feedback and motivation
-###### Positive feedback can support competence
-###### Negative feedback can reduce motivation
-###### External rewards can undermine autonomy
-
-##### Visibility of outcomes
-###### Users are more likely to try actions when outcomes are imaginable or visible
+###### Design questions
+- Does the feature support basic needs?
+- Do rewards support or undermine intrinsic motivation?
+- Can users imagine the motivational outcome?
 
 #### Behavior change
-##### Behavior change
-###### Technology can influence motivations and actions
 
-##### Behavior change applications
-###### Exercise more
-###### Quit smoking
-###### Drink more water
-###### Reduce energy use
-###### Improve digital self-control
+##### Behavior change in HCI
+###### Technology as artifact
+- Systems can remind users of goals
+- Interfaces can support commitments
 
-##### Technology as motivational artifact
-###### Clocks / Calendars / Memorabilia / Self-tracking tools
+###### Behavior change applications
+- Exercise, smoking cessation, hydration, self-tracking
+- Health is a major but not exclusive domain
 
-##### Behavior change beyond health
-###### Any new system may require users to change existing practices
+###### Behavioral problem
+###### Persuasive design
+###### Fogg’s behavior model
+##### Paper Example UbiFit Garden
+###### Fitness inference
+- Sensors infer fitness activities
+- Activity data becomes visible to users
 
-##### Persuasive design
-###### Designing systems to influence user behavior
+###### Workout application
+- Users review workouts and statistics
+- Supports awareness and reflection
 
-##### Fogg’s behavior model
-###### Motivation
-###### Ability
-###### Triggers
+###### Garden display
+- Flowers and butterflies represent activity
+- Goal attainment becomes glanceable and motivating
 
-##### Behavior occurs when
-###### Motivation + Ability + Trigger are present
+###### Behavior change support
+- Supports contemplation, preparation, and action
+- Field trial found the display motivating
 
-##### Ethical concern
-###### Persuasive design can be misunderstood as manipulation
+##### Stages of behavior change
+###### Transtheoretical model
+- Behavior change occurs in stages
+- Different stages need different design support
 
-#### Stages of behavior change
-##### Transtheoretical model
-###### Behavior change occurs through stages
+###### Precontemplation
+###### Contemplation
+###### Preparation
+###### Action
+###### Maintenance
+###### Energy feedback example
 
-##### Precontemplation
-###### Users are unaware of the need to change or unwilling to change
+##### Other factors in behavior change
+###### Goal setting
+###### SDT and behavior change
+###### Nudging
+###### Dual-process theories
+###### Self-control tools
 
-##### Contemplation
-###### Users are ambivalent and consider pros and cons
+##### Ethics of behavior change
+###### Ethical risk
+- Changing behavior affects user agency
+- Design may conflict with real needs
 
-##### Preparation
-###### Users are ready to change and may tell others
+###### Manipulation
+- Motivation knowledge can be misused
+- Addictive and problematic use are concerns
 
-##### Action
-###### Users try and evaluate the new behavior
+###### Dark patterns
+- Interfaces that coerce, steer, or deceive users
+- Benefit services at users’ expense
 
-##### Maintenance
-###### Conditions are created for continuing the behavior
-
-##### HCI application
-###### Interfaces can provide different support at different behavior-change stages
-
-##### UbiFit Garden
-###### Mobile app designed to encourage physical activity
-
-##### UbiFit Garden mechanisms
-###### Activity sensing
-###### Workout statistics
-###### Visual display of recent goal attainment
-
-#### Other factors in behavior change
-##### Goal setting
-###### Concrete goals help users work toward behavior change
-
-##### SDT-based behavior change
-###### Supporting autonomy, competence, and relatedness can help maintain behavior
-
-##### Nudging
-###### Subtle choice architecture changes that alter behavior predictably
-
-##### Choice architecture
-###### Design of how options are presented to users
-
-##### Dual-process theories
-###### Fast automatic processes
-###### Slow reflective processes
-
-##### Habits
-###### Automatic behaviors are powerful targets for behavior change
-
-##### Digital self-control
-###### Tools can help users regulate attention, habits, and technology use
-
-#### Ethics of behavior change
-##### Behavior change is ethically sensitive
-###### Designers may influence what people believe, choose, and do
-
-##### Risk of incongruence
-###### Changed behavior may conflict with users’ needs or values
-
-##### Manipulation risk
-###### Behavioral knowledge can be used to exploit users
-
-##### Addictive technology
-###### Systems may create problematic relationships with technology
-
-##### Dark patterns
-###### Interface elements that coerce, steer, or deceive users into harmful decisions
-
-##### Transparency
-###### Behavior change designs are less ethically problematic when users understand them
-
-##### User interest
-###### Behavior change should support users’ goals and needs, not only service-provider goals
+###### Transparency
+- Transparent nudges are less ethically problematic
+- Hidden influence raises stronger concerns
 
 #### Gamification
-##### Gamification
-###### Adding game mechanics to non-game tasks
+###### Definition
+- Adding game mechanics to non-game tasks
+- Intended to increase engagement and motivation
 
-##### Purpose of gamification
-###### Increase engagement, motivation, performance, or satisfaction
+###### Rewards
+- Points, badges, and performance rewards
+- Can encourage repeated behavior
 
-##### Reward strategies
-###### Points
-###### Badges
-###### Score tables
-###### Visible achievements
+###### Competition
+- Leaderboards and visible comparison
+- May motivate some users but pressure others
 
-##### Competition
-###### Rewards are made visible to other users
+###### Game-like task design
+- Storylines, progress, and adaptive difficulty
+- Makes routine tasks feel more engaging
 
-##### Game-like task design
-###### Storylines
-###### Progression
-###### Increasing difficulty
-###### Game mechanics
+###### Image labeling example
+- Players label images through a game
+- Agreement between players produces useful labels
 
-##### Image labeling example
-###### Users play a game while producing useful labeled data
+###### Incentive-based design
+- Rewards encourage specific actions
+- Effective but ethically sensitive
 
-##### Incentive-based design
-###### System rewards particular behaviors
+###### SDT critique
+- External rewards can undermine intrinsic motivation
+- Gamification may reduce autonomy
 
-##### Gamification criticism
-###### Can manipulate users
-###### Can undermine intrinsic motivation
-###### Can make activity feel controlling
-
-##### SDT view of gamification
-###### External rewards may support or undermine need satisfaction
-
-##### Design warning
-###### Gamification should be used carefully and ethically
+###### Design caution
+- More engagement is not always better
+- Motivation should support real user needs
 
 #### Summary
-##### Self-determination theory explains universal psychological needs
-##### Needs manifest in behavior through motivations
-##### Needs theories support user research, design, evaluation, and behavior change
-##### Behavior change design is ethically contested
-##### Motivation theory warns against naive assumptions about designing experiences
 
+##### Self-determination theory
+###### Core idea
+- Behavior is driven by basic psychological needs
+- Autonomy, competence, and relatedness are central
 
+##### Needs and motivations
+###### Relationship
+- Needs are universal drivers
+- Motivations are contextual expressions of needs
+
+##### Behavior change
+###### Design use
+- Technology can support new behaviors
+- Behavior change is ethically contested
+
+##### Experience design warning
+###### No deterministic link
+- Designers cannot directly manufacture experience
+- Internal and external processes interact in complex ways
+
+##### HCI design implication
+###### Human-centered motivation
+- Understand why users act
+- Support autonomy, competence, relatedness, and well-being
 ### 7 Experience
-##### Introduction
-###### Experience
-###### Experiencing
-###### User experience
-###### Affect
-###### Pragmatic aspects
-###### Hedonic aspects
-
-##### Why experience matters in HCI
-###### Users do not only complete tasks
-###### Users feel frustration, joy, anger, competence, pleasure, and attachment
-
-##### Experience in interaction
-###### Software errors
-###### Hardware errors
-###### Designed functionality
-###### Successful interaction
-###### Failed interaction
-
-##### Experience as a complex concept
-###### Not a single simple response
-###### Formed through feelings, memories, thoughts, and interpretation
-
-##### HCI interest in experience
-###### Fun
-###### Enjoyment
-###### Aesthetics
-###### Engagement
-###### Burden
-###### Meaning
 
 #### What is experience?
-##### Experience
-###### A person’s perceptions and responses resulting from use or anticipated use
-
-##### Experience in HCI
-###### Accounts of interaction episodes
-###### Aggregated summaries of experiencing
 
 ##### Vacation example
-###### Remembered experience can differ from moment-to-moment experience
+###### Before, during, and after experience
+###### Desire to repeat
+ 
+##### Experiencing and experiences
+###### Experiencing
+- Ongoing stream of feelings and perceptions
+- Happens during interaction
 
-##### Experience before use
-###### Anticipation shapes later experience
+###### Experience
+###### Peak–end rule
+###### Duration neglect
+###### Experience as inference
+###### Specific-to-general inference
+###### Halo effect
 
-##### Experience during use
-###### Momentary feelings and evaluations while interacting
+##### Consequences of experiences
+###### Well-being
+###### Continued use
+###### Memory of experience
+###### Storytelling
+ 
+###### Co-experience
+ 
+##### Processes in experience
+###### Anticipation
+###### Connecting
+###### Interpreting
+###### Reflecting
 
-##### Experience after use
-###### Remembered account influences whether users want to repeat the activity
-
-#### Experiencing and experiences
-##### Experiencing
-###### Moment-to-moment evaluative feeling during interaction
-
-##### Experiences
-###### Aggregated accounts of interaction episodes
-
-##### Experiencing vs experience
-###### Experiencing is ongoing
-###### Experience is remembered, summarized, and communicated
-
-##### Remembered experience
-###### Often influences future decisions more than momentary experiencing
-
-##### Assessment difference
-###### Experiencing requires in-the-moment methods
-###### Experience can be studied through retrospective accounts
-
-#### How experiencing becomes experience
-##### Sequencing effects
-###### Order of events affects how experience is remembered
-
-##### Recency
-###### Recent events strongly shape remembered experience
-
-##### Distinctiveness
-###### Unusual events become important anchors of experience
-
-##### Peak–end rule
-###### Users anchor experience judgments to peaks and endings
-
-##### Peak experiences
-###### Best or worst moments associated with a system
-
-##### End experiences
-###### Final moments or most recent encounters with a system
-
-##### Duration neglect
-###### Length of experience may matter less than peaks and endings
-
-##### HCI implication
-###### A short frustrating or delightful moment can strongly shape overall evaluation
-
-#### Experience as inference
-##### Inference
-###### Users actively interpret what their experience was
-
-##### Experience is shaped by
-###### Mood
-###### Context
-###### Attention
-###### Goals
-###### Attitudes
-###### Previous experiences
-###### Socially shared beliefs
-
-##### Specific-to-general inference
-###### Users infer overall experience from remembered parts
-
-##### General-to-specific inference
-###### Overall evaluation spills over into judgments of components
-
-##### Halo effect
-###### A general positive or negative impression affects evaluation of specific parts
-
-##### Design implication
-###### Design does not directly determine experience
-###### Design influences what users use as input to experience inference
-
-#### Consequences of experiences
-##### Experiences affect well-being
-###### Experiences can matter more than ownership or product use itself
-
-##### Experiences affect decisions
-###### Purchase a product
-###### Continue using a system
-###### Recommend a service
-###### Return to an activity
-
-##### Remembered experience
-###### What users tell themselves and others becomes critical
-
-##### Negative and positive memory
-###### Emotional memory can fade differently from cognitive evaluation
-
-##### HCI implication
-###### Designers must consider how interactions will be remembered, not only how they function
-
+###### Appropriating
+###### Recounting
 #### Types of experience
-##### Experience is not monolithic
-###### Multiple dimensions can coexist in one interaction
 
-##### Pragmatic experience
-###### Practical matters and goal achievement
+##### Deficit approach
+###### Early HCI focus
+##### Positive experience approach
+###### Later UX focus
+##### Multifaceted experience
+###### Beyond task value
+##### Paper Example Is that which is beautiful usable?
+###### Aesthetics and usability
+- Beautiful interfaces can seem more usable
+- Aesthetics affects perceived usability
 
-##### Hedonic experience
-###### Pleasure, stimulation, novelty, curiosity, aesthetics, and meaning
+###### Design implication
+- Beauty is not just decoration
+- Perception of aesthetics can shape interaction judgments
 
-##### Instrumental experience
-###### Focused on usefulness, efficiency, and task success
+##### The pragmatic and the hedonic
+###### Pragmatic experiences
+- Concern practical goals and task achievement
+- Related to simplicity, clarity, and usefulness
 
-##### Non-instrumental experience
-###### Focused on pleasure, identity, stimulation, and emotional value
+###### Utilitarian / instrumental value
+- System helps users get things done
+- Historically central in HCI
 
-##### Positive experience
-###### Can stem from competence, relatedness, autonomy, beauty, or meaning
+###### Hedonic experiences
+- Concern pleasure, novelty, curiosity, and aesthetics
+- Related to the journey rather than only the destination
 
-##### Negative experience
-###### Can stem from frustration, overload, failure, threat, or loss of control
+###### Hassenzahl’s UX model
+- Designers control product features
+- Users perceive apparent product character in a situation
 
-#### Is that which is beautiful usable?
-##### Aesthetics and usability
-###### Beauty can affect perceived usability
+###### Intended product character
+- What designers aim to communicate
+- May differ from what users perceive
 
-##### Form vs function
-###### Classic design tension
+###### Apparent product character
+- What the user actually experiences
+- Shaped by product, situation, and user interpretation
 
-##### ATM experiment
-###### Interfaces varied in aesthetics and usability
+###### Stimulation
+- New impressions and opportunities
+- Supports curiosity and motivation
 
-##### Main insight
-###### Aesthetics can strongly influence perceived usability
+###### Identification
+- Product helps users express themselves
+- Important for identity and social meaning
 
-##### HCI implication
-###### Experience qualities can affect how users judge functionality
+###### Evocation
+- Product reminds users of past events or relationships
+- Connects experience to memory
 
-#### The pragmatic and the hedonic
-##### Pragmatic qualities
-###### Simple
-###### Practical
-###### Straightforward
-###### Useful
-###### Goal-oriented
+###### Overall evaluation
+- Pragmatic and hedonic attributes combine
+- Users infer appeal, pleasure, and satisfaction
 
-##### Hedonic qualities
-###### Stylish
-###### Inventive
-###### Creative
-###### Challenging
-###### Captivating
+##### Pleasure
+###### About Pleasure
+###### Physio-pleasure
+###### Socio-pleasure
+###### Psycho-pleasure
+###### Ideo-pleasure
 
-##### Journey vs destination
-###### Pragmatic: getting from A to B
-###### Hedonic: pleasure of the journey
+##### Emotions
+###### Emotion in experience
+- Central to human experience
+- Shapes reactions to systems and environments
 
-##### Hassenzahl’s model of user experience
-###### Designer perspective
-###### User perspective
-###### Product features
-###### Product character
-###### Experiential consequences
+###### Basic emotions
+- Fear, anger, surprise, disgust, happiness, and love
+- Directed toward objects or events
 
-##### Intended product character
-###### What designers try to create
+###### Appraisal
+- Emotion can result from active evaluation
+- Users interpret internal and external stimuli
 
-##### Apparent product character
-###### What users actually perceive
+###### Core affect
+- Basic feeling state at a moment
+- Not necessarily directed at an object
 
-##### Pragmatic attributes
-###### Support practical goal achievement
+###### Valence
+- Positive versus negative feeling
+- Examples include happy, proud, frustrated, angry
 
-##### Hedonic attributes
-###### Support stimulation, identification, and evocation
-
-##### Stimulation
-###### New impressions and opportunities that create curiosity and motivation
-
-##### Identification
-###### Products help users express themselves to others
-
-##### Evocation
-###### Products remind users of past events, thoughts, or relationships
-
-##### Overall product evaluation
-###### Combined perception of pragmatic and hedonic qualities
-
-#### Affect
-##### Affect
-###### Fundamental evaluative aspect of experience
-
-##### Valence
-###### Positive or negative quality of feeling
-
-##### Arousal
-###### Level of activation or intensity
-
-##### Dominance
-###### Sense of control or being controlled
-
-##### Emotion
-###### More specific affective state
-
-##### Mood
-###### Broader and often less object-specific affective state
-
-##### HCI relevance
-###### Interfaces can produce frustration, delight, anxiety, confidence, or boredom
-
-#### Assessing experiences
-##### Experience assessment
-###### Understanding and measuring users’ experiential responses
-
-##### Retrospective reports
-###### Users describe remembered experiences after interaction
-
-##### In-the-moment reports
-###### Users report feelings during interaction
-
-##### Rating scales
-###### Quantitative measures of experience dimensions
-
-##### UX curve method
-###### Users draw experience over time and explain peaks and changes
-
-##### Experience sampling method
-###### Repeated self-reports during real use
-
-##### Bias in experience measures
-###### Retrospection can omit, exaggerate, or reshape memories
-
-#### Measures of experience
-##### Affect
-###### Valence + Arousal + Dominance
-
-##### Enjoyment
-###### Positive emotion and pleasure in using a system
-
-##### Aesthetics
-###### Attraction and beauty of an interface or product
-
-##### Engagement
-###### How much something draws interest and attention
-
-##### Burden
-###### Difficulty, discomfort, privacy concerns, time cost, emotional burden, or financial burden
-
-##### Meaning
-###### Long-term value to the self
-
-##### Eudaimonia
-###### Experience related to personal happiness and meaningful life
-
-#### Measures of the gamer experience
-##### Gamer experience
-###### Challenge
-###### Mastery
-###### Fun
 ###### Arousal
-###### Immersion
+- Level of activation or energy
+- Examples include alert, excited, calm, relaxed
 
-##### Functional dimensions
-###### Ease of control
-###### Progress feedback
-###### Audiovisual appeal
-###### Goals and rules
-###### Challenge
+###### Dominance
+- Sense of control over a stimulus
+- Sometimes included in affect models
 
-##### Psychosocial dimensions
-###### Mastery
-###### Curiosity
-###### Immersion
-###### Autonomy
-###### Meaning
+###### Product emotions
+- Emotions experienced with products
+- Can be used as design goals or evaluation categories
 
-##### Game experience questionnaires
-###### Assess multiple dimensions rather than one single feeling
+#### Assessing and measuring experience
 
-#### Long-term user experience
-##### Experience changes over time
-###### First impressions differ from later incorporation into life
+##### Challenge of assessment
+###### Subjective complexity
+- Experience is rich and elusive
+- Some aspects are known only from the first-person perspective
 
-##### Orientation phase
-###### Users gain familiarity with the product
+###### Need for methods
+- HCI requires ways to study experience
+- Methods support evaluation and iterative design
 
-##### Incorporation phase
-###### Product becomes part of everyday routines
+##### Rich reports on experiences
+###### Open-ended questioning
+- Users describe experiences in their own words
+- Useful for rich qualitative accounts
 
-##### Identification phase
-###### Product becomes part of self-expression and social identity
+###### Semi-structured interviews
+- Researchers guide but do not over-constrain
+- Useful for smart home and everyday technology studies
 
-##### Long-term usability
-###### Usability is experienced differently as users become familiar
+###### Narrative method
+- First-person story-like accounts
+- Reveals how users remember and organize experience
 
-##### Emotional attachment
-###### Users may develop personal attachment to interactive systems
+###### Critical incident method
+- Focuses on outstanding positive or negative experiences
+- Helps capture memorable moments
 
-##### Functional dependency
-###### Users may come to rely on a system in daily life
+###### Micro-phenomenological interviews
+- Deep investigation of lived experience
+- Useful for subtle sensory experiences
+
+##### Paper Example The experience of a new phone
+###### Longitudinal study
+- Followed new iPhone users over time
+- Collected impactful experience reports
+
+###### Orientation
+- Users gain familiarity
+- Learnability and stimulation are central
+
+###### Incorporation
+- Device becomes part of daily life
+- Functional dependency increases
+
+###### Identification
+- Device becomes tied to identity
+- Social aspects and emotional attachment become important
+
+##### Measures
+###### Quantitative indicators
+- Measure dimensions of experience
+- Support systematic comparison and development
+
+###### Rating scales
+- Users rate specific experience statements
+- Common in UX questionnaires
+
+###### UX curve method
+- Users draw experience over time
+- Peaks and declines are explained in interviews
+
+###### UX curve limitation
+- Drawing a curve can bias memory
+- May omit or embellish experience
+
+###### Experience sampling method
+- Repeated reports during everyday use
+- Captures dynamic experience in context
+
+###### Affect measures
+- Assess valence, arousal, and dominance
+- Self-assessment mannequin is one example
+
+###### Enjoyment measures
+- Assess pleasure in using a system
+- Focus on enjoyment apart from performance outcomes
+
+###### Aesthetics measures
+- Assess attraction and beauty
+- Classical aesthetics and expressive aesthetics can differ
+
+###### Engagement measures
+- Assess attraction and interest
+- Relevant to systems that draw user attention
+
+###### Burden measures
+- Assess costs and difficulties of use
+- Includes physical, emotional, privacy, social, and financial burdens
+
+###### Eudaimonia
+- Experience related to personal happiness
+- Meaning comes from long-term value to the self
+
+##### Paper Example Measures of the gamer experience
+###### Functional dimensions
+- Ease of control
+- Consequences
+- Progress feedback
+- Audiovisual appeal
+- Goals and rules
+- Challenge
+
+###### Psychosocial aspects
+- Mastery
+- Curiosity
+- Immersion
+- Autonomy
+- Meaning
+
+###### Measurement logic
+- Game experience is multidimensional
+- Different dimensions may be mostly unrelated
 
 #### Can experiences be designed?
-##### Core question
-###### Can designers design feelings such as pride, happiness, or joy?
 
 ##### Negative answer
-###### Designers cannot directly control users’ individual experiences
+###### Experience cannot be directly controlled
+- Experiences are individual and idiosyncratic
+- Designers cannot fully determine user feelings
 
-##### User experience design as misnomer
-###### Experience is individual, idiosyncratic, and inferential
+###### UX design as misnomer
+- Designers do not literally design experience
+- They design conditions and product features
 
 ##### Positive answer
-###### Design can intentionally influence conditions for experience
+###### Experiences can be intentionally shaped
+- Dining, films, art, and games create experiences
+- HCI can draw on experience principles
 
-##### Design influence
-###### Product features can shape what users notice, feel, remember, and infer
+###### Peak–end rule in design
+- Endings and peaks deserve special attention
+- Memorable moments influence overall evaluation
 
-##### Peak–end rule in design
-###### Pay attention to the strongest moments and the ending
+###### Interactivity attributes
+- Response speed can affect emotional quality
+- Expectedness can affect emotional interpretation
+- Movement speed can affect perceived character
 
-##### Interactivity attributes
-###### Response speed
-###### Expectedness
-###### Movement speed
-###### Sequentiality
-###### Continuity
+##### Balanced view
+###### Design affects experience
+- Design influences what users use as input for inference
+- Product features can shape experience formation
 
-##### Emotional qualities
-###### Interface behavior can be linked to perceived emotional qualities
-
-##### Correct position
-###### Experiences cannot be directly designed
-###### Experiences can be indirectly influenced through design
+###### Design does not determine experience
+- User, context, memory, and interaction also matter
+- Experience emerges from a complex process
 
 #### Summary
-##### Experiences are created through inference from ongoing experiencing
-##### Experience includes pragmatic and hedonic aspects
-##### Affect is a special aspect of experience
-###### Valence + Arousal + Dominance
 
-##### Experience is shaped by memory, context, goals, and interpretation
-##### Designers influence but do not determine experience
+##### Experience as inference
+###### Core idea
+- Experiences are created from ongoing experiencing
+- Users actively interpret and remember interaction
+
+##### Experience is multidimensional
+###### Pragmatic and hedonic
+- Pragmatic experience concerns goal achievement
+- Hedonic experience concerns pleasure and meaning
+
+##### Affect and emotion
+###### Core affect
+- Valence and arousal describe basic feeling
+- Emotions can be directed toward products or events
+
+##### Experience assessment
+###### Rich and quantitative methods
+- Narratives and interviews capture depth
+- Measures support comparison and evaluation
+
+##### Design implication
+###### Indirect influence
+- Designers can shape conditions for experience
+- Experiences cannot be directly manufactured
 
 
 ### 8 Collaboration
