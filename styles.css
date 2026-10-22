@@ -166,7 +166,7 @@ body {
 }
 
 #researchSection {
-    margin-top: -15vh;
+    margin-top: -32vh;
 }
 
 .content-section h2 {
@@ -631,6 +631,12 @@ g.markmap-node.search-match > circle {
     .top-nav { top: 2vh; left: 5vw; }
     .card-grid { gap: 2rem; }
 
+    .otter-container {
+        top: 1vh;
+        right: -15vw;
+        width: 86vw;
+    }
+
     .story-section {
         left: 8vw;
         top: 30vh;
@@ -644,10 +650,12 @@ g.markmap-node.search-match > circle {
     }
 
     .about-photo {
-        position: static;
-        align-self: flex-end;
+        position: absolute;
+        top: -11.8rem;
+        right: 0;
+        left: auto;
         width: 132px;
-        margin: 0.35rem 0 1rem;
+        margin: 0;
         padding: 0.4rem 0.4rem 2rem;
         transform: translateY(var(--photo-rise)) rotate(1.5deg);
     }
@@ -658,7 +666,7 @@ g.markmap-node.search-match > circle {
         gap: 1.6rem;
     }
 
-    #researchSection { margin-top: -10vh; }
+    #researchSection { margin-top: -25vh; }
 
     .research-row { grid-template-columns: 1fr; }
 
