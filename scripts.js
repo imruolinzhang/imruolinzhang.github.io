@@ -4,6 +4,7 @@ const textLayer = document.getElementById('textLayer');
 const aboutMe = document.getElementById('aboutMe');
 const aboutTitle = document.getElementById('aboutTitle');
 const aboutIntro = document.getElementById('aboutIntro');
+const aboutPhoto = document.querySelector('.about-photo');
 const fountain = document.getElementById('fountain');
 const portfolioCard = document.getElementById('portfolioCard');
 
@@ -88,6 +89,10 @@ window.addEventListener('scroll', () => {
     const riseTranslateY = (1 - riseEase) * riseInitialY;
     aboutIntro.style.opacity = 1;
     aboutIntro.style.transform = `translateY(${riseTranslateY}px)`;
+    if (aboutPhoto) {
+        aboutPhoto.style.opacity = riseEase;
+        aboutPhoto.style.setProperty('--photo-rise', `${(1 - riseEase) * window.innerHeight * 0.18}px`);
+    }
     if (portfolioCard) {
         portfolioCard.style.opacity = 1;
         portfolioCard.style.transform = `translateY(${riseTranslateY}px)`;
@@ -125,9 +130,15 @@ async function openMindmap(mdPath) {
 
     const myToken = ++mindmapLoadToken;
     try {
-        const res = await fetch(mdPath);
-        if (!res.ok) throw new Error(`HTTP ${res.status}`);
-        const md = await res.text();
+        let md = '';
+        try {
+            const res = await fetch(mdPath);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            md = await res.text();
+        } catch (fetchError) {
+            md = window.NOTEBOOK_NOTES && window.NOTEBOOK_NOTES[mdPath];
+            if (!md) throw fetchError;
+        }
         if (myToken !== mindmapLoadToken) return;
 
         if (!window.markmap || !window.markmap.Transformer || !window.markmap.Markmap) {
@@ -257,6 +268,42 @@ function attachSpotlight(card) {
 }
 attachSpotlight(portfolioCard);
 attachSpotlight(document.getElementById('hciCard'));
+
+// Research 卡片：保留鼠标探照灯，并在点击后只展开当前论文的右侧光束。
+const researchCards = document.querySelectorAll('.research-card');
+
+function closeResearchBeams() {
+    document.querySelectorAll('.research-row.active').forEach((row) => {
+        row.classList.remove('active');
+        const card = row.querySelector('.research-card');
+        const details = row.querySelector('.beam-details');
+        if (card) card.setAttribute('aria-expanded', 'false');
+        if (details) details.setAttribute('aria-hidden', 'true');
+    });
+}
+
+researchCards.forEach((card) => {
+    attachSpotlight(card);
+    card.addEventListener('click', (event) => {
+        event.stopPropagation();
+        const row = card.closest('.research-row');
+        const shouldOpen = !row.classList.contains('active');
+        closeResearchBeams();
+        if (shouldOpen) {
+            row.classList.add('active');
+            card.setAttribute('aria-expanded', 'true');
+            row.querySelector('.beam-details')?.setAttribute('aria-hidden', 'false');
+        }
+    });
+});
+
+document.addEventListener('click', (event) => {
+    if (!event.target.closest('.research-row')) closeResearchBeams();
+});
+
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') closeResearchBeams();
+});
 
 // Portfolio 弹窗 —— 把已转好的图片每页竖向堆叠
 const PORTFOLIO_PAGE_COUNT = 6;

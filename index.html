@@ -11,18 +11,16 @@
 
     <nav class="top-nav">
         <a href="#" id="navAbout">About Me</a>
-        <a href="#notebookSection" id="navNotebook">Notebook</a>
         <a href="#researchSection" id="navResearch">Research</a>
+        <a href="#notebookSection" id="navNotebook">Notebook</a>
     </nav>
 
     <section class="scroll-container">
         <div class="sticky-viewport">
             <div class="hero-text-layer" id="textLayer">
                 <div class="title-line">
-                    <span class="greeting">HI, I AM</span>
                     <span class="name">RUOLIN ZHANG</span>
                 </div>
-                <p class="subtitle">I am building my knowledge map in <span class="highlight">Human-Computer Interaction</span></p>
             </div>
 
             <div class="otter-container" id="otter">
@@ -35,18 +33,51 @@
 
             <div class="story-section" id="aboutMe">
                 <h2 class="about-title" id="aboutTitle">About Me</h2>
+                <figure class="about-photo" aria-label="Portrait of Ruolin Zhang">
+                    <img src="./images/ruolin-portrait.jpg" alt="Ruolin Zhang standing in front of green foliage">
+                </figure>
                 <div class="about-intro" id="aboutIntro">
-                    <p>My journey into the field of Human-Computer Interaction felt like a coincidence, yet perhaps it was destined.</p>
-                    <p>Before even learning about this field, I was already conducting similar research.&nbsp; My master's thesis focused on desktop documentaries, exploring how desktop elements shape narratives and how these choices affect the audience's experience.</p>
-                    <p>Earlier, I joined the VR department during my first undergraduate internship.&nbsp; My graduation thesis then focused on media studies, exploring the materiality of media from different researchers' perspectives.&nbsp; Paper, computers, mobile phones, VR headsets… I was fascinated by different forms of media.</p>
-                    <p>As I gradually learned about HCI, I realized that everyone can find intersections with HCI in their major and daily life, and I didn't want to just "discover" it; I wanted to explore it further.</p>
-                    <p>Today, artificial intelligence, extended reality, and robotics are constantly reshaping our daily lives.&nbsp; I'm learning technical skills, hoping to explore from a multifaceted perspective how people can better find their place in a technologically constructed world, how media can develop, and how to balance media development.</p>
+                    <p>Hi, I'm Ruolin Zhang, currently a research assistant at the MC² Lab at HKUST (Guangzhou).</p>
+                    <p>My research interests center on AI agents in extended reality, particularly their potential for education and creativity tools. I am interested in how intelligent, embodied systems can support learning, expression, and meaningful human experiences. I am also interested in wearable computing, especially technologies designed to support physical and mental well-being. <a href="./cv.html" class="portfolio-inline-link cv-inline-link" target="_blank" rel="noopener">CV</a></p>
+                    <p>Before transitioning to HCI research, I worked as a director and screenwriter <a href="#" class="portfolio-inline-link" onclick="event.preventDefault(); openPdf();">(Film Portfolio)</a>.</p>
+                    <p>Outside research, I enjoy rock climbing 🧗‍♀️ and ballet 🩰. I studied the erhu for eight years and the violin for two years 🎻, and I love listening to classical music.</p>
                 </div>
-                <div class="library-card portfolio-card" id="portfolioCard" onclick="openPdf()">
-                    <div class="card-header">film &amp; literature</div>
-                    <h3 class="card-title portfolio-title">Portfolio <span class="click-hint-inline">( Click to open )</span></h3>
-                    <div class="spotlight-layer" style="background-image: url('./images/proB.png');"></div>
-                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section" id="researchSection">
+        <h2>Research</h2>
+        <p class="click-hint-block">( Click an image to explore )</p>
+        <div class="research-list">
+            <div class="research-row">
+                <button class="library-card research-card" type="button" aria-expanded="false" aria-controls="tvcgPaperDetails" aria-label="Reveal details for The Convergence of Minds and Bodies">
+                    <img class="research-card-image" src="./images/generative-ai-xr-review.png" alt="Overview illustration for the generative AI agents in extended reality review">
+                    <span class="spotlight-layer research-spotlight" aria-hidden="true"></span>
+                </button>
+                <aside class="research-beam" id="tvcgPaperDetails">
+                    <div class="beam-copy">
+                        <h3 class="beam-title">The Convergence of Minds and Bodies: A Systematic Review of Generative AI Agents in Extended Reality for Education</h3>
+                        <p class="beam-authors"><strong>Ruolin Zhang</strong>, Zheng Wei, Pan Hui</p>
+                        <p class="beam-status"><em>Details coming soon.</em></p>
+                        <p class="beam-details" aria-hidden="true">A PRISMA-based systematic review of 73 studies, synthesizing the roles of generative AI agents in XR education and deriving design implications for future learning experiences.</p>
+                    </div>
+                </aside>
+            </div>
+            <div class="research-row anonymized-project">
+                <button class="library-card research-card anonymous-card" type="button" aria-expanded="false" aria-controls="anonymousProjectDetails" aria-label="Reveal details for an anonymized AI agent system project">
+                    <img class="research-card-image anonymous-research-image" src="./images/chi-vr-museum-teaser.png" alt="An anonymized preview of an AI agent system project">
+                    <span class="anonymous-glass" aria-hidden="true"></span>
+                    <span class="spotlight-layer research-spotlight" aria-hidden="true"></span>
+                </button>
+                <aside class="research-beam" id="anonymousProjectDetails">
+                    <div class="beam-copy">
+                        <h3 class="beam-title">An AI Agent–Mediated System Project</h3>
+                        <p class="beam-authors anonymous-authors" aria-label="Author information anonymized">Anonymous Research Team</p>
+                        <p class="beam-status"><em>Details coming soon.</em></p>
+                        <p class="beam-details" aria-hidden="true">An AI-agent–mediated system project exploring interactive experiences in extended reality. Details coming soon.</p>
+                    </div>
+                </aside>
             </div>
         </div>
     </section>
@@ -60,20 +91,11 @@
                 <h3 class="card-title">Introduction to Human-Computer Interaction</h3>
                 <div class="spotlight-layer" style="background-image: url('./images/Introduction to Human-Computer Interaction.png');"></div>
             </div>
-            <div class="library-card" onclick="openMindmap('./notes/dont-make-me-think.md')">
-                <div class="card-header">🗒️ paper</div>
-                <h3 class="card-title">xxxxxxx</h3>
-            </div>
             <div class="library-card" style="opacity: 0.5;">
                 <div class="card-header">📑 draft</div>
                 <h3 class="card-title">Future Exploration...</h3>
             </div>
         </div>
-    </section>
-
-    <section class="content-section" id="researchSection">
-        <h2>Research</h2>
-        <p class="in-progress-text">in the progress</p>
     </section>
 
     <div id="mindmapModal" class="mindmap-modal">
@@ -92,6 +114,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
-    <script src="scripts.js"></script>
+    <script src="./notes/intro-to-hci-data.js"></script>
+    <script src="scripts.js?v=20261022-photo"></script>
 </body>
 </html>
