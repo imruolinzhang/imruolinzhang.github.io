@@ -490,7 +490,7 @@ g.markmap-node.search-match > circle {
 
 .research-beam {
     position: relative;
-    height: 200px;
+    min-height: 200px;
     margin-left: -2px;
     pointer-events: none;
     transition: height 0.55s cubic-bezier(0.22, 1, 0.36, 1);
@@ -523,7 +523,7 @@ g.markmap-node.search-match > circle {
 }
 
 .research-row.active .research-beam {
-    height: 260px;
+    min-height: 260px;
     pointer-events: auto;
 }
 
@@ -541,8 +541,7 @@ g.markmap-node.search-match > circle {
 }
 
 .beam-copy {
-    position: absolute;
-    inset: 0;
+    position: relative;
     z-index: 1;
     display: flex;
     flex-direction: column;
@@ -579,6 +578,33 @@ g.markmap-node.search-match > circle {
     line-height: 1.35;
     color: var(--color-primary);
     margin-top: 0.45rem;
+}
+
+.paper-pdf-link {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: 0.25rem;
+    margin-top: 0.7rem;
+    padding: 0.15rem 0;
+    color: var(--color-primary);
+    background: transparent;
+    font-family: 'IM Fell English', serif;
+    font-size: 0.8rem;
+    line-height: 1.4;
+    text-decoration: none;
+    pointer-events: auto;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+}
+
+.paper-pdf-link:hover {
+    text-decoration: underline;
+}
+
+.paper-pdf-link:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 4px;
 }
 
 .beam-details {
@@ -682,11 +708,13 @@ g.markmap-node.search-match > circle {
 
     .research-beam {
         width: 100%;
-        height: 220px;
+        min-height: 220px;
         margin: -1px 0 0;
     }
 
-    .research-row.active .research-beam { height: 280px; }
+    .research-row.active .research-beam { min-height: 280px; }
+
+    .paper-pdf-link { align-self: center; }
 
     .research-beam::before {
         inset: 0 -12px;
