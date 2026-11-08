@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruolin Zhang - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=IM+Fell+English:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20261108-scroll">
 </head>
 <body>
 
@@ -24,17 +24,17 @@
             </div>
 
             <div class="otter-container" id="otter">
-                <img src="./images/otter.png" alt="Otter" class="otter-img" onerror="this.src='https://via.placeholder.com/800x500/DAD2BC/425A77?text=Otter+Image'">
+                <img src="./images/otter.webp" width="1840" height="900" fetchpriority="high" alt="Otter" class="otter-img">
             </div>
 
             <div class="fountain-container" id="fountain">
-                <img src="./images/fountain.png" alt="Fountain" class="fountain-img" onerror="this.src='https://via.placeholder.com/600x800/DAD2BC/425A77?text=Fountain+Image'">
+                <img src="./images/fountain.webp" width="1100" height="1556" decoding="async" alt="Fountain" class="fountain-img">
             </div>
 
             <div class="story-section" id="aboutMe">
                 <h2 class="about-title" id="aboutTitle">About Me</h2>
                 <figure class="about-photo" aria-label="Portrait of Ruolin Zhang">
-                    <img src="./images/ruolin-portrait.jpg" alt="Ruolin Zhang standing in front of green foliage">
+                    <img src="./images/ruolin-portrait.webp" decoding="async" alt="Ruolin Zhang standing in front of green foliage">
                 </figure>
                 <div class="about-intro" id="aboutIntro">
                     <p>Hi, I'm Ruolin Zhang, currently a research assistant at the MC² Lab at HKUST (Guangzhou).</p>
@@ -51,7 +51,7 @@
         <div class="research-list">
             <div class="research-row">
                 <button class="library-card research-card" type="button" aria-expanded="false" aria-controls="tvcgPaperDetails" aria-label="Reveal details for The Convergence of Minds and Bodies">
-                    <img class="research-card-image" src="./images/generative-ai-xr-review.png" alt="Overview illustration for the generative AI agents in extended reality review">
+                    <img class="research-card-image" loading="lazy" decoding="async" src="./images/generative-ai-xr-review.png" alt="Overview illustration for the generative AI agents in extended reality review">
                     <span class="spotlight-layer research-spotlight" aria-hidden="true"></span>
                 </button>
                 <aside class="research-beam" id="tvcgPaperDetails">
@@ -66,7 +66,7 @@
             </div>
             <div class="research-row">
                 <button class="library-card research-card" type="button" aria-expanded="false" aria-controls="anonymousProjectDetails" aria-label="Reveal details for Visiting Alone, but Not Alone: Exploring AI Guides and Peers in Solo VR Museum Visits">
-                    <img class="research-card-image" src="./images/chi-vr-museum-teaser.png" alt="Overview of AI guide and peer agents, five agent configurations, and interaction costs in solo VR museum visits">
+                    <img class="research-card-image" loading="lazy" decoding="async" src="./images/chi-vr-museum-teaser.png" alt="Overview of AI guide and peer agents, five agent configurations, and interaction costs in solo VR museum visits">
                     <span class="spotlight-layer research-spotlight" aria-hidden="true"></span>
                 </button>
                 <aside class="research-beam" id="anonymousProjectDetails">
@@ -110,8 +110,6 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
-    <script src="./notes/intro-to-hci-data.js"></script>
-    <script src="scripts.js?v=20261022-photo"></script>
+    <script defer src="scripts.js?v=20261108-scroll"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ body {
     background-color: var(--color-bg);
     color: var(--color-primary);
     font-family: var(--font-main);
-    overflow-x: hidden;
+    overflow-x: clip;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -68,7 +68,7 @@ body {
 }
 .subtitle { font-family: 'IM Fell English', serif; font-size: clamp(1.4rem, 2vw, 2.2rem); color: var(--color-primary); margin-top: 1.2rem; }
 
-.otter-container { position: absolute; top: -5vh; right: -25vw; width: min(58vw, 1550px); z-index: 5; }
+.otter-container { position: absolute; top: -5vh; right: 2vw; width: min(58vw, 1550px); z-index: 5; }
 .otter-img { width: 100%; height: auto; }
 
 .fountain-container {
@@ -86,7 +86,7 @@ body {
 .story-section {
     position: absolute;
     left: 18vw;
-    top: 35vh;
+    top: 30vh;
     width: min(62vw, 820px);
     z-index: 15;
     pointer-events: none;
@@ -658,9 +658,9 @@ g.markmap-node.search-match > circle {
     .card-grid { gap: 2rem; }
 
     .otter-container {
-        top: 1vh;
-        right: -15vw;
-        width: 86vw;
+        top: 14vh;
+        right: 2vw;
+        width: 82vw;
     }
 
     .story-section {
@@ -736,6 +736,15 @@ g.markmap-node.search-match > circle {
         text-align: center;
         padding: 3.4rem 1.8rem 1.6rem;
     }
+}
+
+@media (max-width: 600px) {
+    .story-section { top: max(22vh, 10rem); }
+    .about-title { font-size: clamp(3rem, 12vw, 4rem); }
+    .about-photo { top: -9rem; }
+    .about-intro { font-size: 1rem; line-height: 1.45; }
+    .about-intro p { margin-bottom: 0.9rem; }
+    .about-intro p:last-child { margin-bottom: 0; }
 }
 
 /* 独立 CV 阅读页 */

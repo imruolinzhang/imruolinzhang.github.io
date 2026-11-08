@@ -8,102 +8,96 @@ const aboutPhoto = document.querySelector('.about-photo');
 const fountain = document.getElementById('fountain');
 const portfolioCard = document.getElementById('portfolioCard');
 
+const aboutRiseEnd = 0.68;
+const fountainExitStart = 1.10;
+const fountainExitEnd = 1.30;
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+let sceneTop;
+let sceneTravel;
+let sceneWidth;
+let sceneHeight;
+let otterTravel;
+let sceneFrame = null;
+let lastProgress;
+
 document.getElementById('navAbout').addEventListener('click', (e) => {
     e.preventDefault();
-    const totalH = scrollContainer.clientHeight - window.innerHeight;
-    window.scrollTo({ top: totalH * 0.5, behavior: 'smooth' });
+    window.scrollTo({
+        top: sceneTop + sceneTravel * aboutRiseEnd,
+        behavior: reduceMotion.matches ? 'instant' : 'smooth',
+    });
 });
 
-document.getElementById('navNotebook').addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('notebookSection').scrollIntoView({ behavior: 'smooth' });
-});
+for (const [linkId, sectionId] of [
+    ['navResearch', 'researchSection'],
+    ['navNotebook', 'notebookSection'],
+]) {
+    document.getElementById(linkId).addEventListener('click', (e) => {
+        e.preventDefault();
+        document.getElementById(sectionId).scrollIntoView({
+            behavior: reduceMotion.matches ? 'instant' : 'smooth',
+        });
+    });
+}
 
-document.getElementById('navResearch').addEventListener('click', (e) => {
-    e.preventDefault();
-    document.getElementById('researchSection').scrollIntoView({ behavior: 'smooth' });
-});
+function scheduleSceneFrame() {
+    if (sceneFrame === null) sceneFrame = requestAnimationFrame(renderScene);
+}
 
-window.addEventListener('scroll', () => {
-    const offsetTop = scrollContainer.offsetTop;
-    const totalScrollableHeight = scrollContainer.clientHeight - window.innerHeight;
-    const rawProgress = (window.scrollY - offsetTop) / totalScrollableHeight;
-    let progress = Math.max(0, Math.min(1, rawProgress));
+function measureScene() {
+    sceneWidth = window.innerWidth;
+    sceneHeight = window.innerHeight;
+    sceneTop = scrollContainer.getBoundingClientRect().top + window.scrollY;
+    sceneTravel = Math.max(1, scrollContainer.clientHeight - sceneHeight);
+    otterTravel = sceneWidth + otter.offsetWidth * 1.35;
+    lastProgress = undefined;
+    scheduleSceneFrame();
+}
 
-    // 首屏文字向右滑出
+function renderScene() {
+    sceneFrame = null;
+    const rawProgress = Math.max(0, Math.min(fountainExitEnd, (window.scrollY - sceneTop) / sceneTravel));
+    if (rawProgress === lastProgress) return;
+    lastProgress = rawProgress;
+    const progress = Math.min(1, rawProgress);
+
+    // 首屏文字向右滑出，水獭向左游动，About Me 标题跟在水獭后面。
     const phaseOne = Math.min(progress / 0.28, 1);
-    textLayer.style.transform = `translateX(${phaseOne * window.innerWidth * 0.9}px)`;
-    textLayer.style.opacity = 1 - phaseOne * 1.15;
+    textLayer.style.transform = `translateX(${phaseOne * sceneWidth * 0.9}px)`;
+    textLayer.style.opacity = 1 - phaseOne;
 
-    // 水獭向左移动
-    const otterTravel = window.innerWidth + otter.offsetWidth * 1.35;
     const otterCurrentX = -Math.min(progress * 1.75, 1) * otterTravel;
     otter.style.transform = `translateX(${otterCurrentX}px)`;
 
-    // About Me 标题：从最右侧外，与水獭同速同向滑入，固定距离一起向左
-    const aboutStartX = window.innerWidth * 1.15;
-    const aboutTitleX = Math.max(0, otterCurrentX + aboutStartX);
+    const aboutTitleX = Math.max(0, otterCurrentX + sceneWidth * 1.15);
     aboutTitle.style.transform = `translateX(${aboutTitleX}px)`;
 
-    // About Me 容器：始终不透明（一旦滚动），无渐隐效果
-    aboutMe.style.opacity = 1;
+    // 喷泉升起，保持到 Research 进入视口后再向右滑出。
+    const fountainRise = Math.max(0, Math.min(1, (rawProgress - 0.13) / (0.30 - 0.13)));
+    const fountainY = Math.pow(1 - fountainRise, 3) * 100;
+    const fountainExit = Math.max(0, (rawProgress - fountainExitStart) / (fountainExitEnd - fountainExitStart));
+    const fountainX = Math.pow(fountainExit, 2) * 220;
+    fountain.style.opacity = rawProgress < fountainExitEnd ? fountainRise : 0;
+    fountain.style.transform = `translate(${fountainX}%, ${fountainY}%)`;
 
-    // 喷泉：升起 → 保持 → Portfolio 卡片快要消失（lift 末段）时向右滑出
-    const fInStart = 0.13, fInEnd = 0.30;
-    const fSlideStart = 1.10; // 等 Notebook 已经出现在视口里再开始撤
-    const fSlideEnd   = 1.30; // Notebook 接近完全可见时滑出完成
-    let fountainOpacity = 0;
-    let fountainYPercent = 100;
-    let fountainXPercent = 0;
-
-    if (rawProgress < fInStart) {
-        // 隐藏在下方
-    } else if (rawProgress < fInEnd) {
-        const fInP = (rawProgress - fInStart) / (fInEnd - fInStart);
-        const easeOut = 1 - Math.pow(1 - fInP, 3);
-        fountainOpacity = fInP;
-        fountainYPercent = (1 - easeOut) * 100;
-    } else if (rawProgress < fSlideStart) {
-        // 保持位置（即便 About Me 在向上抬起，喷泉也不动）
-        fountainOpacity = 1;
-        fountainYPercent = 0;
-    } else if (rawProgress < fSlideEnd) {
-        fountainOpacity = 1;
-        fountainYPercent = 0;
-        const fOutP = (rawProgress - fSlideStart) / (fSlideEnd - fSlideStart);
-        const easeIn = Math.pow(fOutP, 2);
-        fountainXPercent = easeIn * 220; // 向右滑出
-    } else {
-        fountainOpacity = 0;
-        fountainXPercent = 220;
-    }
-
-    fountain.style.opacity = fountainOpacity;
-    fountain.style.transform = `translateX(${fountainXPercent}%) translateY(${fountainYPercent}%)`;
-
-    // About Me 介绍 + Portfolio 卡片：标题在 ~0.25 就位之后再从视口下方升起
-    const riseStart = 0.32, riseEnd = 0.68;
-    const riseP = Math.max(0, Math.min(1, (progress - riseStart) / (riseEnd - riseStart)));
+    // About Me 的照片和介绍升起，随后整个区域向上离开。
+    const riseStart = 0.32;
+    const riseP = Math.max(0, Math.min(1, (progress - riseStart) / (aboutRiseEnd - riseStart)));
     const riseEase = 1 - Math.pow(1 - riseP, 3);
-    const riseInitialY = window.innerHeight * 0.9; // 起点：自然位置下方约 90vh（视口外）
-    const riseTranslateY = (1 - riseEase) * riseInitialY;
-    aboutIntro.style.opacity = 1;
-    aboutIntro.style.transform = `translateY(${riseTranslateY}px)`;
-    if (aboutPhoto) {
-        aboutPhoto.style.opacity = riseEase;
-        aboutPhoto.style.setProperty('--photo-rise', `${(1 - riseEase) * window.innerHeight * 0.18}px`);
-    }
-    if (portfolioCard) {
-        portfolioCard.style.opacity = 1;
-        portfolioCard.style.transform = `translateY(${riseTranslateY}px)`;
-    }
+    aboutIntro.style.transform = `translateY(${(1 - riseEase) * sceneHeight * 0.9}px)`;
+    aboutPhoto.style.opacity = riseEase;
+    aboutPhoto.style.setProperty('--photo-rise', `${(1 - riseEase) * sceneHeight * 0.18}px`);
 
-    // 整个 About Me（标题 + intro + 卡片）一起向上滑出视口；不渐隐
     const liftStart = 0.75;
-    const liftP = Math.max(0, Math.min(1, (progress - liftStart) / (1 - liftStart)));
-    const liftEase = Math.pow(liftP, 2);
-    aboutMe.style.transform = `translateY(${-liftEase * window.innerHeight * 1.4}px)`;
-});
+    const liftP = Math.max(0, (progress - liftStart) / (1 - liftStart));
+    aboutMe.style.opacity = progress > 0 ? 1 : 0;
+    aboutMe.style.transform = `translateY(${-Math.pow(liftP, 2) * sceneHeight * 1.4}px)`;
+}
+
+window.addEventListener('scroll', scheduleSceneFrame, { passive: true });
+window.addEventListener('resize', measureScene);
+window.addEventListener('pageshow', scheduleSceneFrame);
+measureScene();
 
 // Mindmap：从外部 .md 文件加载并用 markmap 渲染
 let currentMarkmap = null;
@@ -111,6 +105,45 @@ let currentMmRoot = null;
 let currentInitialExpandLevel = 2;
 let mindmapLoadToken = 0;
 let mindmapSearchTimer = null;
+let mindmapLibrary;
+
+function loadScript(src) {
+    return new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.onload = resolve;
+        script.onerror = () => {
+            script.remove();
+            reject(new Error('Could not load a Notebook resource'));
+        };
+        document.head.appendChild(script);
+    });
+}
+
+function loadMindmapLibrary() {
+    if (!mindmapLibrary) {
+        mindmapLibrary = loadScript('https://cdn.jsdelivr.net/npm/markmap-autoloader@0.18.12')
+            .then(() => window.markmap.autoLoader.ready)
+            .catch((error) => {
+                mindmapLibrary = undefined;
+                throw error;
+            });
+    }
+    return mindmapLibrary;
+}
+
+async function loadNotebookMarkdown(mdPath) {
+    try {
+        const response = await fetch(mdPath);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        return await response.text();
+    } catch (error) {
+        if (!window.NOTEBOOK_NOTES) await loadScript('./notes/intro-to-hci-data.js');
+        const markdown = window.NOTEBOOK_NOTES?.[mdPath];
+        if (!markdown) throw error;
+        return markdown;
+    }
+}
 
 async function openMindmap(mdPath) {
     const modal = document.getElementById('mindmapModal');
@@ -130,15 +163,7 @@ async function openMindmap(mdPath) {
 
     const myToken = ++mindmapLoadToken;
     try {
-        let md = '';
-        try {
-            const res = await fetch(mdPath);
-            if (!res.ok) throw new Error(`HTTP ${res.status}`);
-            md = await res.text();
-        } catch (fetchError) {
-            md = window.NOTEBOOK_NOTES && window.NOTEBOOK_NOTES[mdPath];
-            if (!md) throw fetchError;
-        }
+        const [md] = await Promise.all([loadNotebookMarkdown(mdPath), loadMindmapLibrary()]);
         if (myToken !== mindmapLoadToken) return;
 
         if (!window.markmap || !window.markmap.Transformer || !window.markmap.Markmap) {
@@ -180,7 +205,7 @@ async function openMindmap(mdPath) {
 function closeMindmap() {
     mindmapLoadToken++;
     document.getElementById('mindmapModal').classList.remove('active');
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
     const searchInput = document.getElementById('mindmapSearch');
     if (searchInput) searchInput.value = '';
     const svgEl = document.getElementById('markmapSvg');
@@ -330,5 +355,5 @@ function openPdf() {
 function closePdf() {
     document.getElementById('pdfModal').classList.remove('active');
     document.getElementById('pdfPagesContainer').innerHTML = '';
-    document.body.style.overflow = 'auto';
+    document.body.style.overflow = '';
 }
