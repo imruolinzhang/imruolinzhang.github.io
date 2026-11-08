@@ -68,7 +68,14 @@ body {
 }
 .subtitle { font-family: 'IM Fell English', serif; font-size: clamp(1.4rem, 2vw, 2.2rem); color: var(--color-primary); margin-top: 1.2rem; }
 
-.otter-container { position: absolute; top: -5vh; right: 2vw; width: min(58vw, 1550px); z-index: 5; }
+.otter-container {
+    --otter-width: min(58vw, 1550px);
+    position: absolute;
+    top: -5vh;
+    right: calc(var(--otter-width) * -0.43);
+    width: var(--otter-width);
+    z-index: 5;
+}
 .otter-img { width: 100%; height: auto; }
 
 .fountain-container {
@@ -658,9 +665,8 @@ g.markmap-node.search-match > circle {
     .card-grid { gap: 2rem; }
 
     .otter-container {
-        top: 14vh;
-        right: 2vw;
-        width: 82vw;
+        --otter-width: 86vw;
+        top: 1vh;
     }
 
     .story-section {
